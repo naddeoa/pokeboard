@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "jsx": "react",
+      "outDir": "artifacts",
+      "rootDir": "src",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "declaration": true,
+      "noImplicitAny": true,
+      "preserveConstEnums": true,
+      "strictNullChecks": true,
+      "allowJs": false,
+      "inlineSourceMap": true,
+      "inlineSources": true,
+      "noImplicitReturns": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "skipLibCheck": true,
+      "experimentalDecorators": true
+    },
+    "filesGlob": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/__tests__/**",
+      "artifacts"
+    ],
+    "compileOnSave": false
+  }
+

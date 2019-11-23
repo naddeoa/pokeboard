@@ -1,0 +1,5 @@
+.vscode
+artifacts
+dist
+node_modules
+.server-pids
