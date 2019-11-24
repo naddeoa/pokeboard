@@ -1,4 +1,5 @@
 import fromPairs from 'ramda/es/fromPairs'
+import toPairs from 'ramda/es/toPairs'
 import unionWith from 'ramda/es/unionWith'
 import { pokemon } from '../raw-data/pokemon'
 import { pokemonTypes } from '../raw-data/pokemon-types'
@@ -7,10 +8,8 @@ import { swordShieldPokemon } from '../raw-data/sworshield-pokemon'
 import { typeEfficacy } from '../raw-data/type-efficacy'
 import { englishLocale, types } from '../raw-data/types'
 
-const filtered = new Set(['???', 'shadow'])
-
 export const typeNamesToId = types
-    .filter(it => it.local_language_id === englishLocale && !filtered.has(it.name))
+    .filter(it => it.local_language_id === englishLocale)
     .reduce(
         (acc, { name, type_id }) => {
             acc[name.toLowerCase()] = type_id
@@ -23,7 +22,7 @@ export const typeIdsToNames = types
     .filter(it => it.local_language_id === englishLocale)
     .reduce(
         (acc, { name, type_id }) => {
-            acc[type_id] = name
+            acc[type_id] = name.toLowerCase()
             return acc
         },
         {} as Record<number, string>
@@ -34,43 +33,55 @@ export interface TypeEfficacy {
     readonly damage_factor: number
 }
 
-export const typeIdsToEfficacies = typeEfficacy.reduce(
+export interface Efficacy {
+    [typeName: string]: number
+}
+
+export interface OffenseDefense {
+    offense: Efficacy
+    defense: Efficacy
+}
+
+export interface TypeEfficacies {
+    [typeName: string]: OffenseDefense
+}
+
+export const allTypeNames = Object.keys(typeNamesToId)
+
+function emptyEfficacy(): Efficacy {
+    return fromPairs(allTypeNames.map(typeName => [typeName, 1]))
+}
+
+export function combineEfficacies(e1: Efficacy, e2: Efficacy): Efficacy {
+    return fromPairs(
+        toPairs(e1).map(([typeName, factor]) => {
+            return [typeName, factor * e2[typeName]]
+        })
+    )
+}
+
+export function combineOffenseDefense(o1: OffenseDefense, o2: OffenseDefense): OffenseDefense {
+    return {
+        offense: combineEfficacies(o1.offense, o2.offense),
+        defense: combineEfficacies(o1.defense, o2.defense),
+    }
+}
+
+export const offenseDefenseEfficacies = typeEfficacy.reduce(
     (acc, curr) => {
-        const [strengths, weaknesses] = acc
-        // tslint:disable-next-line:no-magic-numbers
-        if (curr.damage_factor > 100) {
-            const strongTo = strengths[curr.damage_type_id] || []
+        const damageTypeName = typeIdsToNames[curr.damage_type_id]
+        const targetTypeName = typeIdsToNames[curr.target_type_id]
 
-            strongTo.push({
-                damage_factor: curr.damage_factor,
-                type_id: curr.target_type_id,
-            })
+        const damageEfficacy = acc[damageTypeName] || (acc[damageTypeName] = { offense: emptyEfficacy(), defense: emptyEfficacy() })
+        damageEfficacy.offense[targetTypeName] = curr.damage_factor / 100
 
-            if (strengths[curr.damage_type_id] === undefined) {
-                strengths[curr.damage_type_id] = strongTo
-            }
-        } else if (curr.damage_factor < 100) {
-            const weakTo = weaknesses[curr.damage_type_id] || []
-
-            weakTo.push({
-                damage_factor: curr.damage_factor,
-                type_id: curr.target_type_id,
-            })
-
-            if (weaknesses[curr.damage_type_id] === undefined) {
-                weaknesses[curr.damage_type_id] = weakTo
-            }
-        }
+        const targetEfficacy = acc[targetTypeName] || (acc[targetTypeName] = { offense: emptyEfficacy(), defense: emptyEfficacy() })
+        targetEfficacy.defense[damageTypeName] = curr.damage_factor / 100
 
         return acc
     },
-    [{}, {}] as [Record<number, TypeEfficacy[]>, Record<number, TypeEfficacy[]>]
+    {} as TypeEfficacies
 )
-
-export const typeIdsToPositiveEfficacies = typeIdsToEfficacies[0]
-export const typeIdsToNegativeEfficacies = typeIdsToEfficacies[1]
-
-export const allTypeNames = Object.keys(typeNamesToId)
 
 const mergedPokemonDataSets = unionWith((a, b) => a.id === b.id, pokemon, swordShieldPokemon)
 export const pokemonNamesToIds = fromPairs(mergedPokemonDataSets.map(it => [it.identifier, it.id] as [string, number]))

@@ -29,6 +29,6 @@ export interface CardProps {
 }
 
 export function Card({ cardSize, children }: CardProps) {
-    const className = `pkb-card-${cardSize || '1x1'}`
+    const className = `pkb-card pkb-card-${cardSize || '1x1'}`
     return <div className={`pkd-card ${className}`}>{children}</div>
 }

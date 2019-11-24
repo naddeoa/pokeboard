@@ -1,6 +1,5 @@
-import find from 'ramda/es/find'
 import flatten from 'ramda/es/flatten'
-import startsWith from 'ramda/es/startsWith'
+import groupBy from 'ramda/es/groupBy'
 import toPairs from 'ramda/es/toPairs'
 import React, { useEffect, useState } from 'react'
 import { Highlighter, Typeahead, TypeaheadMenuProps, TypeaheadResult } from 'react-bootstrap-typeahead'
@@ -8,41 +7,16 @@ import './app.css'
 import { Card } from './card/Card'
 import {
     allPokemonAndTypeNames,
-    TypeEfficacy,
-    allPokemonNames,
-    allTypeNames,
     AllTypesAndPokemon,
+    combineOffenseDefense,
+    Efficacy,
+    OffenseDefense,
+    offenseDefenseEfficacies,
     pokemonIdsToTypes,
     pokemonNamesToIds,
     typeIdsToNames,
-    typeIdsToNegativeEfficacies,
-    typeIdsToPositiveEfficacies,
     typeNamesToId,
 } from './data-indexes/indexes'
-
-function getPositiveEfficacies(name: string) {
-    const typeId = typeNamesToId[name.toLowerCase()]
-
-    if (typeId === undefined) {
-        return []
-    }
-
-    const strength = typeIdsToPositiveEfficacies[typeId]
-
-    if (strength === undefined) {
-        return []
-    }
-
-    return strength
-}
-
-function findClosestPokemonName(term: string) {
-    return find((name: string) => startsWith(term, name))(allPokemonNames)
-}
-
-function findClosestTypeName(term: string) {
-    return find((type: string) => startsWith(term, type))(allTypeNames)
-}
 
 type TypeResolution = PokemonMatch | TypeMatch | UnknownMatch
 
@@ -82,23 +56,6 @@ function getTypeName(searchTerm: string): TypeResolution {
         return { typeName: searchTerm, matchedAs: 'type name' }
     }
 
-    // Retire the close logic in favor of just using the typeahead
-    // Is it close to a type name?
-    // const almostTypeName = findClosestTypeName(searchTerm)
-    // if (almostTypeName) {
-    //     return { typeName: almostTypeName, matchedAs: 'type name' }
-    // }
-
-    // // Is it close to a pokemon name? This will have horrible perf
-    // const pokemonName = findClosestPokemonName(searchTerm)
-    // if (typeof pokemonName === 'string') {
-    //     return {
-    //         typeName: getTypeForPokemon(pokemonName) as string,
-    //         matchedAs: 'pokemon name',
-    //         pokemonName,
-    //     }
-    // }
-
     return { matchedAs: 'unknown' }
 }
 
@@ -129,76 +86,45 @@ function getTypeForPokemon(name: string): PokemonTypeResult {
     return
 }
 
-function getStrongAgainst(name: string) {
-    // get the id for the type
-    const typeId = typeNamesToId[name.toLowerCase()]
-
-    if (typeId === undefined) {
-        return []
-    }
-
-    return flatten(
-        toPairs(typeIdsToPositiveEfficacies).map(([otherTypeId, efficacy]) => {
-            return efficacy
-                .filter(it => it.type_id === Number(typeId))
-                .map(it => {
-                    const strongAgainst: TypeEfficacy = {
-                        damage_factor: it.damage_factor,
-                        type_id: Number(otherTypeId),
-                    }
-
-                    return strongAgainst
-                })
-        })
-    )
-}
-
-function getNegativeEfficacies(name: string) {
-    const typeId = typeNamesToId[name.toLowerCase()]
-
-    if (typeId === undefined) {
-        return []
-    }
-
-    const weaknesses = typeIdsToNegativeEfficacies[typeId]
-
-    if (weaknesses === undefined) {
-        return []
-    }
-
-    return weaknesses
-}
-
-interface TypeEfficacyProps {
-    readonly efficacy: TypeEfficacy
-}
-
-function TypeEfficacyView(props: TypeEfficacyProps) {
-    const name = typeIdsToNames[props.efficacy.type_id]
-
-    return (
-        <div>
-            <li>
-                <span>{name}: </span>
-                {props.efficacy.damage_factor}
-            </li>
-        </div>
-    )
-}
-
 interface RenderTypeEfficacyProps {
     readonly title: string
-    readonly efficacy: TypeEfficacy[]
+    readonly desc: string
+    readonly efficacy: Efficacy
 }
 function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
-    return (
-        <Card>
-            <span className="pkb-section-title">{props.title}</span>
-            <ul>
-                {props.efficacy.map(it => (
-                    <TypeEfficacyView key={it.type_id} efficacy={it} />
-                ))}
+    const activeModifiers = toPairs(props.efficacy).filter(([_, factor]) => factor !== 1)
+    const groups = toPairs(groupBy((it: [string, number]) => String(it[1]))(activeModifiers))
+
+    groups.sort((a, b) => {
+        if (a[0] > b[0]) {
+            return -1
+        } else if (a[0] === b[0]) {
+            return 0
+        } else {
+            return 1
+        }
+    })
+
+    const jsx = groups.map(([groupKey, it]) => {
+        return (
+            <ul key={groupKey}>
+                {it.map(([typeName, factor]) => {
+                    return (
+                        <li key={typeName}>
+                            <span>{typeName}: </span>
+                            {factor}
+                        </li>
+                    )
+                })}
             </ul>
+        )
+    })
+
+    return (
+        <Card key={props.title}>
+            <div className="pkb-section-title">{props.title}</div>
+            <small>{props.desc}</small>
+            {jsx}
         </Card>
     )
 }
@@ -223,63 +149,26 @@ function renderAllTypes(props: RenderAllTypesProps) {
 
 interface ContentData {
     readonly typeName: string
-    readonly positiveEff: TypeEfficacy[]
-    readonly negativeEff: TypeEfficacy[]
-    readonly strongAgainst: TypeEfficacy[]
+    readonly offDeff: OffenseDefense[]
 }
 
-function getContentData(typeName: TypeResolution): ContentData[] {
+function getContentData(typeName: TypeResolution): ContentData {
     switch (typeName.matchedAs) {
         case 'unknown':
-            return [
-                {
-                    typeName: 'unknown',
-                    positiveEff: [],
-                    negativeEff: [],
-                    strongAgainst: [],
-                },
-            ]
+            return { typeName: 'unknown', offDeff: [] }
 
         case 'type name':
-            return [
-                {
-                    typeName: typeName.typeName,
-                    positiveEff: getPositiveEfficacies(typeName.typeName),
-                    negativeEff: getNegativeEfficacies(typeName.typeName),
-                    strongAgainst: getStrongAgainst(typeName.typeName),
-                },
-            ]
+            return { typeName: typeName.typeName, offDeff: [offenseDefenseEfficacies[typeName.typeName]] }
+
         case 'pokemon name':
-            const ret: ContentData[] = []
-
-            ret.push({
-                typeName: typeName.typeName,
-                positiveEff: getPositiveEfficacies(typeName.typeName),
-                negativeEff: getNegativeEfficacies(typeName.typeName),
-                strongAgainst: getStrongAgainst(typeName.typeName),
-            })
-
             if (typeName.secondaryTypeName) {
-                ret.push({
-                    typeName: typeName.secondaryTypeName,
-                    positiveEff: getPositiveEfficacies(typeName.secondaryTypeName),
-                    negativeEff: getNegativeEfficacies(typeName.secondaryTypeName),
-                    strongAgainst: getStrongAgainst(typeName.secondaryTypeName),
-                })
+                return {
+                    typeName: `${typeName.typeName}+${typeName.secondaryTypeName}`,
+                    offDeff: [combineOffenseDefense(offenseDefenseEfficacies[typeName.typeName], offenseDefenseEfficacies[typeName.secondaryTypeName])],
+                }
+            } else {
+                return { typeName: typeName.typeName, offDeff: [offenseDefenseEfficacies[typeName.typeName]] }
             }
-
-            return ret
-    }
-}
-
-function getReksTitle(typeName: TypeResolution): string {
-    switch (typeName.matchedAs) {
-        case 'unknown':
-            return 'Reks by...'
-        case 'pokemon name':
-            return `${typeName.pokemonName} rek'd by`
-        case 'type name':
-            return `Rek'd by`
     }
 }
 
@@ -352,11 +241,18 @@ export function App() {
 
     const contentData = getContentData(typeNameResult)
     const content = flatten(
-        contentData.map(({ typeName, positiveEff, negativeEff, strongAgainst }) => {
+        contentData.offDeff.map(({ offense, defense }) => {
             return [
-                renderTypeEfficacyCard({ title: `(${typeName}) More Damage Against`, efficacy: positiveEff }),
-                renderTypeEfficacyCard({ title: `(${typeName}) Less Damage Against`, efficacy: negativeEff }),
-                renderTypeEfficacyCard({ title: `(as ${typeName}) ${getReksTitle(typeNameResult)}`, efficacy: strongAgainst }),
+                renderTypeEfficacyCard({
+                    title: `${contentData.typeName} attack modifiers`,
+                    desc: 'bonus damage attacking these',
+                    efficacy: offense,
+                }),
+                renderTypeEfficacyCard({
+                    title: `${contentData.typeName} defense modifiers`,
+                    desc: 'less damage attacking these',
+                    efficacy: defense,
+                }),
             ]
         })
     )

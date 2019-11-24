@@ -1,3 +1,8 @@
+
+.pkb-card {
+    padding: 10px;
+}
+
 .pkb-card-1x0 {
     grid-column-start: 0;
     grid-column-end: span 1;
