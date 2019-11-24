@@ -1,5 +1,10 @@
+### Pokeboard
 
-This is a minimal template project that lets you build using a Makefile. It sets up some reasonable defaults for TypeScript, React, Webpack, TSLint, and Prettier. Build everything with `make all`
+This is a little utility to get readouts of pokemon strengths/weaknesses at a glance. It's hosted at
+
+https://naddeo.dev/demo/pokeboard/
+
+It uses data from https://github.com/veekun/pokedex/tree/master/pokedex/data/csv mostly.
 
 ### Targets
 Execute targets using `make target-name`. Most shells will autocomplete the target name if you spam tab.
