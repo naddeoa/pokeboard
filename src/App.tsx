@@ -1,6 +1,6 @@
 import flatten from 'ramda/es/flatten'
 import values from 'ramda/es/values'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './app.css'
 import { Card } from './card/Card'
 import {
@@ -75,21 +75,22 @@ function getTypeName(searchTerm: string): TypeResolution {
         return { typeName: searchTerm, matchedAs: 'type name' }
     }
 
+    // Retire the close logic in favor of just using the typeahead
     // Is it close to a type name?
-    const almostTypeName = findClosestTypeName(searchTerm)
-    if (almostTypeName) {
-        return { typeName: almostTypeName, matchedAs: 'type name' }
-    }
+    // const almostTypeName = findClosestTypeName(searchTerm)
+    // if (almostTypeName) {
+    //     return { typeName: almostTypeName, matchedAs: 'type name' }
+    // }
 
-    // Is it close to a pokemon name? This will have horrible perf
-    const pokemonName = findClosestPokemonName(searchTerm)
-    if (typeof pokemonName === 'string') {
-        return {
-            typeName: getTypeForPokemon(pokemonName) as string,
-            matchedAs: 'pokemon name',
-            pokemonName,
-        }
-    }
+    // // Is it close to a pokemon name? This will have horrible perf
+    // const pokemonName = findClosestPokemonName(searchTerm)
+    // if (typeof pokemonName === 'string') {
+    //     return {
+    //         typeName: getTypeForPokemon(pokemonName) as string,
+    //         matchedAs: 'pokemon name',
+    //         pokemonName,
+    //     }
+    // }
 
     return { matchedAs: 'unknown' }
 }
@@ -263,24 +264,32 @@ function generateTypeaheadSelection(typeName: TypeResolution): AllTypesAndPokemo
 
 const searchStorageKey = 'pkb_search'
 function getLastSuccessSearch(): string {
-    return localStorage.getItem(searchStorageKey) || 'normal'
+    const urlParams = new URLSearchParams(window.location.search)
+    const searchParam = urlParams.get('search')
+    return searchParam || localStorage.getItem(searchStorageKey) || 'normal'
 }
 
 function setLastSuccessSearch(typeName: TypeResolution) {
+    const urlParams = new URLSearchParams(window.location.search)
+    const currentParam = urlParams.get('search')
     switch (typeName.matchedAs) {
         case 'unknown':
             return
         case 'pokemon name':
             const name = typeName.pokemonName
             document.title = `Pokeboard: ${name}`
-            history.pushState({ search: name }, document.title, `?search=${name}`)
             localStorage.setItem(searchStorageKey, typeName.pokemonName)
+            if (currentParam !== name) {
+                history.pushState({ search: name }, document.title, `?search=${name}`)
+            }
             return
         case 'type name':
             const name2 = typeName.typeName
             document.title = `Pokeboard: ${name2}`
-            history.pushState({ search: name2 }, document.title, `?search=${name2}`)
             localStorage.setItem(searchStorageKey, name2)
+            if (currentParam !== name2) {
+                history.pushState({ search: name2 }, document.title, `?search=${name2}`)
+            }
             return
     }
 }
@@ -289,6 +298,14 @@ export function App() {
     const [searchValue, setValue] = useState(getLastSuccessSearch())
     const typeName = getTypeName(searchValue)
     setLastSuccessSearch(typeName) // side effect
+
+    useEffect(() => {
+        window.onpopstate = (event: PopStateEvent) => {
+            if (event.state.search) {
+                setValue(event.state.search)
+            }
+        }
+    })
 
     const { positiveEff, negativeEff, strongAgainst } = getContentData(typeName)
 
