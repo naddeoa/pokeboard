@@ -5,6 +5,7 @@ import { swordShieldPokemon } from '../raw-data/sworshield-pokemon'
 import { swordShieldPokemonTypes } from '../raw-data/swordshield-pokemon-types'
 import { pokemon } from '../raw-data/pokemon'
 import { pokemonTypes } from '../raw-data/pokemon-types'
+import any from 'ramda/es/any'
 
 const filtered = new Set(['???', 'shadow'])
 
@@ -77,10 +78,16 @@ export interface PokemonType {
     readonly type_id: number
     readonly slot: 'primary' | 'secondary'
 }
+
 export const pokemonIdsToTypes = [...pokemonTypes, ...swordShieldPokemonTypes].reduce(
     (acc, curr) => {
         const typesForPkm = acc[curr.pokemon_id] || []
-        typesForPkm.push({ type_id: curr.type_id, slot: curr.slot === 1 ? 'primary' : 'secondary' })
+
+        // This strips out duplicates from the two data sets merging. I'd like to keep
+        // them both in tact on isk.
+        if (!any((it: PokemonType) => it.type_id === curr.type_id, typesForPkm)) {
+            typesForPkm.push({ type_id: curr.type_id, slot: curr.slot === 1 ? 'primary' : 'secondary' })
+        }
 
         if (acc[curr.pokemon_id] === undefined) {
             acc[curr.pokemon_id] = typesForPkm
