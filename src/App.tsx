@@ -1,7 +1,7 @@
 import flatten from 'ramda/es/flatten'
 import groupBy from 'ramda/es/groupBy'
 import toPairs from 'ramda/es/toPairs'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Highlighter, Typeahead, TypeaheadMenuProps, TypeaheadResult } from 'react-bootstrap-typeahead'
 import './app.css'
 import { Card } from './card/Card'
@@ -105,26 +105,51 @@ function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
         }
     })
 
-    const jsx = groups.map(([groupKey, it]) => {
+    const superEff = 'Super Effective'
+    const notVery = 'Not Very Effective'
+    const effGroups = groupBy(it => (Number(it[0]) > 1 ? superEff : notVery), groups)
+
+    const superEffective = effGroups[superEff]
+    const notVeryEff = effGroups[notVery]
+
+    function renderGroup(title: string, group: typeof groups) {
+        if (!group) {
+            return null
+        }
+        const jsx = group.map(([groupKey, it]) => {
+            return (
+                <ul className="pkb-eff-listing" key={groupKey}>
+                    {it.map(([typeName, factor]) => {
+                        return (
+                            <li key={typeName}>
+                                <span className={`pkb-type-label pkb-type-${typeName}`}>{typeName}</span>
+                                {factor}x
+                                <i className={`${factor > 1 ? 'up' : 'down'} pkb-eff-indicator`} />
+                            </li>
+                        )
+                    })}
+                </ul>
+            )
+        })
+
         return (
-            <ul key={groupKey}>
-                {it.map(([typeName, factor]) => {
-                    return (
-                        <li key={typeName}>
-                            <span>{typeName}: </span>
-                            {factor}
-                        </li>
-                    )
-                })}
-            </ul>
+            <div className="pkb-eff-container" key={title}>
+                {/* <span>{title}</span> */}
+                {jsx}
+            </div>
         )
-    })
+    }
+    const superEffJsx = renderGroup(superEff, superEffective)
+    const notVeryEffJsx = renderGroup(notVery, notVeryEff)
 
     return (
         <Card key={props.title}>
             <div className="pkb-section-title">{props.title}</div>
             <small>{props.desc}</small>
-            {jsx}
+
+            {superEffJsx}
+            {superEffJsx && notVeryEffJsx ? <hr /> : null}
+            {notVeryEffJsx}
         </Card>
     )
 }
@@ -139,7 +164,7 @@ function renderAllTypes(props: RenderAllTypesProps) {
     return (
         <span>
             {allNames.map(name => (
-                <button key={name} onClick={() => props.onClick(name)}>
+                <button className={`pkb-type-${name}`} key={name} onClick={() => props.onClick(name)}>
                     {name}
                 </button>
             ))}
@@ -228,6 +253,8 @@ function setLastSuccessSearch(typeName: TypeResolution) {
 
 export function App() {
     const [searchValue, setValue] = useState(getLastSuccessSearch())
+    const input = useRef<Typeahead<AllTypesAndPokemon>>(null)
+
     const typeNameResult = getTypeName(searchValue)
     setLastSuccessSearch(typeNameResult) // side effect
 
@@ -261,6 +288,15 @@ export function App() {
         setValue(name)
     }
 
+    function onInputChange(val: AllTypesAndPokemon[]) {
+        val[0] && setValue(val[0].name)
+        const ref = input.current
+        if (ref && val.length > 0) {
+            // tslint:disable-next-line:no-any
+            ;(ref as any).blur()
+        }
+    }
+
     const selected = generateTypeaheadSelection(typeNameResult)
 
     return (
@@ -268,18 +304,16 @@ export function App() {
             <div>{renderAllTypes({ onClick: onTypeNameClick })}</div>
             <div className="pkb-search-container">
                 <Typeahead
+                    ref={input}
                     id="typeahead"
                     clearButton={true}
                     renderMenuItemChildren={renderMenuItemChildren}
-                    onChange={it => {
-                        it[0] && setValue(it[0].name)
-                    }}
+                    onChange={onInputChange}
                     selected={selected}
                     maxResults={5}
                     placeholder="Search for types or pokemon"
                     options={allPokemonAndTypeNames}
                     labelKey="name"
-                    onInputChange={it => it[0] && setValue(it[0].toLowerCase())}
                 />
             </div>
 

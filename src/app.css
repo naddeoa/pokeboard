@@ -33,15 +33,110 @@ button {
     transition: all 0.2s;
 }
 
+.pkb-eff-container {
+    padding-left:10px;
+}
+
+i.pkb-eff-indicator {
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+i.up.pkb-eff-indicator {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border-color: green;
+}
+
+i.down.pkb-eff-indicator {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-color: red;
+}
+
 button:hover {
     color: #000000;
     background-color: #776767;
 }
 
-@media only screen and (max-width: 599px) {
+ul.pkb-eff-listing {
+    list-style: none;
+    padding: 3px;
+}
 
+ul.pkb-eff-listing li {
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.pkb-type-label {
+    padding: 5px;
+    margin-right: 3px;
+    border-radius: 2px;
+}
+
+.pkb-type-fire {
+    background-color: #f08030;
+}
+.pkb-type-flying {
+    background-color: #a890f0;
+}
+.pkb-type-rock {
+    background-color: #b8a038;
+}
+.pkb-type-normal {
+    background-color: #a8a878;
+}
+.pkb-type-poison {
+    background-color: #a040a0;
+}
+.pkb-type-bug {
+    background-color: #a8b820;
+}
+.pkb-type-ghost {
+    background-color: #705898;
+}
+.pkb-type-steel {
+    background-color: #b8b8d0;
+}
+.pkb-type-water {
+    background-color: #6890f0;
+}
+.pkb-type-electric {
+    background-color: #f8d030;
+}
+.pkb-type-psychic {
+    background-color: #f85888;
+}
+.pkb-type-ice {
+    background-color: #98d8d8;
+}
+.pkb-type-dragon {
+    background-color: #7038f8;
+}
+.pkb-type-dark {
+    background-color: #705848;
+}
+.pkb-type-fairy {
+    background-color: #ee99ac;
+}
+.pkb-type-fighting {
+    background-color: #c03028;
+}
+.pkb-type-ground {
+    background-color: #e0c068;
+}
+.pkb-type-grass {
+    background-color: #78c850;
+}
+
+@media only screen and (max-width: 599px) {
     .pkb-section-title {
         font-size: 1.4em;
+        line-height: 1em;
         font-weight: bold;
     }
 }
@@ -49,6 +144,7 @@ button:hover {
 @media only screen and (min-width: 600px) {
     .pkb-section-title {
         font-size: 2em;
+        line-height: 1em;
         font-weight: bold;
     }
 }
