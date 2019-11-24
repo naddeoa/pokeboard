@@ -34,7 +34,7 @@ button {
 }
 
 .pkb-eff-container {
-    padding-left:10px;
+    padding-left: 10px;
 }
 
 i.pkb-eff-indicator {
@@ -133,11 +133,17 @@ ul.pkb-eff-listing li {
     background-color: #78c850;
 }
 
+
 @media only screen and (max-width: 599px) {
     .pkb-section-title {
         font-size: 1.4em;
         line-height: 1em;
         font-weight: bold;
+    }
+
+    .pkb-section-subtitle {
+        font-size: .8em;
+        line-height: 1.2em;
     }
 }
 
@@ -146,5 +152,10 @@ ul.pkb-eff-listing li {
         font-size: 2em;
         line-height: 1em;
         font-weight: bold;
+    }
+
+    .pkb-section-subtitle {
+        font-size: .8em;
+        line-height: 1.2em;
     }
 }

@@ -145,7 +145,7 @@ function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
     return (
         <Card key={props.title}>
             <div className="pkb-section-title">{props.title}</div>
-            <small>{props.desc}</small>
+            <div className="pkb-section-subtitle">{props.desc}</div>
 
             {superEffJsx}
             {superEffJsx && notVeryEffJsx ? <hr /> : null}
