@@ -1,25 +1,24 @@
+import find from 'ramda/es/find'
 import flatten from 'ramda/es/flatten'
-import values from 'ramda/es/values'
-import React, { useState, useEffect } from 'react'
+import startsWith from 'ramda/es/startsWith'
+import toPairs from 'ramda/es/toPairs'
+import React, { useEffect, useState } from 'react'
+import { Highlighter, Typeahead, TypeaheadMenuProps, TypeaheadResult } from 'react-bootstrap-typeahead'
 import './app.css'
 import { Card } from './card/Card'
 import {
+    allPokemonAndTypeNames,
     TypeEfficacy,
+    allPokemonNames,
+    allTypeNames,
+    AllTypesAndPokemon,
+    pokemonIdsToTypes,
+    pokemonNamesToIds,
     typeIdsToNames,
     typeIdsToNegativeEfficacies,
     typeIdsToPositiveEfficacies,
     typeNamesToId,
-    pokemonNamesToIds,
-    pokemonIdsToTypes,
-    allTypeNames,
-    allPokemonNames,
-    allPokemonAndTypeNames,
-    AllTypesAndPokemon,
 } from './data-indexes/indexes'
-import toPairs from 'ramda/es/toPairs'
-import find from 'ramda/es/find'
-import startsWith from 'ramda/es/startsWith'
-import { Typeahead, TypeaheadResult, TypeaheadMenuProps, Highlighter } from 'react-bootstrap-typeahead'
 
 function getPositiveEfficacies(name: string) {
     const typeId = typeNamesToId[name.toLowerCase()]
@@ -51,6 +50,7 @@ interface PokemonMatch {
     readonly matchedAs: 'pokemon name'
     readonly pokemonName: string
     readonly typeName: string
+    readonly secondaryTypeName?: string
 }
 
 interface TypeMatch {
@@ -65,8 +65,15 @@ interface UnknownMatch {
 function getTypeName(searchTerm: string): TypeResolution {
     // Is it a pokemon name?
     const pokemonType = getTypeForPokemon(searchTerm)
-    if (pokemonType) {
+    if (typeof pokemonType === 'string') {
         return { typeName: pokemonType, matchedAs: 'pokemon name', pokemonName: searchTerm }
+    } else if (Array.isArray(pokemonType)) {
+        return {
+            typeName: pokemonType[0],
+            matchedAs: 'pokemon name',
+            pokemonName: searchTerm,
+            secondaryTypeName: pokemonType[1],
+        }
     }
 
     // Is it a type name?
@@ -95,7 +102,9 @@ function getTypeName(searchTerm: string): TypeResolution {
     return { matchedAs: 'unknown' }
 }
 
-function getTypeForPokemon(name: string) {
+type PokemonTypeResult = string | [string, string] | undefined
+
+function getTypeForPokemon(name: string): PokemonTypeResult {
     const pokemonId = pokemonNamesToIds[name]
 
     if (pokemonId === undefined) {
@@ -108,9 +117,16 @@ function getTypeForPokemon(name: string) {
         return
     }
 
-    const typeId = types[0].type_id
+    if (types.length === 2) {
+        const typeId1 = types[0].type_id
+        const typeId2 = types[1].type_id
+        return [typeIdsToNames[typeId1], typeIdsToNames[typeId2]]
+    } else if (types.length === 1) {
+        const typeId1 = types[0].type_id
+        return typeIdsToNames[typeId1]
+    }
 
-    return typeIdsToNames[typeId]
+    return
 }
 
 function getStrongAgainst(name: string) {
@@ -157,7 +173,7 @@ interface TypeEfficacyProps {
     readonly efficacy: TypeEfficacy
 }
 
-function TypeEfficacy(props: TypeEfficacyProps) {
+function TypeEfficacyView(props: TypeEfficacyProps) {
     const name = typeIdsToNames[props.efficacy.type_id]
 
     return (
@@ -180,7 +196,7 @@ function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
             <span className="pkb-section-title">{props.title}</span>
             <ul>
                 {props.efficacy.map(it => (
-                    <TypeEfficacy key={it.type_id} efficacy={it} />
+                    <TypeEfficacyView key={it.type_id} efficacy={it} />
                 ))}
             </ul>
         </Card>
@@ -206,37 +222,64 @@ function renderAllTypes(props: RenderAllTypesProps) {
 }
 
 interface ContentData {
+    readonly typeName: string
     readonly positiveEff: TypeEfficacy[]
     readonly negativeEff: TypeEfficacy[]
     readonly strongAgainst: TypeEfficacy[]
 }
 
-function getContentData(typeName: TypeResolution): ContentData {
+function getContentData(typeName: TypeResolution): ContentData[] {
     switch (typeName.matchedAs) {
         case 'unknown':
-            return {
-                positiveEff: [],
-                negativeEff: [],
-                strongAgainst: [],
-            }
+            return [
+                {
+                    typeName: 'unknown',
+                    positiveEff: [],
+                    negativeEff: [],
+                    strongAgainst: [],
+                },
+            ]
 
-        default:
-            return {
+        case 'type name':
+            return [
+                {
+                    typeName: typeName.typeName,
+                    positiveEff: getPositiveEfficacies(typeName.typeName),
+                    negativeEff: getNegativeEfficacies(typeName.typeName),
+                    strongAgainst: getStrongAgainst(typeName.typeName),
+                },
+            ]
+        case 'pokemon name':
+            const ret: ContentData[] = []
+
+            ret.push({
+                typeName: typeName.typeName,
                 positiveEff: getPositiveEfficacies(typeName.typeName),
                 negativeEff: getNegativeEfficacies(typeName.typeName),
                 strongAgainst: getStrongAgainst(typeName.typeName),
+            })
+
+            if (typeName.secondaryTypeName) {
+                ret.push({
+                    typeName: typeName.secondaryTypeName,
+                    positiveEff: getPositiveEfficacies(typeName.secondaryTypeName),
+                    negativeEff: getNegativeEfficacies(typeName.secondaryTypeName),
+                    strongAgainst: getStrongAgainst(typeName.secondaryTypeName),
+                })
             }
+
+            return ret
     }
 }
 
 function getReksTitle(typeName: TypeResolution): string {
     switch (typeName.matchedAs) {
         case 'unknown':
-            return 'Reks...'
+            return 'Reks by...'
         case 'pokemon name':
-            return `Reks ${typeName.pokemonName} (${typeName.typeName})`
+            return `${typeName.pokemonName} rek'd by`
         case 'type name':
-            return `Reks ${typeName.typeName}`
+            return `Rek'd by`
     }
 }
 
@@ -296,8 +339,8 @@ function setLastSuccessSearch(typeName: TypeResolution) {
 
 export function App() {
     const [searchValue, setValue] = useState(getLastSuccessSearch())
-    const typeName = getTypeName(searchValue)
-    setLastSuccessSearch(typeName) // side effect
+    const typeNameResult = getTypeName(searchValue)
+    setLastSuccessSearch(typeNameResult) // side effect
 
     useEffect(() => {
         window.onpopstate = (event: PopStateEvent) => {
@@ -307,20 +350,27 @@ export function App() {
         }
     })
 
-    const { positiveEff, negativeEff, strongAgainst } = getContentData(typeName)
+    const contentData = getContentData(typeNameResult)
+    const content = flatten(
+        contentData.map(({ typeName, positiveEff, negativeEff, strongAgainst }) => {
+            return [
+                renderTypeEfficacyCard({ title: `(${typeName}) More Damage Against`, efficacy: positiveEff }),
+                renderTypeEfficacyCard({ title: `(${typeName}) Less Damage Against`, efficacy: negativeEff }),
+                renderTypeEfficacyCard({ title: `(as ${typeName}) ${getReksTitle(typeNameResult)}`, efficacy: strongAgainst }),
+            ]
+        })
+    )
 
     function onTypeNameClick(name: string) {
         setValue(name)
     }
 
-    const selected = generateTypeaheadSelection(typeName)
+    const selected = generateTypeaheadSelection(typeNameResult)
 
     return (
         <div className="pkb-root">
             <div>{renderAllTypes({ onClick: onTypeNameClick })}</div>
             <div className="pkb-search-container">
-                {/* <span>Search: </span>
-                <input autoFocus={true} value={searchValue} onChange={val => setValue(val.target.value.toLowerCase())} /> */}
                 <Typeahead
                     id="typeahead"
                     clearButton={true}
@@ -329,21 +379,15 @@ export function App() {
                         it[0] && setValue(it[0].name)
                     }}
                     selected={selected}
-                    defaultInputValue={searchValue}
                     maxResults={5}
                     placeholder="Search for types or pokemon"
                     options={allPokemonAndTypeNames}
                     labelKey="name"
                     onInputChange={it => it[0] && setValue(it[0].toLowerCase())}
                 />
-                {/* <span> ({typeName.matchedAs})</span> */}
             </div>
 
-            <div className="pkb-results">
-                {renderTypeEfficacyCard({ title: 'More Damage Against', efficacy: positiveEff })}
-                {renderTypeEfficacyCard({ title: 'Less Damage Against', efficacy: negativeEff })}
-                {renderTypeEfficacyCard({ title: getReksTitle(typeName), efficacy: strongAgainst })}
-            </div>
+            <div className="pkb-results">{content}</div>
         </div>
     )
 }

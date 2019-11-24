@@ -1,10 +1,12 @@
 import { typeEfficacy } from '../raw-data/type-efficacy'
 import { types, englishLocale } from '../raw-data/types'
-import { pokemon } from '../raw-data/pokemon'
 import fromPairs from 'ramda/es/fromPairs'
+import { swordShieldPokemon } from '../raw-data/sworshield-pokemon'
+import { swordShieldPokemonTypes } from '../raw-data/swordshield-pokemon-types'
+import { pokemon } from '../raw-data/pokemon'
 import { pokemonTypes } from '../raw-data/pokemon-types'
 
-const filtered = new Set(['???', 'Shadow'])
+const filtered = new Set(['???', 'shadow'])
 
 export const typeNamesToId = types
     .filter(it => it.local_language_id === englishLocale && !filtered.has(it.name))
@@ -69,13 +71,13 @@ export const typeIdsToNegativeEfficacies = typeIdsToEfficacies[1]
 
 export const allTypeNames = Object.keys(typeNamesToId)
 
-export const pokemonNamesToIds = fromPairs(pokemon.map(it => [it.identifier, it.id] as [string, number]))
+export const pokemonNamesToIds = fromPairs([...pokemon, ...swordShieldPokemon].map(it => [it.identifier, it.id] as [string, number]))
 
 export interface PokemonType {
     readonly type_id: number
     readonly slot: 'primary' | 'secondary'
 }
-export const pokemonIdsToTypes = pokemonTypes.reduce(
+export const pokemonIdsToTypes = [...pokemonTypes, ...swordShieldPokemonTypes].reduce(
     (acc, curr) => {
         const typesForPkm = acc[curr.pokemon_id] || []
         typesForPkm.push({ type_id: curr.type_id, slot: curr.slot === 1 ? 'primary' : 'secondary' })
