@@ -250,15 +250,53 @@ function renderMenuItemChildren(option: TypeaheadResult<AllTypesAndPokemon>, pro
     ]
 }
 
+function generateTypeaheadSelection(typeName: TypeResolution): AllTypesAndPokemon[] {
+    switch (typeName.matchedAs) {
+        case 'unknown':
+            return []
+        case 'pokemon name':
+            return [{ name: typeName.pokemonName, type: 'pokemon' }]
+        case 'type name':
+            return [{ name: typeName.typeName, type: 'pokemon' }]
+    }
+}
+
+const searchStorageKey = 'pkb_search'
+function getLastSuccessSearch(): string {
+    return localStorage.getItem(searchStorageKey) || 'normal'
+}
+
+function setLastSuccessSearch(typeName: TypeResolution) {
+    switch (typeName.matchedAs) {
+        case 'unknown':
+            return
+        case 'pokemon name':
+            const name = typeName.pokemonName
+            document.title = `Pokeboard: ${name}`
+            history.pushState({ search: name }, document.title, `?search=${name}`)
+            localStorage.setItem(searchStorageKey, typeName.pokemonName)
+            return
+        case 'type name':
+            const name2 = typeName.typeName
+            document.title = `Pokeboard: ${name2}`
+            history.pushState({ search: name2 }, document.title, `?search=${name2}`)
+            localStorage.setItem(searchStorageKey, name2)
+            return
+    }
+}
+
 export function App() {
-    const [searchValue, setValue] = useState('')
+    const [searchValue, setValue] = useState(getLastSuccessSearch())
     const typeName = getTypeName(searchValue)
+    setLastSuccessSearch(typeName) // side effect
 
     const { positiveEff, negativeEff, strongAgainst } = getContentData(typeName)
 
     function onTypeNameClick(name: string) {
         setValue(name)
     }
+
+    const selected = generateTypeaheadSelection(typeName)
 
     return (
         <div className="pkb-root">
@@ -273,6 +311,7 @@ export function App() {
                     onChange={it => {
                         it[0] && setValue(it[0].name)
                     }}
+                    selected={selected}
                     defaultInputValue={searchValue}
                     maxResults={5}
                     placeholder="Search for types or pokemon"
