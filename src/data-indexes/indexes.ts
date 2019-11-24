@@ -1,11 +1,11 @@
-import { typeEfficacy } from '../raw-data/type-efficacy'
-import { types, englishLocale } from '../raw-data/types'
 import fromPairs from 'ramda/es/fromPairs'
-import { swordShieldPokemon } from '../raw-data/sworshield-pokemon'
-import { swordShieldPokemonTypes } from '../raw-data/swordshield-pokemon-types'
+import unionWith from 'ramda/es/unionWith'
 import { pokemon } from '../raw-data/pokemon'
 import { pokemonTypes } from '../raw-data/pokemon-types'
-import any from 'ramda/es/any'
+import { swordShieldPokemonTypes } from '../raw-data/swordshield-pokemon-types'
+import { swordShieldPokemon } from '../raw-data/sworshield-pokemon'
+import { typeEfficacy } from '../raw-data/type-efficacy'
+import { englishLocale, types } from '../raw-data/types'
 
 const filtered = new Set(['???', 'shadow'])
 
@@ -72,23 +72,23 @@ export const typeIdsToNegativeEfficacies = typeIdsToEfficacies[1]
 
 export const allTypeNames = Object.keys(typeNamesToId)
 
-export const pokemonNamesToIds = fromPairs([...pokemon, ...swordShieldPokemon].map(it => [it.identifier, it.id] as [string, number]))
+const mergedPokemonDataSets = unionWith((a, b) => a.id === b.id, pokemon, swordShieldPokemon)
+export const pokemonNamesToIds = fromPairs(mergedPokemonDataSets.map(it => [it.identifier, it.id] as [string, number]))
 
 export interface PokemonType {
     readonly type_id: number
     readonly slot: 'primary' | 'secondary'
 }
 
-export const pokemonIdsToTypes = [...pokemonTypes, ...swordShieldPokemonTypes].reduce(
+const mergedPokemonTypeData = unionWith(
+    (a, b) => a.pokemon_id === b.pokemon_id && a.slot === b.slot && a.type_id === b.type_id,
+    pokemonTypes,
+    swordShieldPokemonTypes
+)
+export const pokemonIdsToTypes = mergedPokemonTypeData.reduce(
     (acc, curr) => {
         const typesForPkm = acc[curr.pokemon_id] || []
-
-        // This strips out duplicates from the two data sets merging. I'd like to keep
-        // them both in tact on isk.
-        if (!any((it: PokemonType) => it.type_id === curr.type_id, typesForPkm)) {
-            typesForPkm.push({ type_id: curr.type_id, slot: curr.slot === 1 ? 'primary' : 'secondary' })
-        }
-
+        typesForPkm.push({ type_id: curr.type_id, slot: curr.slot === 1 ? 'primary' : 'secondary' })
         if (acc[curr.pokemon_id] === undefined) {
             acc[curr.pokemon_id] = typesForPkm
         }

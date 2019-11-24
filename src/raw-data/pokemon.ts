@@ -1,7 +1,7 @@
 export const pokemon = [
     {
         id: 1,
-        identifier: 'bulbasaur',
+        identifier: 'Bulbasaur',
         species_id: 1,
         height: 7,
         weight: 69,
@@ -11,7 +11,7 @@ export const pokemon = [
     },
     {
         id: 2,
-        identifier: 'ivysaur',
+        identifier: 'Ivysaur',
         species_id: 2,
         height: 10,
         weight: 130,
@@ -21,7 +21,7 @@ export const pokemon = [
     },
     {
         id: 3,
-        identifier: 'venusaur',
+        identifier: 'Venusaur',
         species_id: 3,
         height: 20,
         weight: 1000,
@@ -31,7 +31,7 @@ export const pokemon = [
     },
     {
         id: 4,
-        identifier: 'charmander',
+        identifier: 'Charmander',
         species_id: 4,
         height: 6,
         weight: 85,
@@ -41,7 +41,7 @@ export const pokemon = [
     },
     {
         id: 5,
-        identifier: 'charmeleon',
+        identifier: 'Charmeleon',
         species_id: 5,
         height: 11,
         weight: 190,
@@ -51,7 +51,7 @@ export const pokemon = [
     },
     {
         id: 6,
-        identifier: 'charizard',
+        identifier: 'Charizard',
         species_id: 6,
         height: 17,
         weight: 905,
@@ -61,7 +61,7 @@ export const pokemon = [
     },
     {
         id: 7,
-        identifier: 'squirtle',
+        identifier: 'Squirtle',
         species_id: 7,
         height: 5,
         weight: 90,
@@ -71,7 +71,7 @@ export const pokemon = [
     },
     {
         id: 8,
-        identifier: 'wartortle',
+        identifier: 'Wartortle',
         species_id: 8,
         height: 10,
         weight: 225,
@@ -81,7 +81,7 @@ export const pokemon = [
     },
     {
         id: 9,
-        identifier: 'blastoise',
+        identifier: 'Blastoise',
         species_id: 9,
         height: 16,
         weight: 855,
@@ -91,7 +91,7 @@ export const pokemon = [
     },
     {
         id: 10,
-        identifier: 'caterpie',
+        identifier: 'Caterpie',
         species_id: 10,
         height: 3,
         weight: 29,
@@ -101,7 +101,7 @@ export const pokemon = [
     },
     {
         id: 11,
-        identifier: 'metapod',
+        identifier: 'Metapod',
         species_id: 11,
         height: 7,
         weight: 99,
@@ -111,7 +111,7 @@ export const pokemon = [
     },
     {
         id: 12,
-        identifier: 'butterfree',
+        identifier: 'Butterfree',
         species_id: 12,
         height: 11,
         weight: 320,
@@ -121,7 +121,7 @@ export const pokemon = [
     },
     {
         id: 13,
-        identifier: 'weedle',
+        identifier: 'Weedle',
         species_id: 13,
         height: 3,
         weight: 32,
@@ -131,7 +131,7 @@ export const pokemon = [
     },
     {
         id: 14,
-        identifier: 'kakuna',
+        identifier: 'Kakuna',
         species_id: 14,
         height: 6,
         weight: 100,
@@ -141,7 +141,7 @@ export const pokemon = [
     },
     {
         id: 15,
-        identifier: 'beedrill',
+        identifier: 'Beedrill',
         species_id: 15,
         height: 10,
         weight: 295,
@@ -151,7 +151,7 @@ export const pokemon = [
     },
     {
         id: 16,
-        identifier: 'pidgey',
+        identifier: 'Pidgey',
         species_id: 16,
         height: 3,
         weight: 18,
@@ -161,7 +161,7 @@ export const pokemon = [
     },
     {
         id: 17,
-        identifier: 'pidgeotto',
+        identifier: 'Pidgeotto',
         species_id: 17,
         height: 11,
         weight: 300,
@@ -171,7 +171,7 @@ export const pokemon = [
     },
     {
         id: 18,
-        identifier: 'pidgeot',
+        identifier: 'Pidgeot',
         species_id: 18,
         height: 15,
         weight: 395,
@@ -181,7 +181,7 @@ export const pokemon = [
     },
     {
         id: 19,
-        identifier: 'rattata',
+        identifier: 'Rattata',
         species_id: 19,
         height: 3,
         weight: 35,
@@ -191,7 +191,7 @@ export const pokemon = [
     },
     {
         id: 20,
-        identifier: 'raticate',
+        identifier: 'Raticate',
         species_id: 20,
         height: 7,
         weight: 185,
@@ -201,7 +201,7 @@ export const pokemon = [
     },
     {
         id: 21,
-        identifier: 'spearow',
+        identifier: 'Spearow',
         species_id: 21,
         height: 3,
         weight: 20,
@@ -211,7 +211,7 @@ export const pokemon = [
     },
     {
         id: 22,
-        identifier: 'fearow',
+        identifier: 'Fearow',
         species_id: 22,
         height: 12,
         weight: 380,
@@ -221,7 +221,7 @@ export const pokemon = [
     },
     {
         id: 23,
-        identifier: 'ekans',
+        identifier: 'Ekans',
         species_id: 23,
         height: 20,
         weight: 69,
@@ -231,7 +231,7 @@ export const pokemon = [
     },
     {
         id: 24,
-        identifier: 'arbok',
+        identifier: 'Arbok',
         species_id: 24,
         height: 35,
         weight: 650,
@@ -241,7 +241,7 @@ export const pokemon = [
     },
     {
         id: 25,
-        identifier: 'pikachu',
+        identifier: 'Pikachu',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -251,7 +251,7 @@ export const pokemon = [
     },
     {
         id: 26,
-        identifier: 'raichu',
+        identifier: 'Raichu',
         species_id: 26,
         height: 8,
         weight: 300,
@@ -261,7 +261,7 @@ export const pokemon = [
     },
     {
         id: 27,
-        identifier: 'sandshrew',
+        identifier: 'Sandshrew',
         species_id: 27,
         height: 6,
         weight: 120,
@@ -271,7 +271,7 @@ export const pokemon = [
     },
     {
         id: 28,
-        identifier: 'sandslash',
+        identifier: 'Sandslash',
         species_id: 28,
         height: 10,
         weight: 295,
@@ -281,7 +281,7 @@ export const pokemon = [
     },
     {
         id: 29,
-        identifier: 'nidoran-f',
+        identifier: 'Nidoran-f',
         species_id: 29,
         height: 4,
         weight: 70,
@@ -291,7 +291,7 @@ export const pokemon = [
     },
     {
         id: 30,
-        identifier: 'nidorina',
+        identifier: 'Nidorina',
         species_id: 30,
         height: 8,
         weight: 200,
@@ -301,7 +301,7 @@ export const pokemon = [
     },
     {
         id: 31,
-        identifier: 'nidoqueen',
+        identifier: 'Nidoqueen',
         species_id: 31,
         height: 13,
         weight: 600,
@@ -311,7 +311,7 @@ export const pokemon = [
     },
     {
         id: 32,
-        identifier: 'nidoran-m',
+        identifier: 'Nidoran-m',
         species_id: 32,
         height: 5,
         weight: 90,
@@ -321,7 +321,7 @@ export const pokemon = [
     },
     {
         id: 33,
-        identifier: 'nidorino',
+        identifier: 'Nidorino',
         species_id: 33,
         height: 9,
         weight: 195,
@@ -331,7 +331,7 @@ export const pokemon = [
     },
     {
         id: 34,
-        identifier: 'nidoking',
+        identifier: 'Nidoking',
         species_id: 34,
         height: 14,
         weight: 620,
@@ -341,7 +341,7 @@ export const pokemon = [
     },
     {
         id: 35,
-        identifier: 'clefairy',
+        identifier: 'Clefairy',
         species_id: 35,
         height: 6,
         weight: 75,
@@ -351,7 +351,7 @@ export const pokemon = [
     },
     {
         id: 36,
-        identifier: 'clefable',
+        identifier: 'Clefable',
         species_id: 36,
         height: 13,
         weight: 400,
@@ -361,7 +361,7 @@ export const pokemon = [
     },
     {
         id: 37,
-        identifier: 'vulpix',
+        identifier: 'Vulpix',
         species_id: 37,
         height: 6,
         weight: 99,
@@ -371,7 +371,7 @@ export const pokemon = [
     },
     {
         id: 38,
-        identifier: 'ninetales',
+        identifier: 'Ninetales',
         species_id: 38,
         height: 11,
         weight: 199,
@@ -381,7 +381,7 @@ export const pokemon = [
     },
     {
         id: 39,
-        identifier: 'jigglypuff',
+        identifier: 'Jigglypuff',
         species_id: 39,
         height: 5,
         weight: 55,
@@ -391,7 +391,7 @@ export const pokemon = [
     },
     {
         id: 40,
-        identifier: 'wigglytuff',
+        identifier: 'Wigglytuff',
         species_id: 40,
         height: 10,
         weight: 120,
@@ -401,7 +401,7 @@ export const pokemon = [
     },
     {
         id: 41,
-        identifier: 'zubat',
+        identifier: 'Zubat',
         species_id: 41,
         height: 8,
         weight: 75,
@@ -411,7 +411,7 @@ export const pokemon = [
     },
     {
         id: 42,
-        identifier: 'golbat',
+        identifier: 'Golbat',
         species_id: 42,
         height: 16,
         weight: 550,
@@ -421,7 +421,7 @@ export const pokemon = [
     },
     {
         id: 43,
-        identifier: 'oddish',
+        identifier: 'Oddish',
         species_id: 43,
         height: 5,
         weight: 54,
@@ -431,7 +431,7 @@ export const pokemon = [
     },
     {
         id: 44,
-        identifier: 'gloom',
+        identifier: 'Gloom',
         species_id: 44,
         height: 8,
         weight: 86,
@@ -441,7 +441,7 @@ export const pokemon = [
     },
     {
         id: 45,
-        identifier: 'vileplume',
+        identifier: 'Vileplume',
         species_id: 45,
         height: 12,
         weight: 186,
@@ -451,7 +451,7 @@ export const pokemon = [
     },
     {
         id: 46,
-        identifier: 'paras',
+        identifier: 'Paras',
         species_id: 46,
         height: 3,
         weight: 54,
@@ -461,7 +461,7 @@ export const pokemon = [
     },
     {
         id: 47,
-        identifier: 'parasect',
+        identifier: 'Parasect',
         species_id: 47,
         height: 10,
         weight: 295,
@@ -471,7 +471,7 @@ export const pokemon = [
     },
     {
         id: 48,
-        identifier: 'venonat',
+        identifier: 'Venonat',
         species_id: 48,
         height: 10,
         weight: 300,
@@ -481,7 +481,7 @@ export const pokemon = [
     },
     {
         id: 49,
-        identifier: 'venomoth',
+        identifier: 'Venomoth',
         species_id: 49,
         height: 15,
         weight: 125,
@@ -491,7 +491,7 @@ export const pokemon = [
     },
     {
         id: 50,
-        identifier: 'diglett',
+        identifier: 'Diglett',
         species_id: 50,
         height: 2,
         weight: 8,
@@ -501,7 +501,7 @@ export const pokemon = [
     },
     {
         id: 51,
-        identifier: 'dugtrio',
+        identifier: 'Dugtrio',
         species_id: 51,
         height: 7,
         weight: 333,
@@ -511,7 +511,7 @@ export const pokemon = [
     },
     {
         id: 52,
-        identifier: 'meowth',
+        identifier: 'Meowth',
         species_id: 52,
         height: 4,
         weight: 42,
@@ -521,7 +521,7 @@ export const pokemon = [
     },
     {
         id: 53,
-        identifier: 'persian',
+        identifier: 'Persian',
         species_id: 53,
         height: 10,
         weight: 320,
@@ -531,7 +531,7 @@ export const pokemon = [
     },
     {
         id: 54,
-        identifier: 'psyduck',
+        identifier: 'Psyduck',
         species_id: 54,
         height: 8,
         weight: 196,
@@ -541,7 +541,7 @@ export const pokemon = [
     },
     {
         id: 55,
-        identifier: 'golduck',
+        identifier: 'Golduck',
         species_id: 55,
         height: 17,
         weight: 766,
@@ -551,7 +551,7 @@ export const pokemon = [
     },
     {
         id: 56,
-        identifier: 'mankey',
+        identifier: 'Mankey',
         species_id: 56,
         height: 5,
         weight: 280,
@@ -561,7 +561,7 @@ export const pokemon = [
     },
     {
         id: 57,
-        identifier: 'primeape',
+        identifier: 'Primeape',
         species_id: 57,
         height: 10,
         weight: 320,
@@ -571,7 +571,7 @@ export const pokemon = [
     },
     {
         id: 58,
-        identifier: 'growlithe',
+        identifier: 'Growlithe',
         species_id: 58,
         height: 7,
         weight: 190,
@@ -581,7 +581,7 @@ export const pokemon = [
     },
     {
         id: 59,
-        identifier: 'arcanine',
+        identifier: 'Arcanine',
         species_id: 59,
         height: 19,
         weight: 1550,
@@ -591,7 +591,7 @@ export const pokemon = [
     },
     {
         id: 60,
-        identifier: 'poliwag',
+        identifier: 'Poliwag',
         species_id: 60,
         height: 6,
         weight: 124,
@@ -601,7 +601,7 @@ export const pokemon = [
     },
     {
         id: 61,
-        identifier: 'poliwhirl',
+        identifier: 'Poliwhirl',
         species_id: 61,
         height: 10,
         weight: 200,
@@ -611,7 +611,7 @@ export const pokemon = [
     },
     {
         id: 62,
-        identifier: 'poliwrath',
+        identifier: 'Poliwrath',
         species_id: 62,
         height: 13,
         weight: 540,
@@ -621,7 +621,7 @@ export const pokemon = [
     },
     {
         id: 63,
-        identifier: 'abra',
+        identifier: 'Abra',
         species_id: 63,
         height: 9,
         weight: 195,
@@ -631,7 +631,7 @@ export const pokemon = [
     },
     {
         id: 64,
-        identifier: 'kadabra',
+        identifier: 'Kadabra',
         species_id: 64,
         height: 13,
         weight: 565,
@@ -641,7 +641,7 @@ export const pokemon = [
     },
     {
         id: 65,
-        identifier: 'alakazam',
+        identifier: 'Alakazam',
         species_id: 65,
         height: 15,
         weight: 480,
@@ -651,7 +651,7 @@ export const pokemon = [
     },
     {
         id: 66,
-        identifier: 'machop',
+        identifier: 'Machop',
         species_id: 66,
         height: 8,
         weight: 195,
@@ -661,7 +661,7 @@ export const pokemon = [
     },
     {
         id: 67,
-        identifier: 'machoke',
+        identifier: 'Machoke',
         species_id: 67,
         height: 15,
         weight: 705,
@@ -671,7 +671,7 @@ export const pokemon = [
     },
     {
         id: 68,
-        identifier: 'machamp',
+        identifier: 'Machamp',
         species_id: 68,
         height: 16,
         weight: 1300,
@@ -681,7 +681,7 @@ export const pokemon = [
     },
     {
         id: 69,
-        identifier: 'bellsprout',
+        identifier: 'Bellsprout',
         species_id: 69,
         height: 7,
         weight: 40,
@@ -691,7 +691,7 @@ export const pokemon = [
     },
     {
         id: 70,
-        identifier: 'weepinbell',
+        identifier: 'Weepinbell',
         species_id: 70,
         height: 10,
         weight: 64,
@@ -701,7 +701,7 @@ export const pokemon = [
     },
     {
         id: 71,
-        identifier: 'victreebel',
+        identifier: 'Victreebel',
         species_id: 71,
         height: 17,
         weight: 155,
@@ -711,7 +711,7 @@ export const pokemon = [
     },
     {
         id: 72,
-        identifier: 'tentacool',
+        identifier: 'Tentacool',
         species_id: 72,
         height: 9,
         weight: 455,
@@ -721,7 +721,7 @@ export const pokemon = [
     },
     {
         id: 73,
-        identifier: 'tentacruel',
+        identifier: 'Tentacruel',
         species_id: 73,
         height: 16,
         weight: 550,
@@ -731,7 +731,7 @@ export const pokemon = [
     },
     {
         id: 74,
-        identifier: 'geodude',
+        identifier: 'Geodude',
         species_id: 74,
         height: 4,
         weight: 200,
@@ -741,7 +741,7 @@ export const pokemon = [
     },
     {
         id: 75,
-        identifier: 'graveler',
+        identifier: 'Graveler',
         species_id: 75,
         height: 10,
         weight: 1050,
@@ -751,7 +751,7 @@ export const pokemon = [
     },
     {
         id: 76,
-        identifier: 'golem',
+        identifier: 'Golem',
         species_id: 76,
         height: 14,
         weight: 3000,
@@ -761,7 +761,7 @@ export const pokemon = [
     },
     {
         id: 77,
-        identifier: 'ponyta',
+        identifier: 'Ponyta',
         species_id: 77,
         height: 10,
         weight: 300,
@@ -771,7 +771,7 @@ export const pokemon = [
     },
     {
         id: 78,
-        identifier: 'rapidash',
+        identifier: 'Rapidash',
         species_id: 78,
         height: 17,
         weight: 950,
@@ -781,7 +781,7 @@ export const pokemon = [
     },
     {
         id: 79,
-        identifier: 'slowpoke',
+        identifier: 'Slowpoke',
         species_id: 79,
         height: 12,
         weight: 360,
@@ -791,7 +791,7 @@ export const pokemon = [
     },
     {
         id: 80,
-        identifier: 'slowbro',
+        identifier: 'Slowbro',
         species_id: 80,
         height: 16,
         weight: 785,
@@ -801,7 +801,7 @@ export const pokemon = [
     },
     {
         id: 81,
-        identifier: 'magnemite',
+        identifier: 'Magnemite',
         species_id: 81,
         height: 3,
         weight: 60,
@@ -811,7 +811,7 @@ export const pokemon = [
     },
     {
         id: 82,
-        identifier: 'magneton',
+        identifier: 'Magneton',
         species_id: 82,
         height: 10,
         weight: 600,
@@ -821,7 +821,7 @@ export const pokemon = [
     },
     {
         id: 83,
-        identifier: 'farfetchd',
+        identifier: 'Farfetchd',
         species_id: 83,
         height: 8,
         weight: 150,
@@ -831,7 +831,7 @@ export const pokemon = [
     },
     {
         id: 84,
-        identifier: 'doduo',
+        identifier: 'Doduo',
         species_id: 84,
         height: 14,
         weight: 392,
@@ -841,7 +841,7 @@ export const pokemon = [
     },
     {
         id: 85,
-        identifier: 'dodrio',
+        identifier: 'Dodrio',
         species_id: 85,
         height: 18,
         weight: 852,
@@ -851,7 +851,7 @@ export const pokemon = [
     },
     {
         id: 86,
-        identifier: 'seel',
+        identifier: 'Seel',
         species_id: 86,
         height: 11,
         weight: 900,
@@ -861,7 +861,7 @@ export const pokemon = [
     },
     {
         id: 87,
-        identifier: 'dewgong',
+        identifier: 'Dewgong',
         species_id: 87,
         height: 17,
         weight: 1200,
@@ -871,7 +871,7 @@ export const pokemon = [
     },
     {
         id: 88,
-        identifier: 'grimer',
+        identifier: 'Grimer',
         species_id: 88,
         height: 9,
         weight: 300,
@@ -881,7 +881,7 @@ export const pokemon = [
     },
     {
         id: 89,
-        identifier: 'muk',
+        identifier: 'Muk',
         species_id: 89,
         height: 12,
         weight: 300,
@@ -891,7 +891,7 @@ export const pokemon = [
     },
     {
         id: 90,
-        identifier: 'shellder',
+        identifier: 'Shellder',
         species_id: 90,
         height: 3,
         weight: 40,
@@ -901,7 +901,7 @@ export const pokemon = [
     },
     {
         id: 91,
-        identifier: 'cloyster',
+        identifier: 'Cloyster',
         species_id: 91,
         height: 15,
         weight: 1325,
@@ -911,7 +911,7 @@ export const pokemon = [
     },
     {
         id: 92,
-        identifier: 'gastly',
+        identifier: 'Gastly',
         species_id: 92,
         height: 13,
         weight: 1,
@@ -921,7 +921,7 @@ export const pokemon = [
     },
     {
         id: 93,
-        identifier: 'haunter',
+        identifier: 'Haunter',
         species_id: 93,
         height: 16,
         weight: 1,
@@ -931,7 +931,7 @@ export const pokemon = [
     },
     {
         id: 94,
-        identifier: 'gengar',
+        identifier: 'Gengar',
         species_id: 94,
         height: 15,
         weight: 405,
@@ -941,7 +941,7 @@ export const pokemon = [
     },
     {
         id: 95,
-        identifier: 'onix',
+        identifier: 'Onix',
         species_id: 95,
         height: 88,
         weight: 2100,
@@ -951,7 +951,7 @@ export const pokemon = [
     },
     {
         id: 96,
-        identifier: 'drowzee',
+        identifier: 'Drowzee',
         species_id: 96,
         height: 10,
         weight: 324,
@@ -961,7 +961,7 @@ export const pokemon = [
     },
     {
         id: 97,
-        identifier: 'hypno',
+        identifier: 'Hypno',
         species_id: 97,
         height: 16,
         weight: 756,
@@ -971,7 +971,7 @@ export const pokemon = [
     },
     {
         id: 98,
-        identifier: 'krabby',
+        identifier: 'Krabby',
         species_id: 98,
         height: 4,
         weight: 65,
@@ -981,7 +981,7 @@ export const pokemon = [
     },
     {
         id: 99,
-        identifier: 'kingler',
+        identifier: 'Kingler',
         species_id: 99,
         height: 13,
         weight: 600,
@@ -991,7 +991,7 @@ export const pokemon = [
     },
     {
         id: 100,
-        identifier: 'voltorb',
+        identifier: 'Voltorb',
         species_id: 100,
         height: 5,
         weight: 104,
@@ -1001,7 +1001,7 @@ export const pokemon = [
     },
     {
         id: 101,
-        identifier: 'electrode',
+        identifier: 'Electrode',
         species_id: 101,
         height: 12,
         weight: 666,
@@ -1011,7 +1011,7 @@ export const pokemon = [
     },
     {
         id: 102,
-        identifier: 'exeggcute',
+        identifier: 'Exeggcute',
         species_id: 102,
         height: 4,
         weight: 25,
@@ -1021,7 +1021,7 @@ export const pokemon = [
     },
     {
         id: 103,
-        identifier: 'exeggutor',
+        identifier: 'Exeggutor',
         species_id: 103,
         height: 20,
         weight: 1200,
@@ -1031,7 +1031,7 @@ export const pokemon = [
     },
     {
         id: 104,
-        identifier: 'cubone',
+        identifier: 'Cubone',
         species_id: 104,
         height: 4,
         weight: 65,
@@ -1041,7 +1041,7 @@ export const pokemon = [
     },
     {
         id: 105,
-        identifier: 'marowak',
+        identifier: 'Marowak',
         species_id: 105,
         height: 10,
         weight: 450,
@@ -1051,7 +1051,7 @@ export const pokemon = [
     },
     {
         id: 106,
-        identifier: 'hitmonlee',
+        identifier: 'Hitmonlee',
         species_id: 106,
         height: 15,
         weight: 498,
@@ -1061,7 +1061,7 @@ export const pokemon = [
     },
     {
         id: 107,
-        identifier: 'hitmonchan',
+        identifier: 'Hitmonchan',
         species_id: 107,
         height: 14,
         weight: 502,
@@ -1071,7 +1071,7 @@ export const pokemon = [
     },
     {
         id: 108,
-        identifier: 'lickitung',
+        identifier: 'Lickitung',
         species_id: 108,
         height: 12,
         weight: 655,
@@ -1081,7 +1081,7 @@ export const pokemon = [
     },
     {
         id: 109,
-        identifier: 'koffing',
+        identifier: 'Koffing',
         species_id: 109,
         height: 6,
         weight: 10,
@@ -1091,7 +1091,7 @@ export const pokemon = [
     },
     {
         id: 110,
-        identifier: 'weezing',
+        identifier: 'Weezing',
         species_id: 110,
         height: 12,
         weight: 95,
@@ -1101,7 +1101,7 @@ export const pokemon = [
     },
     {
         id: 111,
-        identifier: 'rhyhorn',
+        identifier: 'Rhyhorn',
         species_id: 111,
         height: 10,
         weight: 1150,
@@ -1111,7 +1111,7 @@ export const pokemon = [
     },
     {
         id: 112,
-        identifier: 'rhydon',
+        identifier: 'Rhydon',
         species_id: 112,
         height: 19,
         weight: 1200,
@@ -1121,7 +1121,7 @@ export const pokemon = [
     },
     {
         id: 113,
-        identifier: 'chansey',
+        identifier: 'Chansey',
         species_id: 113,
         height: 11,
         weight: 346,
@@ -1131,7 +1131,7 @@ export const pokemon = [
     },
     {
         id: 114,
-        identifier: 'tangela',
+        identifier: 'Tangela',
         species_id: 114,
         height: 10,
         weight: 350,
@@ -1141,7 +1141,7 @@ export const pokemon = [
     },
     {
         id: 115,
-        identifier: 'kangaskhan',
+        identifier: 'Kangaskhan',
         species_id: 115,
         height: 22,
         weight: 800,
@@ -1151,7 +1151,7 @@ export const pokemon = [
     },
     {
         id: 116,
-        identifier: 'horsea',
+        identifier: 'Horsea',
         species_id: 116,
         height: 4,
         weight: 80,
@@ -1161,7 +1161,7 @@ export const pokemon = [
     },
     {
         id: 117,
-        identifier: 'seadra',
+        identifier: 'Seadra',
         species_id: 117,
         height: 12,
         weight: 250,
@@ -1171,7 +1171,7 @@ export const pokemon = [
     },
     {
         id: 118,
-        identifier: 'goldeen',
+        identifier: 'Goldeen',
         species_id: 118,
         height: 6,
         weight: 150,
@@ -1181,7 +1181,7 @@ export const pokemon = [
     },
     {
         id: 119,
-        identifier: 'seaking',
+        identifier: 'Seaking',
         species_id: 119,
         height: 13,
         weight: 390,
@@ -1191,7 +1191,7 @@ export const pokemon = [
     },
     {
         id: 120,
-        identifier: 'staryu',
+        identifier: 'Staryu',
         species_id: 120,
         height: 8,
         weight: 345,
@@ -1201,7 +1201,7 @@ export const pokemon = [
     },
     {
         id: 121,
-        identifier: 'starmie',
+        identifier: 'Starmie',
         species_id: 121,
         height: 11,
         weight: 800,
@@ -1211,7 +1211,7 @@ export const pokemon = [
     },
     {
         id: 122,
-        identifier: 'mr-mime',
+        identifier: 'Mr-mime',
         species_id: 122,
         height: 13,
         weight: 545,
@@ -1221,7 +1221,7 @@ export const pokemon = [
     },
     {
         id: 123,
-        identifier: 'scyther',
+        identifier: 'Scyther',
         species_id: 123,
         height: 15,
         weight: 560,
@@ -1231,7 +1231,7 @@ export const pokemon = [
     },
     {
         id: 124,
-        identifier: 'jynx',
+        identifier: 'Jynx',
         species_id: 124,
         height: 14,
         weight: 406,
@@ -1241,7 +1241,7 @@ export const pokemon = [
     },
     {
         id: 125,
-        identifier: 'electabuzz',
+        identifier: 'Electabuzz',
         species_id: 125,
         height: 11,
         weight: 300,
@@ -1251,7 +1251,7 @@ export const pokemon = [
     },
     {
         id: 126,
-        identifier: 'magmar',
+        identifier: 'Magmar',
         species_id: 126,
         height: 13,
         weight: 445,
@@ -1261,7 +1261,7 @@ export const pokemon = [
     },
     {
         id: 127,
-        identifier: 'pinsir',
+        identifier: 'Pinsir',
         species_id: 127,
         height: 15,
         weight: 550,
@@ -1271,7 +1271,7 @@ export const pokemon = [
     },
     {
         id: 128,
-        identifier: 'tauros',
+        identifier: 'Tauros',
         species_id: 128,
         height: 14,
         weight: 884,
@@ -1281,7 +1281,7 @@ export const pokemon = [
     },
     {
         id: 129,
-        identifier: 'magikarp',
+        identifier: 'Magikarp',
         species_id: 129,
         height: 9,
         weight: 100,
@@ -1291,7 +1291,7 @@ export const pokemon = [
     },
     {
         id: 130,
-        identifier: 'gyarados',
+        identifier: 'Gyarados',
         species_id: 130,
         height: 65,
         weight: 2350,
@@ -1301,7 +1301,7 @@ export const pokemon = [
     },
     {
         id: 131,
-        identifier: 'lapras',
+        identifier: 'Lapras',
         species_id: 131,
         height: 25,
         weight: 2200,
@@ -1311,7 +1311,7 @@ export const pokemon = [
     },
     {
         id: 132,
-        identifier: 'ditto',
+        identifier: 'Ditto',
         species_id: 132,
         height: 3,
         weight: 40,
@@ -1321,7 +1321,7 @@ export const pokemon = [
     },
     {
         id: 133,
-        identifier: 'eevee',
+        identifier: 'Eevee',
         species_id: 133,
         height: 3,
         weight: 65,
@@ -1331,7 +1331,7 @@ export const pokemon = [
     },
     {
         id: 134,
-        identifier: 'vaporeon',
+        identifier: 'Vaporeon',
         species_id: 134,
         height: 10,
         weight: 290,
@@ -1341,7 +1341,7 @@ export const pokemon = [
     },
     {
         id: 135,
-        identifier: 'jolteon',
+        identifier: 'Jolteon',
         species_id: 135,
         height: 8,
         weight: 245,
@@ -1351,7 +1351,7 @@ export const pokemon = [
     },
     {
         id: 136,
-        identifier: 'flareon',
+        identifier: 'Flareon',
         species_id: 136,
         height: 9,
         weight: 250,
@@ -1361,7 +1361,7 @@ export const pokemon = [
     },
     {
         id: 137,
-        identifier: 'porygon',
+        identifier: 'Porygon',
         species_id: 137,
         height: 8,
         weight: 365,
@@ -1371,7 +1371,7 @@ export const pokemon = [
     },
     {
         id: 138,
-        identifier: 'omanyte',
+        identifier: 'Omanyte',
         species_id: 138,
         height: 4,
         weight: 75,
@@ -1381,7 +1381,7 @@ export const pokemon = [
     },
     {
         id: 139,
-        identifier: 'omastar',
+        identifier: 'Omastar',
         species_id: 139,
         height: 10,
         weight: 350,
@@ -1391,7 +1391,7 @@ export const pokemon = [
     },
     {
         id: 140,
-        identifier: 'kabuto',
+        identifier: 'Kabuto',
         species_id: 140,
         height: 5,
         weight: 115,
@@ -1401,7 +1401,7 @@ export const pokemon = [
     },
     {
         id: 141,
-        identifier: 'kabutops',
+        identifier: 'Kabutops',
         species_id: 141,
         height: 13,
         weight: 405,
@@ -1411,7 +1411,7 @@ export const pokemon = [
     },
     {
         id: 142,
-        identifier: 'aerodactyl',
+        identifier: 'Aerodactyl',
         species_id: 142,
         height: 18,
         weight: 590,
@@ -1421,7 +1421,7 @@ export const pokemon = [
     },
     {
         id: 143,
-        identifier: 'snorlax',
+        identifier: 'Snorlax',
         species_id: 143,
         height: 21,
         weight: 4600,
@@ -1431,7 +1431,7 @@ export const pokemon = [
     },
     {
         id: 144,
-        identifier: 'articuno',
+        identifier: 'Articuno',
         species_id: 144,
         height: 17,
         weight: 554,
@@ -1441,7 +1441,7 @@ export const pokemon = [
     },
     {
         id: 145,
-        identifier: 'zapdos',
+        identifier: 'Zapdos',
         species_id: 145,
         height: 16,
         weight: 526,
@@ -1451,7 +1451,7 @@ export const pokemon = [
     },
     {
         id: 146,
-        identifier: 'moltres',
+        identifier: 'Moltres',
         species_id: 146,
         height: 20,
         weight: 600,
@@ -1461,7 +1461,7 @@ export const pokemon = [
     },
     {
         id: 147,
-        identifier: 'dratini',
+        identifier: 'Dratini',
         species_id: 147,
         height: 18,
         weight: 33,
@@ -1471,7 +1471,7 @@ export const pokemon = [
     },
     {
         id: 148,
-        identifier: 'dragonair',
+        identifier: 'Dragonair',
         species_id: 148,
         height: 40,
         weight: 165,
@@ -1481,7 +1481,7 @@ export const pokemon = [
     },
     {
         id: 149,
-        identifier: 'dragonite',
+        identifier: 'Dragonite',
         species_id: 149,
         height: 22,
         weight: 2100,
@@ -1491,7 +1491,7 @@ export const pokemon = [
     },
     {
         id: 150,
-        identifier: 'mewtwo',
+        identifier: 'Mewtwo',
         species_id: 150,
         height: 20,
         weight: 1220,
@@ -1501,7 +1501,7 @@ export const pokemon = [
     },
     {
         id: 151,
-        identifier: 'mew',
+        identifier: 'Mew',
         species_id: 151,
         height: 4,
         weight: 40,
@@ -1511,7 +1511,7 @@ export const pokemon = [
     },
     {
         id: 152,
-        identifier: 'chikorita',
+        identifier: 'Chikorita',
         species_id: 152,
         height: 9,
         weight: 64,
@@ -1521,7 +1521,7 @@ export const pokemon = [
     },
     {
         id: 153,
-        identifier: 'bayleef',
+        identifier: 'Bayleef',
         species_id: 153,
         height: 12,
         weight: 158,
@@ -1531,7 +1531,7 @@ export const pokemon = [
     },
     {
         id: 154,
-        identifier: 'meganium',
+        identifier: 'Meganium',
         species_id: 154,
         height: 18,
         weight: 1005,
@@ -1541,7 +1541,7 @@ export const pokemon = [
     },
     {
         id: 155,
-        identifier: 'cyndaquil',
+        identifier: 'Cyndaquil',
         species_id: 155,
         height: 5,
         weight: 79,
@@ -1551,7 +1551,7 @@ export const pokemon = [
     },
     {
         id: 156,
-        identifier: 'quilava',
+        identifier: 'Quilava',
         species_id: 156,
         height: 9,
         weight: 190,
@@ -1561,7 +1561,7 @@ export const pokemon = [
     },
     {
         id: 157,
-        identifier: 'typhlosion',
+        identifier: 'Typhlosion',
         species_id: 157,
         height: 17,
         weight: 795,
@@ -1571,7 +1571,7 @@ export const pokemon = [
     },
     {
         id: 158,
-        identifier: 'totodile',
+        identifier: 'Totodile',
         species_id: 158,
         height: 6,
         weight: 95,
@@ -1581,7 +1581,7 @@ export const pokemon = [
     },
     {
         id: 159,
-        identifier: 'croconaw',
+        identifier: 'Croconaw',
         species_id: 159,
         height: 11,
         weight: 250,
@@ -1591,7 +1591,7 @@ export const pokemon = [
     },
     {
         id: 160,
-        identifier: 'feraligatr',
+        identifier: 'Feraligatr',
         species_id: 160,
         height: 23,
         weight: 888,
@@ -1601,7 +1601,7 @@ export const pokemon = [
     },
     {
         id: 161,
-        identifier: 'sentret',
+        identifier: 'Sentret',
         species_id: 161,
         height: 8,
         weight: 60,
@@ -1611,7 +1611,7 @@ export const pokemon = [
     },
     {
         id: 162,
-        identifier: 'furret',
+        identifier: 'Furret',
         species_id: 162,
         height: 18,
         weight: 325,
@@ -1621,7 +1621,7 @@ export const pokemon = [
     },
     {
         id: 163,
-        identifier: 'hoothoot',
+        identifier: 'Hoothoot',
         species_id: 163,
         height: 7,
         weight: 212,
@@ -1631,7 +1631,7 @@ export const pokemon = [
     },
     {
         id: 164,
-        identifier: 'noctowl',
+        identifier: 'Noctowl',
         species_id: 164,
         height: 16,
         weight: 408,
@@ -1641,7 +1641,7 @@ export const pokemon = [
     },
     {
         id: 165,
-        identifier: 'ledyba',
+        identifier: 'Ledyba',
         species_id: 165,
         height: 10,
         weight: 108,
@@ -1651,7 +1651,7 @@ export const pokemon = [
     },
     {
         id: 166,
-        identifier: 'ledian',
+        identifier: 'Ledian',
         species_id: 166,
         height: 14,
         weight: 356,
@@ -1661,7 +1661,7 @@ export const pokemon = [
     },
     {
         id: 167,
-        identifier: 'spinarak',
+        identifier: 'Spinarak',
         species_id: 167,
         height: 5,
         weight: 85,
@@ -1671,7 +1671,7 @@ export const pokemon = [
     },
     {
         id: 168,
-        identifier: 'ariados',
+        identifier: 'Ariados',
         species_id: 168,
         height: 11,
         weight: 335,
@@ -1681,7 +1681,7 @@ export const pokemon = [
     },
     {
         id: 169,
-        identifier: 'crobat',
+        identifier: 'Crobat',
         species_id: 169,
         height: 18,
         weight: 750,
@@ -1691,7 +1691,7 @@ export const pokemon = [
     },
     {
         id: 170,
-        identifier: 'chinchou',
+        identifier: 'Chinchou',
         species_id: 170,
         height: 5,
         weight: 120,
@@ -1701,7 +1701,7 @@ export const pokemon = [
     },
     {
         id: 171,
-        identifier: 'lanturn',
+        identifier: 'Lanturn',
         species_id: 171,
         height: 12,
         weight: 225,
@@ -1711,7 +1711,7 @@ export const pokemon = [
     },
     {
         id: 172,
-        identifier: 'pichu',
+        identifier: 'Pichu',
         species_id: 172,
         height: 3,
         weight: 20,
@@ -1721,7 +1721,7 @@ export const pokemon = [
     },
     {
         id: 173,
-        identifier: 'cleffa',
+        identifier: 'Cleffa',
         species_id: 173,
         height: 3,
         weight: 30,
@@ -1731,7 +1731,7 @@ export const pokemon = [
     },
     {
         id: 174,
-        identifier: 'igglybuff',
+        identifier: 'Igglybuff',
         species_id: 174,
         height: 3,
         weight: 10,
@@ -1741,7 +1741,7 @@ export const pokemon = [
     },
     {
         id: 175,
-        identifier: 'togepi',
+        identifier: 'Togepi',
         species_id: 175,
         height: 3,
         weight: 15,
@@ -1751,7 +1751,7 @@ export const pokemon = [
     },
     {
         id: 176,
-        identifier: 'togetic',
+        identifier: 'Togetic',
         species_id: 176,
         height: 6,
         weight: 32,
@@ -1761,7 +1761,7 @@ export const pokemon = [
     },
     {
         id: 177,
-        identifier: 'natu',
+        identifier: 'Natu',
         species_id: 177,
         height: 2,
         weight: 20,
@@ -1771,7 +1771,7 @@ export const pokemon = [
     },
     {
         id: 178,
-        identifier: 'xatu',
+        identifier: 'Xatu',
         species_id: 178,
         height: 15,
         weight: 150,
@@ -1781,7 +1781,7 @@ export const pokemon = [
     },
     {
         id: 179,
-        identifier: 'mareep',
+        identifier: 'Mareep',
         species_id: 179,
         height: 6,
         weight: 78,
@@ -1791,7 +1791,7 @@ export const pokemon = [
     },
     {
         id: 180,
-        identifier: 'flaaffy',
+        identifier: 'Flaaffy',
         species_id: 180,
         height: 8,
         weight: 133,
@@ -1801,7 +1801,7 @@ export const pokemon = [
     },
     {
         id: 181,
-        identifier: 'ampharos',
+        identifier: 'Ampharos',
         species_id: 181,
         height: 14,
         weight: 615,
@@ -1811,7 +1811,7 @@ export const pokemon = [
     },
     {
         id: 182,
-        identifier: 'bellossom',
+        identifier: 'Bellossom',
         species_id: 182,
         height: 4,
         weight: 58,
@@ -1821,7 +1821,7 @@ export const pokemon = [
     },
     {
         id: 183,
-        identifier: 'marill',
+        identifier: 'Marill',
         species_id: 183,
         height: 4,
         weight: 85,
@@ -1831,7 +1831,7 @@ export const pokemon = [
     },
     {
         id: 184,
-        identifier: 'azumarill',
+        identifier: 'Azumarill',
         species_id: 184,
         height: 8,
         weight: 285,
@@ -1841,7 +1841,7 @@ export const pokemon = [
     },
     {
         id: 185,
-        identifier: 'sudowoodo',
+        identifier: 'Sudowoodo',
         species_id: 185,
         height: 12,
         weight: 380,
@@ -1851,7 +1851,7 @@ export const pokemon = [
     },
     {
         id: 186,
-        identifier: 'politoed',
+        identifier: 'Politoed',
         species_id: 186,
         height: 11,
         weight: 339,
@@ -1861,7 +1861,7 @@ export const pokemon = [
     },
     {
         id: 187,
-        identifier: 'hoppip',
+        identifier: 'Hoppip',
         species_id: 187,
         height: 4,
         weight: 5,
@@ -1871,7 +1871,7 @@ export const pokemon = [
     },
     {
         id: 188,
-        identifier: 'skiploom',
+        identifier: 'Skiploom',
         species_id: 188,
         height: 6,
         weight: 10,
@@ -1881,7 +1881,7 @@ export const pokemon = [
     },
     {
         id: 189,
-        identifier: 'jumpluff',
+        identifier: 'Jumpluff',
         species_id: 189,
         height: 8,
         weight: 30,
@@ -1891,7 +1891,7 @@ export const pokemon = [
     },
     {
         id: 190,
-        identifier: 'aipom',
+        identifier: 'Aipom',
         species_id: 190,
         height: 8,
         weight: 115,
@@ -1901,7 +1901,7 @@ export const pokemon = [
     },
     {
         id: 191,
-        identifier: 'sunkern',
+        identifier: 'Sunkern',
         species_id: 191,
         height: 3,
         weight: 18,
@@ -1911,7 +1911,7 @@ export const pokemon = [
     },
     {
         id: 192,
-        identifier: 'sunflora',
+        identifier: 'Sunflora',
         species_id: 192,
         height: 8,
         weight: 85,
@@ -1921,7 +1921,7 @@ export const pokemon = [
     },
     {
         id: 193,
-        identifier: 'yanma',
+        identifier: 'Yanma',
         species_id: 193,
         height: 12,
         weight: 380,
@@ -1931,7 +1931,7 @@ export const pokemon = [
     },
     {
         id: 194,
-        identifier: 'wooper',
+        identifier: 'Wooper',
         species_id: 194,
         height: 4,
         weight: 85,
@@ -1941,7 +1941,7 @@ export const pokemon = [
     },
     {
         id: 195,
-        identifier: 'quagsire',
+        identifier: 'Quagsire',
         species_id: 195,
         height: 14,
         weight: 750,
@@ -1951,7 +1951,7 @@ export const pokemon = [
     },
     {
         id: 196,
-        identifier: 'espeon',
+        identifier: 'Espeon',
         species_id: 196,
         height: 9,
         weight: 265,
@@ -1961,7 +1961,7 @@ export const pokemon = [
     },
     {
         id: 197,
-        identifier: 'umbreon',
+        identifier: 'Umbreon',
         species_id: 197,
         height: 10,
         weight: 270,
@@ -1971,7 +1971,7 @@ export const pokemon = [
     },
     {
         id: 198,
-        identifier: 'murkrow',
+        identifier: 'Murkrow',
         species_id: 198,
         height: 5,
         weight: 21,
@@ -1981,7 +1981,7 @@ export const pokemon = [
     },
     {
         id: 199,
-        identifier: 'slowking',
+        identifier: 'Slowking',
         species_id: 199,
         height: 20,
         weight: 795,
@@ -1991,7 +1991,7 @@ export const pokemon = [
     },
     {
         id: 200,
-        identifier: 'misdreavus',
+        identifier: 'Misdreavus',
         species_id: 200,
         height: 7,
         weight: 10,
@@ -2001,7 +2001,7 @@ export const pokemon = [
     },
     {
         id: 201,
-        identifier: 'unown',
+        identifier: 'Unown',
         species_id: 201,
         height: 5,
         weight: 50,
@@ -2011,7 +2011,7 @@ export const pokemon = [
     },
     {
         id: 202,
-        identifier: 'wobbuffet',
+        identifier: 'Wobbuffet',
         species_id: 202,
         height: 13,
         weight: 285,
@@ -2021,7 +2021,7 @@ export const pokemon = [
     },
     {
         id: 203,
-        identifier: 'girafarig',
+        identifier: 'Girafarig',
         species_id: 203,
         height: 15,
         weight: 415,
@@ -2031,7 +2031,7 @@ export const pokemon = [
     },
     {
         id: 204,
-        identifier: 'pineco',
+        identifier: 'Pineco',
         species_id: 204,
         height: 6,
         weight: 72,
@@ -2041,7 +2041,7 @@ export const pokemon = [
     },
     {
         id: 205,
-        identifier: 'forretress',
+        identifier: 'Forretress',
         species_id: 205,
         height: 12,
         weight: 1258,
@@ -2051,7 +2051,7 @@ export const pokemon = [
     },
     {
         id: 206,
-        identifier: 'dunsparce',
+        identifier: 'Dunsparce',
         species_id: 206,
         height: 15,
         weight: 140,
@@ -2061,7 +2061,7 @@ export const pokemon = [
     },
     {
         id: 207,
-        identifier: 'gligar',
+        identifier: 'Gligar',
         species_id: 207,
         height: 11,
         weight: 648,
@@ -2071,7 +2071,7 @@ export const pokemon = [
     },
     {
         id: 208,
-        identifier: 'steelix',
+        identifier: 'Steelix',
         species_id: 208,
         height: 92,
         weight: 4000,
@@ -2081,7 +2081,7 @@ export const pokemon = [
     },
     {
         id: 209,
-        identifier: 'snubbull',
+        identifier: 'Snubbull',
         species_id: 209,
         height: 6,
         weight: 78,
@@ -2091,7 +2091,7 @@ export const pokemon = [
     },
     {
         id: 210,
-        identifier: 'granbull',
+        identifier: 'Granbull',
         species_id: 210,
         height: 14,
         weight: 487,
@@ -2101,7 +2101,7 @@ export const pokemon = [
     },
     {
         id: 211,
-        identifier: 'qwilfish',
+        identifier: 'Qwilfish',
         species_id: 211,
         height: 5,
         weight: 39,
@@ -2111,7 +2111,7 @@ export const pokemon = [
     },
     {
         id: 212,
-        identifier: 'scizor',
+        identifier: 'Scizor',
         species_id: 212,
         height: 18,
         weight: 1180,
@@ -2121,7 +2121,7 @@ export const pokemon = [
     },
     {
         id: 213,
-        identifier: 'shuckle',
+        identifier: 'Shuckle',
         species_id: 213,
         height: 6,
         weight: 205,
@@ -2131,7 +2131,7 @@ export const pokemon = [
     },
     {
         id: 214,
-        identifier: 'heracross',
+        identifier: 'Heracross',
         species_id: 214,
         height: 15,
         weight: 540,
@@ -2141,7 +2141,7 @@ export const pokemon = [
     },
     {
         id: 215,
-        identifier: 'sneasel',
+        identifier: 'Sneasel',
         species_id: 215,
         height: 9,
         weight: 280,
@@ -2151,7 +2151,7 @@ export const pokemon = [
     },
     {
         id: 216,
-        identifier: 'teddiursa',
+        identifier: 'Teddiursa',
         species_id: 216,
         height: 6,
         weight: 88,
@@ -2161,7 +2161,7 @@ export const pokemon = [
     },
     {
         id: 217,
-        identifier: 'ursaring',
+        identifier: 'Ursaring',
         species_id: 217,
         height: 18,
         weight: 1258,
@@ -2171,7 +2171,7 @@ export const pokemon = [
     },
     {
         id: 218,
-        identifier: 'slugma',
+        identifier: 'Slugma',
         species_id: 218,
         height: 7,
         weight: 350,
@@ -2181,7 +2181,7 @@ export const pokemon = [
     },
     {
         id: 219,
-        identifier: 'magcargo',
+        identifier: 'Magcargo',
         species_id: 219,
         height: 8,
         weight: 550,
@@ -2191,7 +2191,7 @@ export const pokemon = [
     },
     {
         id: 220,
-        identifier: 'swinub',
+        identifier: 'Swinub',
         species_id: 220,
         height: 4,
         weight: 65,
@@ -2201,7 +2201,7 @@ export const pokemon = [
     },
     {
         id: 221,
-        identifier: 'piloswine',
+        identifier: 'Piloswine',
         species_id: 221,
         height: 11,
         weight: 558,
@@ -2211,7 +2211,7 @@ export const pokemon = [
     },
     {
         id: 222,
-        identifier: 'corsola',
+        identifier: 'Corsola',
         species_id: 222,
         height: 6,
         weight: 50,
@@ -2221,7 +2221,7 @@ export const pokemon = [
     },
     {
         id: 223,
-        identifier: 'remoraid',
+        identifier: 'Remoraid',
         species_id: 223,
         height: 6,
         weight: 120,
@@ -2231,7 +2231,7 @@ export const pokemon = [
     },
     {
         id: 224,
-        identifier: 'octillery',
+        identifier: 'Octillery',
         species_id: 224,
         height: 9,
         weight: 285,
@@ -2241,7 +2241,7 @@ export const pokemon = [
     },
     {
         id: 225,
-        identifier: 'delibird',
+        identifier: 'Delibird',
         species_id: 225,
         height: 9,
         weight: 160,
@@ -2251,7 +2251,7 @@ export const pokemon = [
     },
     {
         id: 226,
-        identifier: 'mantine',
+        identifier: 'Mantine',
         species_id: 226,
         height: 21,
         weight: 2200,
@@ -2261,7 +2261,7 @@ export const pokemon = [
     },
     {
         id: 227,
-        identifier: 'skarmory',
+        identifier: 'Skarmory',
         species_id: 227,
         height: 17,
         weight: 505,
@@ -2271,7 +2271,7 @@ export const pokemon = [
     },
     {
         id: 228,
-        identifier: 'houndour',
+        identifier: 'Houndour',
         species_id: 228,
         height: 6,
         weight: 108,
@@ -2281,7 +2281,7 @@ export const pokemon = [
     },
     {
         id: 229,
-        identifier: 'houndoom',
+        identifier: 'Houndoom',
         species_id: 229,
         height: 14,
         weight: 350,
@@ -2291,7 +2291,7 @@ export const pokemon = [
     },
     {
         id: 230,
-        identifier: 'kingdra',
+        identifier: 'Kingdra',
         species_id: 230,
         height: 18,
         weight: 1520,
@@ -2301,7 +2301,7 @@ export const pokemon = [
     },
     {
         id: 231,
-        identifier: 'phanpy',
+        identifier: 'Phanpy',
         species_id: 231,
         height: 5,
         weight: 335,
@@ -2311,7 +2311,7 @@ export const pokemon = [
     },
     {
         id: 232,
-        identifier: 'donphan',
+        identifier: 'Donphan',
         species_id: 232,
         height: 11,
         weight: 1200,
@@ -2321,7 +2321,7 @@ export const pokemon = [
     },
     {
         id: 233,
-        identifier: 'porygon2',
+        identifier: 'Porygon2',
         species_id: 233,
         height: 6,
         weight: 325,
@@ -2331,7 +2331,7 @@ export const pokemon = [
     },
     {
         id: 234,
-        identifier: 'stantler',
+        identifier: 'Stantler',
         species_id: 234,
         height: 14,
         weight: 712,
@@ -2341,7 +2341,7 @@ export const pokemon = [
     },
     {
         id: 235,
-        identifier: 'smeargle',
+        identifier: 'Smeargle',
         species_id: 235,
         height: 12,
         weight: 580,
@@ -2351,7 +2351,7 @@ export const pokemon = [
     },
     {
         id: 236,
-        identifier: 'tyrogue',
+        identifier: 'Tyrogue',
         species_id: 236,
         height: 7,
         weight: 210,
@@ -2361,7 +2361,7 @@ export const pokemon = [
     },
     {
         id: 237,
-        identifier: 'hitmontop',
+        identifier: 'Hitmontop',
         species_id: 237,
         height: 14,
         weight: 480,
@@ -2371,7 +2371,7 @@ export const pokemon = [
     },
     {
         id: 238,
-        identifier: 'smoochum',
+        identifier: 'Smoochum',
         species_id: 238,
         height: 4,
         weight: 60,
@@ -2381,7 +2381,7 @@ export const pokemon = [
     },
     {
         id: 239,
-        identifier: 'elekid',
+        identifier: 'Elekid',
         species_id: 239,
         height: 6,
         weight: 235,
@@ -2391,7 +2391,7 @@ export const pokemon = [
     },
     {
         id: 240,
-        identifier: 'magby',
+        identifier: 'Magby',
         species_id: 240,
         height: 7,
         weight: 214,
@@ -2401,7 +2401,7 @@ export const pokemon = [
     },
     {
         id: 241,
-        identifier: 'miltank',
+        identifier: 'Miltank',
         species_id: 241,
         height: 12,
         weight: 755,
@@ -2411,7 +2411,7 @@ export const pokemon = [
     },
     {
         id: 242,
-        identifier: 'blissey',
+        identifier: 'Blissey',
         species_id: 242,
         height: 15,
         weight: 468,
@@ -2421,7 +2421,7 @@ export const pokemon = [
     },
     {
         id: 243,
-        identifier: 'raikou',
+        identifier: 'Raikou',
         species_id: 243,
         height: 19,
         weight: 1780,
@@ -2431,7 +2431,7 @@ export const pokemon = [
     },
     {
         id: 244,
-        identifier: 'entei',
+        identifier: 'Entei',
         species_id: 244,
         height: 21,
         weight: 1980,
@@ -2441,7 +2441,7 @@ export const pokemon = [
     },
     {
         id: 245,
-        identifier: 'suicune',
+        identifier: 'Suicune',
         species_id: 245,
         height: 20,
         weight: 1870,
@@ -2451,7 +2451,7 @@ export const pokemon = [
     },
     {
         id: 246,
-        identifier: 'larvitar',
+        identifier: 'Larvitar',
         species_id: 246,
         height: 6,
         weight: 720,
@@ -2461,7 +2461,7 @@ export const pokemon = [
     },
     {
         id: 247,
-        identifier: 'pupitar',
+        identifier: 'Pupitar',
         species_id: 247,
         height: 12,
         weight: 1520,
@@ -2471,7 +2471,7 @@ export const pokemon = [
     },
     {
         id: 248,
-        identifier: 'tyranitar',
+        identifier: 'Tyranitar',
         species_id: 248,
         height: 20,
         weight: 2020,
@@ -2481,7 +2481,7 @@ export const pokemon = [
     },
     {
         id: 249,
-        identifier: 'lugia',
+        identifier: 'Lugia',
         species_id: 249,
         height: 52,
         weight: 2160,
@@ -2491,7 +2491,7 @@ export const pokemon = [
     },
     {
         id: 250,
-        identifier: 'ho-oh',
+        identifier: 'Ho-oh',
         species_id: 250,
         height: 38,
         weight: 1990,
@@ -2501,7 +2501,7 @@ export const pokemon = [
     },
     {
         id: 251,
-        identifier: 'celebi',
+        identifier: 'Celebi',
         species_id: 251,
         height: 6,
         weight: 50,
@@ -2511,7 +2511,7 @@ export const pokemon = [
     },
     {
         id: 252,
-        identifier: 'treecko',
+        identifier: 'Treecko',
         species_id: 252,
         height: 5,
         weight: 50,
@@ -2521,7 +2521,7 @@ export const pokemon = [
     },
     {
         id: 253,
-        identifier: 'grovyle',
+        identifier: 'Grovyle',
         species_id: 253,
         height: 9,
         weight: 216,
@@ -2531,7 +2531,7 @@ export const pokemon = [
     },
     {
         id: 254,
-        identifier: 'sceptile',
+        identifier: 'Sceptile',
         species_id: 254,
         height: 17,
         weight: 522,
@@ -2541,7 +2541,7 @@ export const pokemon = [
     },
     {
         id: 255,
-        identifier: 'torchic',
+        identifier: 'Torchic',
         species_id: 255,
         height: 4,
         weight: 25,
@@ -2551,7 +2551,7 @@ export const pokemon = [
     },
     {
         id: 256,
-        identifier: 'combusken',
+        identifier: 'Combusken',
         species_id: 256,
         height: 9,
         weight: 195,
@@ -2561,7 +2561,7 @@ export const pokemon = [
     },
     {
         id: 257,
-        identifier: 'blaziken',
+        identifier: 'Blaziken',
         species_id: 257,
         height: 19,
         weight: 520,
@@ -2571,7 +2571,7 @@ export const pokemon = [
     },
     {
         id: 258,
-        identifier: 'mudkip',
+        identifier: 'Mudkip',
         species_id: 258,
         height: 4,
         weight: 76,
@@ -2581,7 +2581,7 @@ export const pokemon = [
     },
     {
         id: 259,
-        identifier: 'marshtomp',
+        identifier: 'Marshtomp',
         species_id: 259,
         height: 7,
         weight: 280,
@@ -2591,7 +2591,7 @@ export const pokemon = [
     },
     {
         id: 260,
-        identifier: 'swampert',
+        identifier: 'Swampert',
         species_id: 260,
         height: 15,
         weight: 819,
@@ -2601,7 +2601,7 @@ export const pokemon = [
     },
     {
         id: 261,
-        identifier: 'poochyena',
+        identifier: 'Poochyena',
         species_id: 261,
         height: 5,
         weight: 136,
@@ -2611,7 +2611,7 @@ export const pokemon = [
     },
     {
         id: 262,
-        identifier: 'mightyena',
+        identifier: 'Mightyena',
         species_id: 262,
         height: 10,
         weight: 370,
@@ -2621,7 +2621,7 @@ export const pokemon = [
     },
     {
         id: 263,
-        identifier: 'zigzagoon',
+        identifier: 'Zigzagoon',
         species_id: 263,
         height: 4,
         weight: 175,
@@ -2631,7 +2631,7 @@ export const pokemon = [
     },
     {
         id: 264,
-        identifier: 'linoone',
+        identifier: 'Linoone',
         species_id: 264,
         height: 5,
         weight: 325,
@@ -2641,7 +2641,7 @@ export const pokemon = [
     },
     {
         id: 265,
-        identifier: 'wurmple',
+        identifier: 'Wurmple',
         species_id: 265,
         height: 3,
         weight: 36,
@@ -2651,7 +2651,7 @@ export const pokemon = [
     },
     {
         id: 266,
-        identifier: 'silcoon',
+        identifier: 'Silcoon',
         species_id: 266,
         height: 6,
         weight: 100,
@@ -2661,7 +2661,7 @@ export const pokemon = [
     },
     {
         id: 267,
-        identifier: 'beautifly',
+        identifier: 'Beautifly',
         species_id: 267,
         height: 10,
         weight: 284,
@@ -2671,7 +2671,7 @@ export const pokemon = [
     },
     {
         id: 268,
-        identifier: 'cascoon',
+        identifier: 'Cascoon',
         species_id: 268,
         height: 7,
         weight: 115,
@@ -2681,7 +2681,7 @@ export const pokemon = [
     },
     {
         id: 269,
-        identifier: 'dustox',
+        identifier: 'Dustox',
         species_id: 269,
         height: 12,
         weight: 316,
@@ -2691,7 +2691,7 @@ export const pokemon = [
     },
     {
         id: 270,
-        identifier: 'lotad',
+        identifier: 'Lotad',
         species_id: 270,
         height: 5,
         weight: 26,
@@ -2701,7 +2701,7 @@ export const pokemon = [
     },
     {
         id: 271,
-        identifier: 'lombre',
+        identifier: 'Lombre',
         species_id: 271,
         height: 12,
         weight: 325,
@@ -2711,7 +2711,7 @@ export const pokemon = [
     },
     {
         id: 272,
-        identifier: 'ludicolo',
+        identifier: 'Ludicolo',
         species_id: 272,
         height: 15,
         weight: 550,
@@ -2721,7 +2721,7 @@ export const pokemon = [
     },
     {
         id: 273,
-        identifier: 'seedot',
+        identifier: 'Seedot',
         species_id: 273,
         height: 5,
         weight: 40,
@@ -2731,7 +2731,7 @@ export const pokemon = [
     },
     {
         id: 274,
-        identifier: 'nuzleaf',
+        identifier: 'Nuzleaf',
         species_id: 274,
         height: 10,
         weight: 280,
@@ -2741,7 +2741,7 @@ export const pokemon = [
     },
     {
         id: 275,
-        identifier: 'shiftry',
+        identifier: 'Shiftry',
         species_id: 275,
         height: 13,
         weight: 596,
@@ -2751,7 +2751,7 @@ export const pokemon = [
     },
     {
         id: 276,
-        identifier: 'taillow',
+        identifier: 'Taillow',
         species_id: 276,
         height: 3,
         weight: 23,
@@ -2761,7 +2761,7 @@ export const pokemon = [
     },
     {
         id: 277,
-        identifier: 'swellow',
+        identifier: 'Swellow',
         species_id: 277,
         height: 7,
         weight: 198,
@@ -2771,7 +2771,7 @@ export const pokemon = [
     },
     {
         id: 278,
-        identifier: 'wingull',
+        identifier: 'Wingull',
         species_id: 278,
         height: 6,
         weight: 95,
@@ -2781,7 +2781,7 @@ export const pokemon = [
     },
     {
         id: 279,
-        identifier: 'pelipper',
+        identifier: 'Pelipper',
         species_id: 279,
         height: 12,
         weight: 280,
@@ -2791,7 +2791,7 @@ export const pokemon = [
     },
     {
         id: 280,
-        identifier: 'ralts',
+        identifier: 'Ralts',
         species_id: 280,
         height: 4,
         weight: 66,
@@ -2801,7 +2801,7 @@ export const pokemon = [
     },
     {
         id: 281,
-        identifier: 'kirlia',
+        identifier: 'Kirlia',
         species_id: 281,
         height: 8,
         weight: 202,
@@ -2811,7 +2811,7 @@ export const pokemon = [
     },
     {
         id: 282,
-        identifier: 'gardevoir',
+        identifier: 'Gardevoir',
         species_id: 282,
         height: 16,
         weight: 484,
@@ -2821,7 +2821,7 @@ export const pokemon = [
     },
     {
         id: 283,
-        identifier: 'surskit',
+        identifier: 'Surskit',
         species_id: 283,
         height: 5,
         weight: 17,
@@ -2831,7 +2831,7 @@ export const pokemon = [
     },
     {
         id: 284,
-        identifier: 'masquerain',
+        identifier: 'Masquerain',
         species_id: 284,
         height: 8,
         weight: 36,
@@ -2841,7 +2841,7 @@ export const pokemon = [
     },
     {
         id: 285,
-        identifier: 'shroomish',
+        identifier: 'Shroomish',
         species_id: 285,
         height: 4,
         weight: 45,
@@ -2851,7 +2851,7 @@ export const pokemon = [
     },
     {
         id: 286,
-        identifier: 'breloom',
+        identifier: 'Breloom',
         species_id: 286,
         height: 12,
         weight: 392,
@@ -2861,7 +2861,7 @@ export const pokemon = [
     },
     {
         id: 287,
-        identifier: 'slakoth',
+        identifier: 'Slakoth',
         species_id: 287,
         height: 8,
         weight: 240,
@@ -2871,7 +2871,7 @@ export const pokemon = [
     },
     {
         id: 288,
-        identifier: 'vigoroth',
+        identifier: 'Vigoroth',
         species_id: 288,
         height: 14,
         weight: 465,
@@ -2881,7 +2881,7 @@ export const pokemon = [
     },
     {
         id: 289,
-        identifier: 'slaking',
+        identifier: 'Slaking',
         species_id: 289,
         height: 20,
         weight: 1305,
@@ -2891,7 +2891,7 @@ export const pokemon = [
     },
     {
         id: 290,
-        identifier: 'nincada',
+        identifier: 'Nincada',
         species_id: 290,
         height: 5,
         weight: 55,
@@ -2901,7 +2901,7 @@ export const pokemon = [
     },
     {
         id: 291,
-        identifier: 'ninjask',
+        identifier: 'Ninjask',
         species_id: 291,
         height: 8,
         weight: 120,
@@ -2911,7 +2911,7 @@ export const pokemon = [
     },
     {
         id: 292,
-        identifier: 'shedinja',
+        identifier: 'Shedinja',
         species_id: 292,
         height: 8,
         weight: 12,
@@ -2921,7 +2921,7 @@ export const pokemon = [
     },
     {
         id: 293,
-        identifier: 'whismur',
+        identifier: 'Whismur',
         species_id: 293,
         height: 6,
         weight: 163,
@@ -2931,7 +2931,7 @@ export const pokemon = [
     },
     {
         id: 294,
-        identifier: 'loudred',
+        identifier: 'Loudred',
         species_id: 294,
         height: 10,
         weight: 405,
@@ -2941,7 +2941,7 @@ export const pokemon = [
     },
     {
         id: 295,
-        identifier: 'exploud',
+        identifier: 'Exploud',
         species_id: 295,
         height: 15,
         weight: 840,
@@ -2951,7 +2951,7 @@ export const pokemon = [
     },
     {
         id: 296,
-        identifier: 'makuhita',
+        identifier: 'Makuhita',
         species_id: 296,
         height: 10,
         weight: 864,
@@ -2961,7 +2961,7 @@ export const pokemon = [
     },
     {
         id: 297,
-        identifier: 'hariyama',
+        identifier: 'Hariyama',
         species_id: 297,
         height: 23,
         weight: 2538,
@@ -2971,7 +2971,7 @@ export const pokemon = [
     },
     {
         id: 298,
-        identifier: 'azurill',
+        identifier: 'Azurill',
         species_id: 298,
         height: 2,
         weight: 20,
@@ -2981,7 +2981,7 @@ export const pokemon = [
     },
     {
         id: 299,
-        identifier: 'nosepass',
+        identifier: 'Nosepass',
         species_id: 299,
         height: 10,
         weight: 970,
@@ -2991,7 +2991,7 @@ export const pokemon = [
     },
     {
         id: 300,
-        identifier: 'skitty',
+        identifier: 'Skitty',
         species_id: 300,
         height: 6,
         weight: 110,
@@ -3001,7 +3001,7 @@ export const pokemon = [
     },
     {
         id: 301,
-        identifier: 'delcatty',
+        identifier: 'Delcatty',
         species_id: 301,
         height: 11,
         weight: 326,
@@ -3011,7 +3011,7 @@ export const pokemon = [
     },
     {
         id: 302,
-        identifier: 'sableye',
+        identifier: 'Sableye',
         species_id: 302,
         height: 5,
         weight: 110,
@@ -3021,7 +3021,7 @@ export const pokemon = [
     },
     {
         id: 303,
-        identifier: 'mawile',
+        identifier: 'Mawile',
         species_id: 303,
         height: 6,
         weight: 115,
@@ -3031,7 +3031,7 @@ export const pokemon = [
     },
     {
         id: 304,
-        identifier: 'aron',
+        identifier: 'Aron',
         species_id: 304,
         height: 4,
         weight: 600,
@@ -3041,7 +3041,7 @@ export const pokemon = [
     },
     {
         id: 305,
-        identifier: 'lairon',
+        identifier: 'Lairon',
         species_id: 305,
         height: 9,
         weight: 1200,
@@ -3051,7 +3051,7 @@ export const pokemon = [
     },
     {
         id: 306,
-        identifier: 'aggron',
+        identifier: 'Aggron',
         species_id: 306,
         height: 21,
         weight: 3600,
@@ -3061,7 +3061,7 @@ export const pokemon = [
     },
     {
         id: 307,
-        identifier: 'meditite',
+        identifier: 'Meditite',
         species_id: 307,
         height: 6,
         weight: 112,
@@ -3071,7 +3071,7 @@ export const pokemon = [
     },
     {
         id: 308,
-        identifier: 'medicham',
+        identifier: 'Medicham',
         species_id: 308,
         height: 13,
         weight: 315,
@@ -3081,7 +3081,7 @@ export const pokemon = [
     },
     {
         id: 309,
-        identifier: 'electrike',
+        identifier: 'Electrike',
         species_id: 309,
         height: 6,
         weight: 152,
@@ -3091,7 +3091,7 @@ export const pokemon = [
     },
     {
         id: 310,
-        identifier: 'manectric',
+        identifier: 'Manectric',
         species_id: 310,
         height: 15,
         weight: 402,
@@ -3101,7 +3101,7 @@ export const pokemon = [
     },
     {
         id: 311,
-        identifier: 'plusle',
+        identifier: 'Plusle',
         species_id: 311,
         height: 4,
         weight: 42,
@@ -3111,7 +3111,7 @@ export const pokemon = [
     },
     {
         id: 312,
-        identifier: 'minun',
+        identifier: 'Minun',
         species_id: 312,
         height: 4,
         weight: 42,
@@ -3121,7 +3121,7 @@ export const pokemon = [
     },
     {
         id: 313,
-        identifier: 'volbeat',
+        identifier: 'Volbeat',
         species_id: 313,
         height: 7,
         weight: 177,
@@ -3131,7 +3131,7 @@ export const pokemon = [
     },
     {
         id: 314,
-        identifier: 'illumise',
+        identifier: 'Illumise',
         species_id: 314,
         height: 6,
         weight: 177,
@@ -3141,7 +3141,7 @@ export const pokemon = [
     },
     {
         id: 315,
-        identifier: 'roselia',
+        identifier: 'Roselia',
         species_id: 315,
         height: 3,
         weight: 20,
@@ -3151,7 +3151,7 @@ export const pokemon = [
     },
     {
         id: 316,
-        identifier: 'gulpin',
+        identifier: 'Gulpin',
         species_id: 316,
         height: 4,
         weight: 103,
@@ -3161,7 +3161,7 @@ export const pokemon = [
     },
     {
         id: 317,
-        identifier: 'swalot',
+        identifier: 'Swalot',
         species_id: 317,
         height: 17,
         weight: 800,
@@ -3171,7 +3171,7 @@ export const pokemon = [
     },
     {
         id: 318,
-        identifier: 'carvanha',
+        identifier: 'Carvanha',
         species_id: 318,
         height: 8,
         weight: 208,
@@ -3181,7 +3181,7 @@ export const pokemon = [
     },
     {
         id: 319,
-        identifier: 'sharpedo',
+        identifier: 'Sharpedo',
         species_id: 319,
         height: 18,
         weight: 888,
@@ -3191,7 +3191,7 @@ export const pokemon = [
     },
     {
         id: 320,
-        identifier: 'wailmer',
+        identifier: 'Wailmer',
         species_id: 320,
         height: 20,
         weight: 1300,
@@ -3201,7 +3201,7 @@ export const pokemon = [
     },
     {
         id: 321,
-        identifier: 'wailord',
+        identifier: 'Wailord',
         species_id: 321,
         height: 145,
         weight: 3980,
@@ -3211,7 +3211,7 @@ export const pokemon = [
     },
     {
         id: 322,
-        identifier: 'numel',
+        identifier: 'Numel',
         species_id: 322,
         height: 7,
         weight: 240,
@@ -3221,7 +3221,7 @@ export const pokemon = [
     },
     {
         id: 323,
-        identifier: 'camerupt',
+        identifier: 'Camerupt',
         species_id: 323,
         height: 19,
         weight: 2200,
@@ -3231,7 +3231,7 @@ export const pokemon = [
     },
     {
         id: 324,
-        identifier: 'torkoal',
+        identifier: 'Torkoal',
         species_id: 324,
         height: 5,
         weight: 804,
@@ -3241,7 +3241,7 @@ export const pokemon = [
     },
     {
         id: 325,
-        identifier: 'spoink',
+        identifier: 'Spoink',
         species_id: 325,
         height: 7,
         weight: 306,
@@ -3251,7 +3251,7 @@ export const pokemon = [
     },
     {
         id: 326,
-        identifier: 'grumpig',
+        identifier: 'Grumpig',
         species_id: 326,
         height: 9,
         weight: 715,
@@ -3261,7 +3261,7 @@ export const pokemon = [
     },
     {
         id: 327,
-        identifier: 'spinda',
+        identifier: 'Spinda',
         species_id: 327,
         height: 11,
         weight: 50,
@@ -3271,7 +3271,7 @@ export const pokemon = [
     },
     {
         id: 328,
-        identifier: 'trapinch',
+        identifier: 'Trapinch',
         species_id: 328,
         height: 7,
         weight: 150,
@@ -3281,7 +3281,7 @@ export const pokemon = [
     },
     {
         id: 329,
-        identifier: 'vibrava',
+        identifier: 'Vibrava',
         species_id: 329,
         height: 11,
         weight: 153,
@@ -3291,7 +3291,7 @@ export const pokemon = [
     },
     {
         id: 330,
-        identifier: 'flygon',
+        identifier: 'Flygon',
         species_id: 330,
         height: 20,
         weight: 820,
@@ -3301,7 +3301,7 @@ export const pokemon = [
     },
     {
         id: 331,
-        identifier: 'cacnea',
+        identifier: 'Cacnea',
         species_id: 331,
         height: 4,
         weight: 513,
@@ -3311,7 +3311,7 @@ export const pokemon = [
     },
     {
         id: 332,
-        identifier: 'cacturne',
+        identifier: 'Cacturne',
         species_id: 332,
         height: 13,
         weight: 774,
@@ -3321,7 +3321,7 @@ export const pokemon = [
     },
     {
         id: 333,
-        identifier: 'swablu',
+        identifier: 'Swablu',
         species_id: 333,
         height: 4,
         weight: 12,
@@ -3331,7 +3331,7 @@ export const pokemon = [
     },
     {
         id: 334,
-        identifier: 'altaria',
+        identifier: 'Altaria',
         species_id: 334,
         height: 11,
         weight: 206,
@@ -3341,7 +3341,7 @@ export const pokemon = [
     },
     {
         id: 335,
-        identifier: 'zangoose',
+        identifier: 'Zangoose',
         species_id: 335,
         height: 13,
         weight: 403,
@@ -3351,7 +3351,7 @@ export const pokemon = [
     },
     {
         id: 336,
-        identifier: 'seviper',
+        identifier: 'Seviper',
         species_id: 336,
         height: 27,
         weight: 525,
@@ -3361,7 +3361,7 @@ export const pokemon = [
     },
     {
         id: 337,
-        identifier: 'lunatone',
+        identifier: 'Lunatone',
         species_id: 337,
         height: 10,
         weight: 1680,
@@ -3371,7 +3371,7 @@ export const pokemon = [
     },
     {
         id: 338,
-        identifier: 'solrock',
+        identifier: 'Solrock',
         species_id: 338,
         height: 12,
         weight: 1540,
@@ -3381,7 +3381,7 @@ export const pokemon = [
     },
     {
         id: 339,
-        identifier: 'barboach',
+        identifier: 'Barboach',
         species_id: 339,
         height: 4,
         weight: 19,
@@ -3391,7 +3391,7 @@ export const pokemon = [
     },
     {
         id: 340,
-        identifier: 'whiscash',
+        identifier: 'Whiscash',
         species_id: 340,
         height: 9,
         weight: 236,
@@ -3401,7 +3401,7 @@ export const pokemon = [
     },
     {
         id: 341,
-        identifier: 'corphish',
+        identifier: 'Corphish',
         species_id: 341,
         height: 6,
         weight: 115,
@@ -3411,7 +3411,7 @@ export const pokemon = [
     },
     {
         id: 342,
-        identifier: 'crawdaunt',
+        identifier: 'Crawdaunt',
         species_id: 342,
         height: 11,
         weight: 328,
@@ -3421,7 +3421,7 @@ export const pokemon = [
     },
     {
         id: 343,
-        identifier: 'baltoy',
+        identifier: 'Baltoy',
         species_id: 343,
         height: 5,
         weight: 215,
@@ -3431,7 +3431,7 @@ export const pokemon = [
     },
     {
         id: 344,
-        identifier: 'claydol',
+        identifier: 'Claydol',
         species_id: 344,
         height: 15,
         weight: 1080,
@@ -3441,7 +3441,7 @@ export const pokemon = [
     },
     {
         id: 345,
-        identifier: 'lileep',
+        identifier: 'Lileep',
         species_id: 345,
         height: 10,
         weight: 238,
@@ -3451,7 +3451,7 @@ export const pokemon = [
     },
     {
         id: 346,
-        identifier: 'cradily',
+        identifier: 'Cradily',
         species_id: 346,
         height: 15,
         weight: 604,
@@ -3461,7 +3461,7 @@ export const pokemon = [
     },
     {
         id: 347,
-        identifier: 'anorith',
+        identifier: 'Anorith',
         species_id: 347,
         height: 7,
         weight: 125,
@@ -3471,7 +3471,7 @@ export const pokemon = [
     },
     {
         id: 348,
-        identifier: 'armaldo',
+        identifier: 'Armaldo',
         species_id: 348,
         height: 15,
         weight: 682,
@@ -3481,7 +3481,7 @@ export const pokemon = [
     },
     {
         id: 349,
-        identifier: 'feebas',
+        identifier: 'Feebas',
         species_id: 349,
         height: 6,
         weight: 74,
@@ -3491,7 +3491,7 @@ export const pokemon = [
     },
     {
         id: 350,
-        identifier: 'milotic',
+        identifier: 'Milotic',
         species_id: 350,
         height: 62,
         weight: 1620,
@@ -3501,7 +3501,7 @@ export const pokemon = [
     },
     {
         id: 351,
-        identifier: 'castform',
+        identifier: 'Castform',
         species_id: 351,
         height: 3,
         weight: 8,
@@ -3511,7 +3511,7 @@ export const pokemon = [
     },
     {
         id: 352,
-        identifier: 'kecleon',
+        identifier: 'Kecleon',
         species_id: 352,
         height: 10,
         weight: 220,
@@ -3521,7 +3521,7 @@ export const pokemon = [
     },
     {
         id: 353,
-        identifier: 'shuppet',
+        identifier: 'Shuppet',
         species_id: 353,
         height: 6,
         weight: 23,
@@ -3531,7 +3531,7 @@ export const pokemon = [
     },
     {
         id: 354,
-        identifier: 'banette',
+        identifier: 'Banette',
         species_id: 354,
         height: 11,
         weight: 125,
@@ -3541,7 +3541,7 @@ export const pokemon = [
     },
     {
         id: 355,
-        identifier: 'duskull',
+        identifier: 'Duskull',
         species_id: 355,
         height: 8,
         weight: 150,
@@ -3551,7 +3551,7 @@ export const pokemon = [
     },
     {
         id: 356,
-        identifier: 'dusclops',
+        identifier: 'Dusclops',
         species_id: 356,
         height: 16,
         weight: 306,
@@ -3561,7 +3561,7 @@ export const pokemon = [
     },
     {
         id: 357,
-        identifier: 'tropius',
+        identifier: 'Tropius',
         species_id: 357,
         height: 20,
         weight: 1000,
@@ -3571,7 +3571,7 @@ export const pokemon = [
     },
     {
         id: 358,
-        identifier: 'chimecho',
+        identifier: 'Chimecho',
         species_id: 358,
         height: 6,
         weight: 10,
@@ -3581,7 +3581,7 @@ export const pokemon = [
     },
     {
         id: 359,
-        identifier: 'absol',
+        identifier: 'Absol',
         species_id: 359,
         height: 12,
         weight: 470,
@@ -3591,7 +3591,7 @@ export const pokemon = [
     },
     {
         id: 360,
-        identifier: 'wynaut',
+        identifier: 'Wynaut',
         species_id: 360,
         height: 6,
         weight: 140,
@@ -3601,7 +3601,7 @@ export const pokemon = [
     },
     {
         id: 361,
-        identifier: 'snorunt',
+        identifier: 'Snorunt',
         species_id: 361,
         height: 7,
         weight: 168,
@@ -3611,7 +3611,7 @@ export const pokemon = [
     },
     {
         id: 362,
-        identifier: 'glalie',
+        identifier: 'Glalie',
         species_id: 362,
         height: 15,
         weight: 2565,
@@ -3621,7 +3621,7 @@ export const pokemon = [
     },
     {
         id: 363,
-        identifier: 'spheal',
+        identifier: 'Spheal',
         species_id: 363,
         height: 8,
         weight: 395,
@@ -3631,7 +3631,7 @@ export const pokemon = [
     },
     {
         id: 364,
-        identifier: 'sealeo',
+        identifier: 'Sealeo',
         species_id: 364,
         height: 11,
         weight: 876,
@@ -3641,7 +3641,7 @@ export const pokemon = [
     },
     {
         id: 365,
-        identifier: 'walrein',
+        identifier: 'Walrein',
         species_id: 365,
         height: 14,
         weight: 1506,
@@ -3651,7 +3651,7 @@ export const pokemon = [
     },
     {
         id: 366,
-        identifier: 'clamperl',
+        identifier: 'Clamperl',
         species_id: 366,
         height: 4,
         weight: 525,
@@ -3661,7 +3661,7 @@ export const pokemon = [
     },
     {
         id: 367,
-        identifier: 'huntail',
+        identifier: 'Huntail',
         species_id: 367,
         height: 17,
         weight: 270,
@@ -3671,7 +3671,7 @@ export const pokemon = [
     },
     {
         id: 368,
-        identifier: 'gorebyss',
+        identifier: 'Gorebyss',
         species_id: 368,
         height: 18,
         weight: 226,
@@ -3681,7 +3681,7 @@ export const pokemon = [
     },
     {
         id: 369,
-        identifier: 'relicanth',
+        identifier: 'Relicanth',
         species_id: 369,
         height: 10,
         weight: 234,
@@ -3691,7 +3691,7 @@ export const pokemon = [
     },
     {
         id: 370,
-        identifier: 'luvdisc',
+        identifier: 'Luvdisc',
         species_id: 370,
         height: 6,
         weight: 87,
@@ -3701,7 +3701,7 @@ export const pokemon = [
     },
     {
         id: 371,
-        identifier: 'bagon',
+        identifier: 'Bagon',
         species_id: 371,
         height: 6,
         weight: 421,
@@ -3711,7 +3711,7 @@ export const pokemon = [
     },
     {
         id: 372,
-        identifier: 'shelgon',
+        identifier: 'Shelgon',
         species_id: 372,
         height: 11,
         weight: 1105,
@@ -3721,7 +3721,7 @@ export const pokemon = [
     },
     {
         id: 373,
-        identifier: 'salamence',
+        identifier: 'Salamence',
         species_id: 373,
         height: 15,
         weight: 1026,
@@ -3731,7 +3731,7 @@ export const pokemon = [
     },
     {
         id: 374,
-        identifier: 'beldum',
+        identifier: 'Beldum',
         species_id: 374,
         height: 6,
         weight: 952,
@@ -3741,7 +3741,7 @@ export const pokemon = [
     },
     {
         id: 375,
-        identifier: 'metang',
+        identifier: 'Metang',
         species_id: 375,
         height: 12,
         weight: 2025,
@@ -3751,7 +3751,7 @@ export const pokemon = [
     },
     {
         id: 376,
-        identifier: 'metagross',
+        identifier: 'Metagross',
         species_id: 376,
         height: 16,
         weight: 5500,
@@ -3761,7 +3761,7 @@ export const pokemon = [
     },
     {
         id: 377,
-        identifier: 'regirock',
+        identifier: 'Regirock',
         species_id: 377,
         height: 17,
         weight: 2300,
@@ -3771,7 +3771,7 @@ export const pokemon = [
     },
     {
         id: 378,
-        identifier: 'regice',
+        identifier: 'Regice',
         species_id: 378,
         height: 18,
         weight: 1750,
@@ -3781,7 +3781,7 @@ export const pokemon = [
     },
     {
         id: 379,
-        identifier: 'registeel',
+        identifier: 'Registeel',
         species_id: 379,
         height: 19,
         weight: 2050,
@@ -3791,7 +3791,7 @@ export const pokemon = [
     },
     {
         id: 380,
-        identifier: 'latias',
+        identifier: 'Latias',
         species_id: 380,
         height: 14,
         weight: 400,
@@ -3801,7 +3801,7 @@ export const pokemon = [
     },
     {
         id: 381,
-        identifier: 'latios',
+        identifier: 'Latios',
         species_id: 381,
         height: 20,
         weight: 600,
@@ -3811,7 +3811,7 @@ export const pokemon = [
     },
     {
         id: 382,
-        identifier: 'kyogre',
+        identifier: 'Kyogre',
         species_id: 382,
         height: 45,
         weight: 3520,
@@ -3821,7 +3821,7 @@ export const pokemon = [
     },
     {
         id: 383,
-        identifier: 'groudon',
+        identifier: 'Groudon',
         species_id: 383,
         height: 35,
         weight: 9500,
@@ -3831,7 +3831,7 @@ export const pokemon = [
     },
     {
         id: 384,
-        identifier: 'rayquaza',
+        identifier: 'Rayquaza',
         species_id: 384,
         height: 70,
         weight: 2065,
@@ -3841,7 +3841,7 @@ export const pokemon = [
     },
     {
         id: 385,
-        identifier: 'jirachi',
+        identifier: 'Jirachi',
         species_id: 385,
         height: 3,
         weight: 11,
@@ -3851,7 +3851,7 @@ export const pokemon = [
     },
     {
         id: 386,
-        identifier: 'deoxys-normal',
+        identifier: 'Deoxys-normal',
         species_id: 386,
         height: 17,
         weight: 608,
@@ -3861,7 +3861,7 @@ export const pokemon = [
     },
     {
         id: 387,
-        identifier: 'turtwig',
+        identifier: 'Turtwig',
         species_id: 387,
         height: 4,
         weight: 102,
@@ -3871,7 +3871,7 @@ export const pokemon = [
     },
     {
         id: 388,
-        identifier: 'grotle',
+        identifier: 'Grotle',
         species_id: 388,
         height: 11,
         weight: 970,
@@ -3881,7 +3881,7 @@ export const pokemon = [
     },
     {
         id: 389,
-        identifier: 'torterra',
+        identifier: 'Torterra',
         species_id: 389,
         height: 22,
         weight: 3100,
@@ -3891,7 +3891,7 @@ export const pokemon = [
     },
     {
         id: 390,
-        identifier: 'chimchar',
+        identifier: 'Chimchar',
         species_id: 390,
         height: 5,
         weight: 62,
@@ -3901,7 +3901,7 @@ export const pokemon = [
     },
     {
         id: 391,
-        identifier: 'monferno',
+        identifier: 'Monferno',
         species_id: 391,
         height: 9,
         weight: 220,
@@ -3911,7 +3911,7 @@ export const pokemon = [
     },
     {
         id: 392,
-        identifier: 'infernape',
+        identifier: 'Infernape',
         species_id: 392,
         height: 12,
         weight: 550,
@@ -3921,7 +3921,7 @@ export const pokemon = [
     },
     {
         id: 393,
-        identifier: 'piplup',
+        identifier: 'Piplup',
         species_id: 393,
         height: 4,
         weight: 52,
@@ -3931,7 +3931,7 @@ export const pokemon = [
     },
     {
         id: 394,
-        identifier: 'prinplup',
+        identifier: 'Prinplup',
         species_id: 394,
         height: 8,
         weight: 230,
@@ -3941,7 +3941,7 @@ export const pokemon = [
     },
     {
         id: 395,
-        identifier: 'empoleon',
+        identifier: 'Empoleon',
         species_id: 395,
         height: 17,
         weight: 845,
@@ -3951,7 +3951,7 @@ export const pokemon = [
     },
     {
         id: 396,
-        identifier: 'starly',
+        identifier: 'Starly',
         species_id: 396,
         height: 3,
         weight: 20,
@@ -3961,7 +3961,7 @@ export const pokemon = [
     },
     {
         id: 397,
-        identifier: 'staravia',
+        identifier: 'Staravia',
         species_id: 397,
         height: 6,
         weight: 155,
@@ -3971,7 +3971,7 @@ export const pokemon = [
     },
     {
         id: 398,
-        identifier: 'staraptor',
+        identifier: 'Staraptor',
         species_id: 398,
         height: 12,
         weight: 249,
@@ -3981,7 +3981,7 @@ export const pokemon = [
     },
     {
         id: 399,
-        identifier: 'bidoof',
+        identifier: 'Bidoof',
         species_id: 399,
         height: 5,
         weight: 200,
@@ -3991,7 +3991,7 @@ export const pokemon = [
     },
     {
         id: 400,
-        identifier: 'bibarel',
+        identifier: 'Bibarel',
         species_id: 400,
         height: 10,
         weight: 315,
@@ -4001,7 +4001,7 @@ export const pokemon = [
     },
     {
         id: 401,
-        identifier: 'kricketot',
+        identifier: 'Kricketot',
         species_id: 401,
         height: 3,
         weight: 22,
@@ -4011,7 +4011,7 @@ export const pokemon = [
     },
     {
         id: 402,
-        identifier: 'kricketune',
+        identifier: 'Kricketune',
         species_id: 402,
         height: 10,
         weight: 255,
@@ -4021,7 +4021,7 @@ export const pokemon = [
     },
     {
         id: 403,
-        identifier: 'shinx',
+        identifier: 'Shinx',
         species_id: 403,
         height: 5,
         weight: 95,
@@ -4031,7 +4031,7 @@ export const pokemon = [
     },
     {
         id: 404,
-        identifier: 'luxio',
+        identifier: 'Luxio',
         species_id: 404,
         height: 9,
         weight: 305,
@@ -4041,7 +4041,7 @@ export const pokemon = [
     },
     {
         id: 405,
-        identifier: 'luxray',
+        identifier: 'Luxray',
         species_id: 405,
         height: 14,
         weight: 420,
@@ -4051,7 +4051,7 @@ export const pokemon = [
     },
     {
         id: 406,
-        identifier: 'budew',
+        identifier: 'Budew',
         species_id: 406,
         height: 2,
         weight: 12,
@@ -4061,7 +4061,7 @@ export const pokemon = [
     },
     {
         id: 407,
-        identifier: 'roserade',
+        identifier: 'Roserade',
         species_id: 407,
         height: 9,
         weight: 145,
@@ -4071,7 +4071,7 @@ export const pokemon = [
     },
     {
         id: 408,
-        identifier: 'cranidos',
+        identifier: 'Cranidos',
         species_id: 408,
         height: 9,
         weight: 315,
@@ -4081,7 +4081,7 @@ export const pokemon = [
     },
     {
         id: 409,
-        identifier: 'rampardos',
+        identifier: 'Rampardos',
         species_id: 409,
         height: 16,
         weight: 1025,
@@ -4091,7 +4091,7 @@ export const pokemon = [
     },
     {
         id: 410,
-        identifier: 'shieldon',
+        identifier: 'Shieldon',
         species_id: 410,
         height: 5,
         weight: 570,
@@ -4101,7 +4101,7 @@ export const pokemon = [
     },
     {
         id: 411,
-        identifier: 'bastiodon',
+        identifier: 'Bastiodon',
         species_id: 411,
         height: 13,
         weight: 1495,
@@ -4111,7 +4111,7 @@ export const pokemon = [
     },
     {
         id: 412,
-        identifier: 'burmy',
+        identifier: 'Burmy',
         species_id: 412,
         height: 2,
         weight: 34,
@@ -4121,7 +4121,7 @@ export const pokemon = [
     },
     {
         id: 413,
-        identifier: 'wormadam-plant',
+        identifier: 'Wormadam-plant',
         species_id: 413,
         height: 5,
         weight: 65,
@@ -4131,7 +4131,7 @@ export const pokemon = [
     },
     {
         id: 414,
-        identifier: 'mothim',
+        identifier: 'Mothim',
         species_id: 414,
         height: 9,
         weight: 233,
@@ -4141,7 +4141,7 @@ export const pokemon = [
     },
     {
         id: 415,
-        identifier: 'combee',
+        identifier: 'Combee',
         species_id: 415,
         height: 3,
         weight: 55,
@@ -4151,7 +4151,7 @@ export const pokemon = [
     },
     {
         id: 416,
-        identifier: 'vespiquen',
+        identifier: 'Vespiquen',
         species_id: 416,
         height: 12,
         weight: 385,
@@ -4161,7 +4161,7 @@ export const pokemon = [
     },
     {
         id: 417,
-        identifier: 'pachirisu',
+        identifier: 'Pachirisu',
         species_id: 417,
         height: 4,
         weight: 39,
@@ -4171,7 +4171,7 @@ export const pokemon = [
     },
     {
         id: 418,
-        identifier: 'buizel',
+        identifier: 'Buizel',
         species_id: 418,
         height: 7,
         weight: 295,
@@ -4181,7 +4181,7 @@ export const pokemon = [
     },
     {
         id: 419,
-        identifier: 'floatzel',
+        identifier: 'Floatzel',
         species_id: 419,
         height: 11,
         weight: 335,
@@ -4191,7 +4191,7 @@ export const pokemon = [
     },
     {
         id: 420,
-        identifier: 'cherubi',
+        identifier: 'Cherubi',
         species_id: 420,
         height: 4,
         weight: 33,
@@ -4201,7 +4201,7 @@ export const pokemon = [
     },
     {
         id: 421,
-        identifier: 'cherrim',
+        identifier: 'Cherrim',
         species_id: 421,
         height: 5,
         weight: 93,
@@ -4211,7 +4211,7 @@ export const pokemon = [
     },
     {
         id: 422,
-        identifier: 'shellos',
+        identifier: 'Shellos',
         species_id: 422,
         height: 3,
         weight: 63,
@@ -4221,7 +4221,7 @@ export const pokemon = [
     },
     {
         id: 423,
-        identifier: 'gastrodon',
+        identifier: 'Gastrodon',
         species_id: 423,
         height: 9,
         weight: 299,
@@ -4231,7 +4231,7 @@ export const pokemon = [
     },
     {
         id: 424,
-        identifier: 'ambipom',
+        identifier: 'Ambipom',
         species_id: 424,
         height: 12,
         weight: 203,
@@ -4241,7 +4241,7 @@ export const pokemon = [
     },
     {
         id: 425,
-        identifier: 'drifloon',
+        identifier: 'Drifloon',
         species_id: 425,
         height: 4,
         weight: 12,
@@ -4251,7 +4251,7 @@ export const pokemon = [
     },
     {
         id: 426,
-        identifier: 'drifblim',
+        identifier: 'Drifblim',
         species_id: 426,
         height: 12,
         weight: 150,
@@ -4261,7 +4261,7 @@ export const pokemon = [
     },
     {
         id: 427,
-        identifier: 'buneary',
+        identifier: 'Buneary',
         species_id: 427,
         height: 4,
         weight: 55,
@@ -4271,7 +4271,7 @@ export const pokemon = [
     },
     {
         id: 428,
-        identifier: 'lopunny',
+        identifier: 'Lopunny',
         species_id: 428,
         height: 12,
         weight: 333,
@@ -4281,7 +4281,7 @@ export const pokemon = [
     },
     {
         id: 429,
-        identifier: 'mismagius',
+        identifier: 'Mismagius',
         species_id: 429,
         height: 9,
         weight: 44,
@@ -4291,7 +4291,7 @@ export const pokemon = [
     },
     {
         id: 430,
-        identifier: 'honchkrow',
+        identifier: 'Honchkrow',
         species_id: 430,
         height: 9,
         weight: 273,
@@ -4301,7 +4301,7 @@ export const pokemon = [
     },
     {
         id: 431,
-        identifier: 'glameow',
+        identifier: 'Glameow',
         species_id: 431,
         height: 5,
         weight: 39,
@@ -4311,7 +4311,7 @@ export const pokemon = [
     },
     {
         id: 432,
-        identifier: 'purugly',
+        identifier: 'Purugly',
         species_id: 432,
         height: 10,
         weight: 438,
@@ -4321,7 +4321,7 @@ export const pokemon = [
     },
     {
         id: 433,
-        identifier: 'chingling',
+        identifier: 'Chingling',
         species_id: 433,
         height: 2,
         weight: 6,
@@ -4331,7 +4331,7 @@ export const pokemon = [
     },
     {
         id: 434,
-        identifier: 'stunky',
+        identifier: 'Stunky',
         species_id: 434,
         height: 4,
         weight: 192,
@@ -4341,7 +4341,7 @@ export const pokemon = [
     },
     {
         id: 435,
-        identifier: 'skuntank',
+        identifier: 'Skuntank',
         species_id: 435,
         height: 10,
         weight: 380,
@@ -4351,7 +4351,7 @@ export const pokemon = [
     },
     {
         id: 436,
-        identifier: 'bronzor',
+        identifier: 'Bronzor',
         species_id: 436,
         height: 5,
         weight: 605,
@@ -4361,7 +4361,7 @@ export const pokemon = [
     },
     {
         id: 437,
-        identifier: 'bronzong',
+        identifier: 'Bronzong',
         species_id: 437,
         height: 13,
         weight: 1870,
@@ -4371,7 +4371,7 @@ export const pokemon = [
     },
     {
         id: 438,
-        identifier: 'bonsly',
+        identifier: 'Bonsly',
         species_id: 438,
         height: 5,
         weight: 150,
@@ -4381,7 +4381,7 @@ export const pokemon = [
     },
     {
         id: 439,
-        identifier: 'mime-jr',
+        identifier: 'Mime-jr',
         species_id: 439,
         height: 6,
         weight: 130,
@@ -4391,7 +4391,7 @@ export const pokemon = [
     },
     {
         id: 440,
-        identifier: 'happiny',
+        identifier: 'Happiny',
         species_id: 440,
         height: 6,
         weight: 244,
@@ -4401,7 +4401,7 @@ export const pokemon = [
     },
     {
         id: 441,
-        identifier: 'chatot',
+        identifier: 'Chatot',
         species_id: 441,
         height: 5,
         weight: 19,
@@ -4411,7 +4411,7 @@ export const pokemon = [
     },
     {
         id: 442,
-        identifier: 'spiritomb',
+        identifier: 'Spiritomb',
         species_id: 442,
         height: 10,
         weight: 1080,
@@ -4421,7 +4421,7 @@ export const pokemon = [
     },
     {
         id: 443,
-        identifier: 'gible',
+        identifier: 'Gible',
         species_id: 443,
         height: 7,
         weight: 205,
@@ -4431,7 +4431,7 @@ export const pokemon = [
     },
     {
         id: 444,
-        identifier: 'gabite',
+        identifier: 'Gabite',
         species_id: 444,
         height: 14,
         weight: 560,
@@ -4441,7 +4441,7 @@ export const pokemon = [
     },
     {
         id: 445,
-        identifier: 'garchomp',
+        identifier: 'Garchomp',
         species_id: 445,
         height: 19,
         weight: 950,
@@ -4451,7 +4451,7 @@ export const pokemon = [
     },
     {
         id: 446,
-        identifier: 'munchlax',
+        identifier: 'Munchlax',
         species_id: 446,
         height: 6,
         weight: 1050,
@@ -4461,7 +4461,7 @@ export const pokemon = [
     },
     {
         id: 447,
-        identifier: 'riolu',
+        identifier: 'Riolu',
         species_id: 447,
         height: 7,
         weight: 202,
@@ -4471,7 +4471,7 @@ export const pokemon = [
     },
     {
         id: 448,
-        identifier: 'lucario',
+        identifier: 'Lucario',
         species_id: 448,
         height: 12,
         weight: 540,
@@ -4481,7 +4481,7 @@ export const pokemon = [
     },
     {
         id: 449,
-        identifier: 'hippopotas',
+        identifier: 'Hippopotas',
         species_id: 449,
         height: 8,
         weight: 495,
@@ -4491,7 +4491,7 @@ export const pokemon = [
     },
     {
         id: 450,
-        identifier: 'hippowdon',
+        identifier: 'Hippowdon',
         species_id: 450,
         height: 20,
         weight: 3000,
@@ -4501,7 +4501,7 @@ export const pokemon = [
     },
     {
         id: 451,
-        identifier: 'skorupi',
+        identifier: 'Skorupi',
         species_id: 451,
         height: 8,
         weight: 120,
@@ -4511,7 +4511,7 @@ export const pokemon = [
     },
     {
         id: 452,
-        identifier: 'drapion',
+        identifier: 'Drapion',
         species_id: 452,
         height: 13,
         weight: 615,
@@ -4521,7 +4521,7 @@ export const pokemon = [
     },
     {
         id: 453,
-        identifier: 'croagunk',
+        identifier: 'Croagunk',
         species_id: 453,
         height: 7,
         weight: 230,
@@ -4531,7 +4531,7 @@ export const pokemon = [
     },
     {
         id: 454,
-        identifier: 'toxicroak',
+        identifier: 'Toxicroak',
         species_id: 454,
         height: 13,
         weight: 444,
@@ -4541,7 +4541,7 @@ export const pokemon = [
     },
     {
         id: 455,
-        identifier: 'carnivine',
+        identifier: 'Carnivine',
         species_id: 455,
         height: 14,
         weight: 270,
@@ -4551,7 +4551,7 @@ export const pokemon = [
     },
     {
         id: 456,
-        identifier: 'finneon',
+        identifier: 'Finneon',
         species_id: 456,
         height: 4,
         weight: 70,
@@ -4561,7 +4561,7 @@ export const pokemon = [
     },
     {
         id: 457,
-        identifier: 'lumineon',
+        identifier: 'Lumineon',
         species_id: 457,
         height: 12,
         weight: 240,
@@ -4571,7 +4571,7 @@ export const pokemon = [
     },
     {
         id: 458,
-        identifier: 'mantyke',
+        identifier: 'Mantyke',
         species_id: 458,
         height: 10,
         weight: 650,
@@ -4581,7 +4581,7 @@ export const pokemon = [
     },
     {
         id: 459,
-        identifier: 'snover',
+        identifier: 'Snover',
         species_id: 459,
         height: 10,
         weight: 505,
@@ -4591,7 +4591,7 @@ export const pokemon = [
     },
     {
         id: 460,
-        identifier: 'abomasnow',
+        identifier: 'Abomasnow',
         species_id: 460,
         height: 22,
         weight: 1355,
@@ -4601,7 +4601,7 @@ export const pokemon = [
     },
     {
         id: 461,
-        identifier: 'weavile',
+        identifier: 'Weavile',
         species_id: 461,
         height: 11,
         weight: 340,
@@ -4611,7 +4611,7 @@ export const pokemon = [
     },
     {
         id: 462,
-        identifier: 'magnezone',
+        identifier: 'Magnezone',
         species_id: 462,
         height: 12,
         weight: 1800,
@@ -4621,7 +4621,7 @@ export const pokemon = [
     },
     {
         id: 463,
-        identifier: 'lickilicky',
+        identifier: 'Lickilicky',
         species_id: 463,
         height: 17,
         weight: 1400,
@@ -4631,7 +4631,7 @@ export const pokemon = [
     },
     {
         id: 464,
-        identifier: 'rhyperior',
+        identifier: 'Rhyperior',
         species_id: 464,
         height: 24,
         weight: 2828,
@@ -4641,7 +4641,7 @@ export const pokemon = [
     },
     {
         id: 465,
-        identifier: 'tangrowth',
+        identifier: 'Tangrowth',
         species_id: 465,
         height: 20,
         weight: 1286,
@@ -4651,7 +4651,7 @@ export const pokemon = [
     },
     {
         id: 466,
-        identifier: 'electivire',
+        identifier: 'Electivire',
         species_id: 466,
         height: 18,
         weight: 1386,
@@ -4661,7 +4661,7 @@ export const pokemon = [
     },
     {
         id: 467,
-        identifier: 'magmortar',
+        identifier: 'Magmortar',
         species_id: 467,
         height: 16,
         weight: 680,
@@ -4671,7 +4671,7 @@ export const pokemon = [
     },
     {
         id: 468,
-        identifier: 'togekiss',
+        identifier: 'Togekiss',
         species_id: 468,
         height: 15,
         weight: 380,
@@ -4681,7 +4681,7 @@ export const pokemon = [
     },
     {
         id: 469,
-        identifier: 'yanmega',
+        identifier: 'Yanmega',
         species_id: 469,
         height: 19,
         weight: 515,
@@ -4691,7 +4691,7 @@ export const pokemon = [
     },
     {
         id: 470,
-        identifier: 'leafeon',
+        identifier: 'Leafeon',
         species_id: 470,
         height: 10,
         weight: 255,
@@ -4701,7 +4701,7 @@ export const pokemon = [
     },
     {
         id: 471,
-        identifier: 'glaceon',
+        identifier: 'Glaceon',
         species_id: 471,
         height: 8,
         weight: 259,
@@ -4711,7 +4711,7 @@ export const pokemon = [
     },
     {
         id: 472,
-        identifier: 'gliscor',
+        identifier: 'Gliscor',
         species_id: 472,
         height: 20,
         weight: 425,
@@ -4721,7 +4721,7 @@ export const pokemon = [
     },
     {
         id: 473,
-        identifier: 'mamoswine',
+        identifier: 'Mamoswine',
         species_id: 473,
         height: 25,
         weight: 2910,
@@ -4731,7 +4731,7 @@ export const pokemon = [
     },
     {
         id: 474,
-        identifier: 'porygon-z',
+        identifier: 'Porygon-z',
         species_id: 474,
         height: 9,
         weight: 340,
@@ -4741,7 +4741,7 @@ export const pokemon = [
     },
     {
         id: 475,
-        identifier: 'gallade',
+        identifier: 'Gallade',
         species_id: 475,
         height: 16,
         weight: 520,
@@ -4751,7 +4751,7 @@ export const pokemon = [
     },
     {
         id: 476,
-        identifier: 'probopass',
+        identifier: 'Probopass',
         species_id: 476,
         height: 14,
         weight: 3400,
@@ -4761,7 +4761,7 @@ export const pokemon = [
     },
     {
         id: 477,
-        identifier: 'dusknoir',
+        identifier: 'Dusknoir',
         species_id: 477,
         height: 22,
         weight: 1066,
@@ -4771,7 +4771,7 @@ export const pokemon = [
     },
     {
         id: 478,
-        identifier: 'froslass',
+        identifier: 'Froslass',
         species_id: 478,
         height: 13,
         weight: 266,
@@ -4781,7 +4781,7 @@ export const pokemon = [
     },
     {
         id: 479,
-        identifier: 'rotom',
+        identifier: 'Rotom',
         species_id: 479,
         height: 3,
         weight: 3,
@@ -4791,7 +4791,7 @@ export const pokemon = [
     },
     {
         id: 480,
-        identifier: 'uxie',
+        identifier: 'Uxie',
         species_id: 480,
         height: 3,
         weight: 3,
@@ -4801,7 +4801,7 @@ export const pokemon = [
     },
     {
         id: 481,
-        identifier: 'mesprit',
+        identifier: 'Mesprit',
         species_id: 481,
         height: 3,
         weight: 3,
@@ -4811,7 +4811,7 @@ export const pokemon = [
     },
     {
         id: 482,
-        identifier: 'azelf',
+        identifier: 'Azelf',
         species_id: 482,
         height: 3,
         weight: 3,
@@ -4821,7 +4821,7 @@ export const pokemon = [
     },
     {
         id: 483,
-        identifier: 'dialga',
+        identifier: 'Dialga',
         species_id: 483,
         height: 54,
         weight: 6830,
@@ -4831,7 +4831,7 @@ export const pokemon = [
     },
     {
         id: 484,
-        identifier: 'palkia',
+        identifier: 'Palkia',
         species_id: 484,
         height: 42,
         weight: 3360,
@@ -4841,7 +4841,7 @@ export const pokemon = [
     },
     {
         id: 485,
-        identifier: 'heatran',
+        identifier: 'Heatran',
         species_id: 485,
         height: 17,
         weight: 4300,
@@ -4851,7 +4851,7 @@ export const pokemon = [
     },
     {
         id: 486,
-        identifier: 'regigigas',
+        identifier: 'Regigigas',
         species_id: 486,
         height: 37,
         weight: 4200,
@@ -4861,7 +4861,7 @@ export const pokemon = [
     },
     {
         id: 487,
-        identifier: 'giratina-altered',
+        identifier: 'Giratina-altered',
         species_id: 487,
         height: 45,
         weight: 7500,
@@ -4871,7 +4871,7 @@ export const pokemon = [
     },
     {
         id: 488,
-        identifier: 'cresselia',
+        identifier: 'Cresselia',
         species_id: 488,
         height: 15,
         weight: 856,
@@ -4881,7 +4881,7 @@ export const pokemon = [
     },
     {
         id: 489,
-        identifier: 'phione',
+        identifier: 'Phione',
         species_id: 489,
         height: 4,
         weight: 31,
@@ -4891,7 +4891,7 @@ export const pokemon = [
     },
     {
         id: 490,
-        identifier: 'manaphy',
+        identifier: 'Manaphy',
         species_id: 490,
         height: 3,
         weight: 14,
@@ -4901,7 +4901,7 @@ export const pokemon = [
     },
     {
         id: 491,
-        identifier: 'darkrai',
+        identifier: 'Darkrai',
         species_id: 491,
         height: 15,
         weight: 505,
@@ -4911,7 +4911,7 @@ export const pokemon = [
     },
     {
         id: 492,
-        identifier: 'shaymin-land',
+        identifier: 'Shaymin-land',
         species_id: 492,
         height: 2,
         weight: 21,
@@ -4921,7 +4921,7 @@ export const pokemon = [
     },
     {
         id: 493,
-        identifier: 'arceus',
+        identifier: 'Arceus',
         species_id: 493,
         height: 32,
         weight: 3200,
@@ -4931,7 +4931,7 @@ export const pokemon = [
     },
     {
         id: 494,
-        identifier: 'victini',
+        identifier: 'Victini',
         species_id: 494,
         height: 4,
         weight: 40,
@@ -4941,7 +4941,7 @@ export const pokemon = [
     },
     {
         id: 495,
-        identifier: 'snivy',
+        identifier: 'Snivy',
         species_id: 495,
         height: 6,
         weight: 81,
@@ -4951,7 +4951,7 @@ export const pokemon = [
     },
     {
         id: 496,
-        identifier: 'servine',
+        identifier: 'Servine',
         species_id: 496,
         height: 8,
         weight: 160,
@@ -4961,7 +4961,7 @@ export const pokemon = [
     },
     {
         id: 497,
-        identifier: 'serperior',
+        identifier: 'Serperior',
         species_id: 497,
         height: 33,
         weight: 630,
@@ -4971,7 +4971,7 @@ export const pokemon = [
     },
     {
         id: 498,
-        identifier: 'tepig',
+        identifier: 'Tepig',
         species_id: 498,
         height: 5,
         weight: 99,
@@ -4981,7 +4981,7 @@ export const pokemon = [
     },
     {
         id: 499,
-        identifier: 'pignite',
+        identifier: 'Pignite',
         species_id: 499,
         height: 10,
         weight: 555,
@@ -4991,7 +4991,7 @@ export const pokemon = [
     },
     {
         id: 500,
-        identifier: 'emboar',
+        identifier: 'Emboar',
         species_id: 500,
         height: 16,
         weight: 1500,
@@ -5001,7 +5001,7 @@ export const pokemon = [
     },
     {
         id: 501,
-        identifier: 'oshawott',
+        identifier: 'Oshawott',
         species_id: 501,
         height: 5,
         weight: 59,
@@ -5011,7 +5011,7 @@ export const pokemon = [
     },
     {
         id: 502,
-        identifier: 'dewott',
+        identifier: 'Dewott',
         species_id: 502,
         height: 8,
         weight: 245,
@@ -5021,7 +5021,7 @@ export const pokemon = [
     },
     {
         id: 503,
-        identifier: 'samurott',
+        identifier: 'Samurott',
         species_id: 503,
         height: 15,
         weight: 946,
@@ -5031,7 +5031,7 @@ export const pokemon = [
     },
     {
         id: 504,
-        identifier: 'patrat',
+        identifier: 'Patrat',
         species_id: 504,
         height: 5,
         weight: 116,
@@ -5041,7 +5041,7 @@ export const pokemon = [
     },
     {
         id: 505,
-        identifier: 'watchog',
+        identifier: 'Watchog',
         species_id: 505,
         height: 11,
         weight: 270,
@@ -5051,7 +5051,7 @@ export const pokemon = [
     },
     {
         id: 506,
-        identifier: 'lillipup',
+        identifier: 'Lillipup',
         species_id: 506,
         height: 4,
         weight: 41,
@@ -5061,7 +5061,7 @@ export const pokemon = [
     },
     {
         id: 507,
-        identifier: 'herdier',
+        identifier: 'Herdier',
         species_id: 507,
         height: 9,
         weight: 147,
@@ -5071,7 +5071,7 @@ export const pokemon = [
     },
     {
         id: 508,
-        identifier: 'stoutland',
+        identifier: 'Stoutland',
         species_id: 508,
         height: 12,
         weight: 610,
@@ -5081,7 +5081,7 @@ export const pokemon = [
     },
     {
         id: 509,
-        identifier: 'purrloin',
+        identifier: 'Purrloin',
         species_id: 509,
         height: 4,
         weight: 101,
@@ -5091,7 +5091,7 @@ export const pokemon = [
     },
     {
         id: 510,
-        identifier: 'liepard',
+        identifier: 'Liepard',
         species_id: 510,
         height: 11,
         weight: 375,
@@ -5101,7 +5101,7 @@ export const pokemon = [
     },
     {
         id: 511,
-        identifier: 'pansage',
+        identifier: 'Pansage',
         species_id: 511,
         height: 6,
         weight: 105,
@@ -5111,7 +5111,7 @@ export const pokemon = [
     },
     {
         id: 512,
-        identifier: 'simisage',
+        identifier: 'Simisage',
         species_id: 512,
         height: 11,
         weight: 305,
@@ -5121,7 +5121,7 @@ export const pokemon = [
     },
     {
         id: 513,
-        identifier: 'pansear',
+        identifier: 'Pansear',
         species_id: 513,
         height: 6,
         weight: 110,
@@ -5131,7 +5131,7 @@ export const pokemon = [
     },
     {
         id: 514,
-        identifier: 'simisear',
+        identifier: 'Simisear',
         species_id: 514,
         height: 10,
         weight: 280,
@@ -5141,7 +5141,7 @@ export const pokemon = [
     },
     {
         id: 515,
-        identifier: 'panpour',
+        identifier: 'Panpour',
         species_id: 515,
         height: 6,
         weight: 135,
@@ -5151,7 +5151,7 @@ export const pokemon = [
     },
     {
         id: 516,
-        identifier: 'simipour',
+        identifier: 'Simipour',
         species_id: 516,
         height: 10,
         weight: 290,
@@ -5161,7 +5161,7 @@ export const pokemon = [
     },
     {
         id: 517,
-        identifier: 'munna',
+        identifier: 'Munna',
         species_id: 517,
         height: 6,
         weight: 233,
@@ -5171,7 +5171,7 @@ export const pokemon = [
     },
     {
         id: 518,
-        identifier: 'musharna',
+        identifier: 'Musharna',
         species_id: 518,
         height: 11,
         weight: 605,
@@ -5181,7 +5181,7 @@ export const pokemon = [
     },
     {
         id: 519,
-        identifier: 'pidove',
+        identifier: 'Pidove',
         species_id: 519,
         height: 3,
         weight: 21,
@@ -5191,7 +5191,7 @@ export const pokemon = [
     },
     {
         id: 520,
-        identifier: 'tranquill',
+        identifier: 'Tranquill',
         species_id: 520,
         height: 6,
         weight: 150,
@@ -5201,7 +5201,7 @@ export const pokemon = [
     },
     {
         id: 521,
-        identifier: 'unfezant',
+        identifier: 'Unfezant',
         species_id: 521,
         height: 12,
         weight: 290,
@@ -5211,7 +5211,7 @@ export const pokemon = [
     },
     {
         id: 522,
-        identifier: 'blitzle',
+        identifier: 'Blitzle',
         species_id: 522,
         height: 8,
         weight: 298,
@@ -5221,7 +5221,7 @@ export const pokemon = [
     },
     {
         id: 523,
-        identifier: 'zebstrika',
+        identifier: 'Zebstrika',
         species_id: 523,
         height: 16,
         weight: 795,
@@ -5231,7 +5231,7 @@ export const pokemon = [
     },
     {
         id: 524,
-        identifier: 'roggenrola',
+        identifier: 'Roggenrola',
         species_id: 524,
         height: 4,
         weight: 180,
@@ -5241,7 +5241,7 @@ export const pokemon = [
     },
     {
         id: 525,
-        identifier: 'boldore',
+        identifier: 'Boldore',
         species_id: 525,
         height: 9,
         weight: 1020,
@@ -5251,7 +5251,7 @@ export const pokemon = [
     },
     {
         id: 526,
-        identifier: 'gigalith',
+        identifier: 'Gigalith',
         species_id: 526,
         height: 17,
         weight: 2600,
@@ -5261,7 +5261,7 @@ export const pokemon = [
     },
     {
         id: 527,
-        identifier: 'woobat',
+        identifier: 'Woobat',
         species_id: 527,
         height: 4,
         weight: 21,
@@ -5271,7 +5271,7 @@ export const pokemon = [
     },
     {
         id: 528,
-        identifier: 'swoobat',
+        identifier: 'Swoobat',
         species_id: 528,
         height: 9,
         weight: 105,
@@ -5281,7 +5281,7 @@ export const pokemon = [
     },
     {
         id: 529,
-        identifier: 'drilbur',
+        identifier: 'Drilbur',
         species_id: 529,
         height: 3,
         weight: 85,
@@ -5291,7 +5291,7 @@ export const pokemon = [
     },
     {
         id: 530,
-        identifier: 'excadrill',
+        identifier: 'Excadrill',
         species_id: 530,
         height: 7,
         weight: 404,
@@ -5301,7 +5301,7 @@ export const pokemon = [
     },
     {
         id: 531,
-        identifier: 'audino',
+        identifier: 'Audino',
         species_id: 531,
         height: 11,
         weight: 310,
@@ -5311,7 +5311,7 @@ export const pokemon = [
     },
     {
         id: 532,
-        identifier: 'timburr',
+        identifier: 'Timburr',
         species_id: 532,
         height: 6,
         weight: 125,
@@ -5321,7 +5321,7 @@ export const pokemon = [
     },
     {
         id: 533,
-        identifier: 'gurdurr',
+        identifier: 'Gurdurr',
         species_id: 533,
         height: 12,
         weight: 400,
@@ -5331,7 +5331,7 @@ export const pokemon = [
     },
     {
         id: 534,
-        identifier: 'conkeldurr',
+        identifier: 'Conkeldurr',
         species_id: 534,
         height: 14,
         weight: 870,
@@ -5341,7 +5341,7 @@ export const pokemon = [
     },
     {
         id: 535,
-        identifier: 'tympole',
+        identifier: 'Tympole',
         species_id: 535,
         height: 5,
         weight: 45,
@@ -5351,7 +5351,7 @@ export const pokemon = [
     },
     {
         id: 536,
-        identifier: 'palpitoad',
+        identifier: 'Palpitoad',
         species_id: 536,
         height: 8,
         weight: 170,
@@ -5361,7 +5361,7 @@ export const pokemon = [
     },
     {
         id: 537,
-        identifier: 'seismitoad',
+        identifier: 'Seismitoad',
         species_id: 537,
         height: 15,
         weight: 620,
@@ -5371,7 +5371,7 @@ export const pokemon = [
     },
     {
         id: 538,
-        identifier: 'throh',
+        identifier: 'Throh',
         species_id: 538,
         height: 13,
         weight: 555,
@@ -5381,7 +5381,7 @@ export const pokemon = [
     },
     {
         id: 539,
-        identifier: 'sawk',
+        identifier: 'Sawk',
         species_id: 539,
         height: 14,
         weight: 510,
@@ -5391,7 +5391,7 @@ export const pokemon = [
     },
     {
         id: 540,
-        identifier: 'sewaddle',
+        identifier: 'Sewaddle',
         species_id: 540,
         height: 3,
         weight: 25,
@@ -5401,7 +5401,7 @@ export const pokemon = [
     },
     {
         id: 541,
-        identifier: 'swadloon',
+        identifier: 'Swadloon',
         species_id: 541,
         height: 5,
         weight: 73,
@@ -5411,7 +5411,7 @@ export const pokemon = [
     },
     {
         id: 542,
-        identifier: 'leavanny',
+        identifier: 'Leavanny',
         species_id: 542,
         height: 12,
         weight: 205,
@@ -5421,7 +5421,7 @@ export const pokemon = [
     },
     {
         id: 543,
-        identifier: 'venipede',
+        identifier: 'Venipede',
         species_id: 543,
         height: 4,
         weight: 53,
@@ -5431,7 +5431,7 @@ export const pokemon = [
     },
     {
         id: 544,
-        identifier: 'whirlipede',
+        identifier: 'Whirlipede',
         species_id: 544,
         height: 12,
         weight: 585,
@@ -5441,7 +5441,7 @@ export const pokemon = [
     },
     {
         id: 545,
-        identifier: 'scolipede',
+        identifier: 'Scolipede',
         species_id: 545,
         height: 25,
         weight: 2005,
@@ -5451,7 +5451,7 @@ export const pokemon = [
     },
     {
         id: 546,
-        identifier: 'cottonee',
+        identifier: 'Cottonee',
         species_id: 546,
         height: 3,
         weight: 6,
@@ -5461,7 +5461,7 @@ export const pokemon = [
     },
     {
         id: 547,
-        identifier: 'whimsicott',
+        identifier: 'Whimsicott',
         species_id: 547,
         height: 7,
         weight: 66,
@@ -5471,7 +5471,7 @@ export const pokemon = [
     },
     {
         id: 548,
-        identifier: 'petilil',
+        identifier: 'Petilil',
         species_id: 548,
         height: 5,
         weight: 66,
@@ -5481,7 +5481,7 @@ export const pokemon = [
     },
     {
         id: 549,
-        identifier: 'lilligant',
+        identifier: 'Lilligant',
         species_id: 549,
         height: 11,
         weight: 163,
@@ -5491,7 +5491,7 @@ export const pokemon = [
     },
     {
         id: 550,
-        identifier: 'basculin-red-striped',
+        identifier: 'Basculin-red-striped',
         species_id: 550,
         height: 10,
         weight: 180,
@@ -5501,7 +5501,7 @@ export const pokemon = [
     },
     {
         id: 551,
-        identifier: 'sandile',
+        identifier: 'Sandile',
         species_id: 551,
         height: 7,
         weight: 152,
@@ -5511,7 +5511,7 @@ export const pokemon = [
     },
     {
         id: 552,
-        identifier: 'krokorok',
+        identifier: 'Krokorok',
         species_id: 552,
         height: 10,
         weight: 334,
@@ -5521,7 +5521,7 @@ export const pokemon = [
     },
     {
         id: 553,
-        identifier: 'krookodile',
+        identifier: 'Krookodile',
         species_id: 553,
         height: 15,
         weight: 963,
@@ -5531,7 +5531,7 @@ export const pokemon = [
     },
     {
         id: 554,
-        identifier: 'darumaka',
+        identifier: 'Darumaka',
         species_id: 554,
         height: 6,
         weight: 375,
@@ -5541,7 +5541,7 @@ export const pokemon = [
     },
     {
         id: 555,
-        identifier: 'darmanitan-standard',
+        identifier: 'Darmanitan-standard',
         species_id: 555,
         height: 13,
         weight: 929,
@@ -5551,7 +5551,7 @@ export const pokemon = [
     },
     {
         id: 556,
-        identifier: 'maractus',
+        identifier: 'Maractus',
         species_id: 556,
         height: 10,
         weight: 280,
@@ -5561,7 +5561,7 @@ export const pokemon = [
     },
     {
         id: 557,
-        identifier: 'dwebble',
+        identifier: 'Dwebble',
         species_id: 557,
         height: 3,
         weight: 145,
@@ -5571,7 +5571,7 @@ export const pokemon = [
     },
     {
         id: 558,
-        identifier: 'crustle',
+        identifier: 'Crustle',
         species_id: 558,
         height: 14,
         weight: 2000,
@@ -5581,7 +5581,7 @@ export const pokemon = [
     },
     {
         id: 559,
-        identifier: 'scraggy',
+        identifier: 'Scraggy',
         species_id: 559,
         height: 6,
         weight: 118,
@@ -5591,7 +5591,7 @@ export const pokemon = [
     },
     {
         id: 560,
-        identifier: 'scrafty',
+        identifier: 'Scrafty',
         species_id: 560,
         height: 11,
         weight: 300,
@@ -5601,7 +5601,7 @@ export const pokemon = [
     },
     {
         id: 561,
-        identifier: 'sigilyph',
+        identifier: 'Sigilyph',
         species_id: 561,
         height: 14,
         weight: 140,
@@ -5611,7 +5611,7 @@ export const pokemon = [
     },
     {
         id: 562,
-        identifier: 'yamask',
+        identifier: 'Yamask',
         species_id: 562,
         height: 5,
         weight: 15,
@@ -5621,7 +5621,7 @@ export const pokemon = [
     },
     {
         id: 563,
-        identifier: 'cofagrigus',
+        identifier: 'Cofagrigus',
         species_id: 563,
         height: 17,
         weight: 765,
@@ -5631,7 +5631,7 @@ export const pokemon = [
     },
     {
         id: 564,
-        identifier: 'tirtouga',
+        identifier: 'Tirtouga',
         species_id: 564,
         height: 7,
         weight: 165,
@@ -5641,7 +5641,7 @@ export const pokemon = [
     },
     {
         id: 565,
-        identifier: 'carracosta',
+        identifier: 'Carracosta',
         species_id: 565,
         height: 12,
         weight: 810,
@@ -5651,7 +5651,7 @@ export const pokemon = [
     },
     {
         id: 566,
-        identifier: 'archen',
+        identifier: 'Archen',
         species_id: 566,
         height: 5,
         weight: 95,
@@ -5661,7 +5661,7 @@ export const pokemon = [
     },
     {
         id: 567,
-        identifier: 'archeops',
+        identifier: 'Archeops',
         species_id: 567,
         height: 14,
         weight: 320,
@@ -5671,7 +5671,7 @@ export const pokemon = [
     },
     {
         id: 568,
-        identifier: 'trubbish',
+        identifier: 'Trubbish',
         species_id: 568,
         height: 6,
         weight: 310,
@@ -5681,7 +5681,7 @@ export const pokemon = [
     },
     {
         id: 569,
-        identifier: 'garbodor',
+        identifier: 'Garbodor',
         species_id: 569,
         height: 19,
         weight: 1073,
@@ -5691,7 +5691,7 @@ export const pokemon = [
     },
     {
         id: 570,
-        identifier: 'zorua',
+        identifier: 'Zorua',
         species_id: 570,
         height: 7,
         weight: 125,
@@ -5701,7 +5701,7 @@ export const pokemon = [
     },
     {
         id: 571,
-        identifier: 'zoroark',
+        identifier: 'Zoroark',
         species_id: 571,
         height: 16,
         weight: 811,
@@ -5711,7 +5711,7 @@ export const pokemon = [
     },
     {
         id: 572,
-        identifier: 'minccino',
+        identifier: 'Minccino',
         species_id: 572,
         height: 4,
         weight: 58,
@@ -5721,7 +5721,7 @@ export const pokemon = [
     },
     {
         id: 573,
-        identifier: 'cinccino',
+        identifier: 'Cinccino',
         species_id: 573,
         height: 5,
         weight: 75,
@@ -5731,7 +5731,7 @@ export const pokemon = [
     },
     {
         id: 574,
-        identifier: 'gothita',
+        identifier: 'Gothita',
         species_id: 574,
         height: 4,
         weight: 58,
@@ -5741,7 +5741,7 @@ export const pokemon = [
     },
     {
         id: 575,
-        identifier: 'gothorita',
+        identifier: 'Gothorita',
         species_id: 575,
         height: 7,
         weight: 180,
@@ -5751,7 +5751,7 @@ export const pokemon = [
     },
     {
         id: 576,
-        identifier: 'gothitelle',
+        identifier: 'Gothitelle',
         species_id: 576,
         height: 15,
         weight: 440,
@@ -5761,7 +5761,7 @@ export const pokemon = [
     },
     {
         id: 577,
-        identifier: 'solosis',
+        identifier: 'Solosis',
         species_id: 577,
         height: 3,
         weight: 10,
@@ -5771,7 +5771,7 @@ export const pokemon = [
     },
     {
         id: 578,
-        identifier: 'duosion',
+        identifier: 'Duosion',
         species_id: 578,
         height: 6,
         weight: 80,
@@ -5781,7 +5781,7 @@ export const pokemon = [
     },
     {
         id: 579,
-        identifier: 'reuniclus',
+        identifier: 'Reuniclus',
         species_id: 579,
         height: 10,
         weight: 201,
@@ -5791,7 +5791,7 @@ export const pokemon = [
     },
     {
         id: 580,
-        identifier: 'ducklett',
+        identifier: 'Ducklett',
         species_id: 580,
         height: 5,
         weight: 55,
@@ -5801,7 +5801,7 @@ export const pokemon = [
     },
     {
         id: 581,
-        identifier: 'swanna',
+        identifier: 'Swanna',
         species_id: 581,
         height: 13,
         weight: 242,
@@ -5811,7 +5811,7 @@ export const pokemon = [
     },
     {
         id: 582,
-        identifier: 'vanillite',
+        identifier: 'Vanillite',
         species_id: 582,
         height: 4,
         weight: 57,
@@ -5821,7 +5821,7 @@ export const pokemon = [
     },
     {
         id: 583,
-        identifier: 'vanillish',
+        identifier: 'Vanillish',
         species_id: 583,
         height: 11,
         weight: 410,
@@ -5831,7 +5831,7 @@ export const pokemon = [
     },
     {
         id: 584,
-        identifier: 'vanilluxe',
+        identifier: 'Vanilluxe',
         species_id: 584,
         height: 13,
         weight: 575,
@@ -5841,7 +5841,7 @@ export const pokemon = [
     },
     {
         id: 585,
-        identifier: 'deerling',
+        identifier: 'Deerling',
         species_id: 585,
         height: 6,
         weight: 195,
@@ -5851,7 +5851,7 @@ export const pokemon = [
     },
     {
         id: 586,
-        identifier: 'sawsbuck',
+        identifier: 'Sawsbuck',
         species_id: 586,
         height: 19,
         weight: 925,
@@ -5861,7 +5861,7 @@ export const pokemon = [
     },
     {
         id: 587,
-        identifier: 'emolga',
+        identifier: 'Emolga',
         species_id: 587,
         height: 4,
         weight: 50,
@@ -5871,7 +5871,7 @@ export const pokemon = [
     },
     {
         id: 588,
-        identifier: 'karrablast',
+        identifier: 'Karrablast',
         species_id: 588,
         height: 5,
         weight: 59,
@@ -5881,7 +5881,7 @@ export const pokemon = [
     },
     {
         id: 589,
-        identifier: 'escavalier',
+        identifier: 'Escavalier',
         species_id: 589,
         height: 10,
         weight: 330,
@@ -5891,7 +5891,7 @@ export const pokemon = [
     },
     {
         id: 590,
-        identifier: 'foongus',
+        identifier: 'Foongus',
         species_id: 590,
         height: 2,
         weight: 10,
@@ -5901,7 +5901,7 @@ export const pokemon = [
     },
     {
         id: 591,
-        identifier: 'amoonguss',
+        identifier: 'Amoonguss',
         species_id: 591,
         height: 6,
         weight: 105,
@@ -5911,7 +5911,7 @@ export const pokemon = [
     },
     {
         id: 592,
-        identifier: 'frillish',
+        identifier: 'Frillish',
         species_id: 592,
         height: 12,
         weight: 330,
@@ -5921,7 +5921,7 @@ export const pokemon = [
     },
     {
         id: 593,
-        identifier: 'jellicent',
+        identifier: 'Jellicent',
         species_id: 593,
         height: 22,
         weight: 1350,
@@ -5931,7 +5931,7 @@ export const pokemon = [
     },
     {
         id: 594,
-        identifier: 'alomomola',
+        identifier: 'Alomomola',
         species_id: 594,
         height: 12,
         weight: 316,
@@ -5941,7 +5941,7 @@ export const pokemon = [
     },
     {
         id: 595,
-        identifier: 'joltik',
+        identifier: 'Joltik',
         species_id: 595,
         height: 1,
         weight: 6,
@@ -5951,7 +5951,7 @@ export const pokemon = [
     },
     {
         id: 596,
-        identifier: 'galvantula',
+        identifier: 'Galvantula',
         species_id: 596,
         height: 8,
         weight: 143,
@@ -5961,7 +5961,7 @@ export const pokemon = [
     },
     {
         id: 597,
-        identifier: 'ferroseed',
+        identifier: 'Ferroseed',
         species_id: 597,
         height: 6,
         weight: 188,
@@ -5971,7 +5971,7 @@ export const pokemon = [
     },
     {
         id: 598,
-        identifier: 'ferrothorn',
+        identifier: 'Ferrothorn',
         species_id: 598,
         height: 10,
         weight: 1100,
@@ -5981,7 +5981,7 @@ export const pokemon = [
     },
     {
         id: 599,
-        identifier: 'klink',
+        identifier: 'Klink',
         species_id: 599,
         height: 3,
         weight: 210,
@@ -5991,7 +5991,7 @@ export const pokemon = [
     },
     {
         id: 600,
-        identifier: 'klang',
+        identifier: 'Klang',
         species_id: 600,
         height: 6,
         weight: 510,
@@ -6001,7 +6001,7 @@ export const pokemon = [
     },
     {
         id: 601,
-        identifier: 'klinklang',
+        identifier: 'Klinklang',
         species_id: 601,
         height: 6,
         weight: 810,
@@ -6011,7 +6011,7 @@ export const pokemon = [
     },
     {
         id: 602,
-        identifier: 'tynamo',
+        identifier: 'Tynamo',
         species_id: 602,
         height: 2,
         weight: 3,
@@ -6021,7 +6021,7 @@ export const pokemon = [
     },
     {
         id: 603,
-        identifier: 'eelektrik',
+        identifier: 'Eelektrik',
         species_id: 603,
         height: 12,
         weight: 220,
@@ -6031,7 +6031,7 @@ export const pokemon = [
     },
     {
         id: 604,
-        identifier: 'eelektross',
+        identifier: 'Eelektross',
         species_id: 604,
         height: 21,
         weight: 805,
@@ -6041,7 +6041,7 @@ export const pokemon = [
     },
     {
         id: 605,
-        identifier: 'elgyem',
+        identifier: 'Elgyem',
         species_id: 605,
         height: 5,
         weight: 90,
@@ -6051,7 +6051,7 @@ export const pokemon = [
     },
     {
         id: 606,
-        identifier: 'beheeyem',
+        identifier: 'Beheeyem',
         species_id: 606,
         height: 10,
         weight: 345,
@@ -6061,7 +6061,7 @@ export const pokemon = [
     },
     {
         id: 607,
-        identifier: 'litwick',
+        identifier: 'Litwick',
         species_id: 607,
         height: 3,
         weight: 31,
@@ -6071,7 +6071,7 @@ export const pokemon = [
     },
     {
         id: 608,
-        identifier: 'lampent',
+        identifier: 'Lampent',
         species_id: 608,
         height: 6,
         weight: 130,
@@ -6081,7 +6081,7 @@ export const pokemon = [
     },
     {
         id: 609,
-        identifier: 'chandelure',
+        identifier: 'Chandelure',
         species_id: 609,
         height: 10,
         weight: 343,
@@ -6091,7 +6091,7 @@ export const pokemon = [
     },
     {
         id: 610,
-        identifier: 'axew',
+        identifier: 'Axew',
         species_id: 610,
         height: 6,
         weight: 180,
@@ -6101,7 +6101,7 @@ export const pokemon = [
     },
     {
         id: 611,
-        identifier: 'fraxure',
+        identifier: 'Fraxure',
         species_id: 611,
         height: 10,
         weight: 360,
@@ -6111,7 +6111,7 @@ export const pokemon = [
     },
     {
         id: 612,
-        identifier: 'haxorus',
+        identifier: 'Haxorus',
         species_id: 612,
         height: 18,
         weight: 1055,
@@ -6121,7 +6121,7 @@ export const pokemon = [
     },
     {
         id: 613,
-        identifier: 'cubchoo',
+        identifier: 'Cubchoo',
         species_id: 613,
         height: 5,
         weight: 85,
@@ -6131,7 +6131,7 @@ export const pokemon = [
     },
     {
         id: 614,
-        identifier: 'beartic',
+        identifier: 'Beartic',
         species_id: 614,
         height: 26,
         weight: 2600,
@@ -6141,7 +6141,7 @@ export const pokemon = [
     },
     {
         id: 615,
-        identifier: 'cryogonal',
+        identifier: 'Cryogonal',
         species_id: 615,
         height: 11,
         weight: 1480,
@@ -6151,7 +6151,7 @@ export const pokemon = [
     },
     {
         id: 616,
-        identifier: 'shelmet',
+        identifier: 'Shelmet',
         species_id: 616,
         height: 4,
         weight: 77,
@@ -6161,7 +6161,7 @@ export const pokemon = [
     },
     {
         id: 617,
-        identifier: 'accelgor',
+        identifier: 'Accelgor',
         species_id: 617,
         height: 8,
         weight: 253,
@@ -6171,7 +6171,7 @@ export const pokemon = [
     },
     {
         id: 618,
-        identifier: 'stunfisk',
+        identifier: 'Stunfisk',
         species_id: 618,
         height: 7,
         weight: 110,
@@ -6181,7 +6181,7 @@ export const pokemon = [
     },
     {
         id: 619,
-        identifier: 'mienfoo',
+        identifier: 'Mienfoo',
         species_id: 619,
         height: 9,
         weight: 200,
@@ -6191,7 +6191,7 @@ export const pokemon = [
     },
     {
         id: 620,
-        identifier: 'mienshao',
+        identifier: 'Mienshao',
         species_id: 620,
         height: 14,
         weight: 355,
@@ -6201,7 +6201,7 @@ export const pokemon = [
     },
     {
         id: 621,
-        identifier: 'druddigon',
+        identifier: 'Druddigon',
         species_id: 621,
         height: 16,
         weight: 1390,
@@ -6211,7 +6211,7 @@ export const pokemon = [
     },
     {
         id: 622,
-        identifier: 'golett',
+        identifier: 'Golett',
         species_id: 622,
         height: 10,
         weight: 920,
@@ -6221,7 +6221,7 @@ export const pokemon = [
     },
     {
         id: 623,
-        identifier: 'golurk',
+        identifier: 'Golurk',
         species_id: 623,
         height: 28,
         weight: 3300,
@@ -6231,7 +6231,7 @@ export const pokemon = [
     },
     {
         id: 624,
-        identifier: 'pawniard',
+        identifier: 'Pawniard',
         species_id: 624,
         height: 5,
         weight: 102,
@@ -6241,7 +6241,7 @@ export const pokemon = [
     },
     {
         id: 625,
-        identifier: 'bisharp',
+        identifier: 'Bisharp',
         species_id: 625,
         height: 16,
         weight: 700,
@@ -6251,7 +6251,7 @@ export const pokemon = [
     },
     {
         id: 626,
-        identifier: 'bouffalant',
+        identifier: 'Bouffalant',
         species_id: 626,
         height: 16,
         weight: 946,
@@ -6261,7 +6261,7 @@ export const pokemon = [
     },
     {
         id: 627,
-        identifier: 'rufflet',
+        identifier: 'Rufflet',
         species_id: 627,
         height: 5,
         weight: 105,
@@ -6271,7 +6271,7 @@ export const pokemon = [
     },
     {
         id: 628,
-        identifier: 'braviary',
+        identifier: 'Braviary',
         species_id: 628,
         height: 15,
         weight: 410,
@@ -6281,7 +6281,7 @@ export const pokemon = [
     },
     {
         id: 629,
-        identifier: 'vullaby',
+        identifier: 'Vullaby',
         species_id: 629,
         height: 5,
         weight: 90,
@@ -6291,7 +6291,7 @@ export const pokemon = [
     },
     {
         id: 630,
-        identifier: 'mandibuzz',
+        identifier: 'Mandibuzz',
         species_id: 630,
         height: 12,
         weight: 395,
@@ -6301,7 +6301,7 @@ export const pokemon = [
     },
     {
         id: 631,
-        identifier: 'heatmor',
+        identifier: 'Heatmor',
         species_id: 631,
         height: 14,
         weight: 580,
@@ -6311,7 +6311,7 @@ export const pokemon = [
     },
     {
         id: 632,
-        identifier: 'durant',
+        identifier: 'Durant',
         species_id: 632,
         height: 3,
         weight: 330,
@@ -6321,7 +6321,7 @@ export const pokemon = [
     },
     {
         id: 633,
-        identifier: 'deino',
+        identifier: 'Deino',
         species_id: 633,
         height: 8,
         weight: 173,
@@ -6331,7 +6331,7 @@ export const pokemon = [
     },
     {
         id: 634,
-        identifier: 'zweilous',
+        identifier: 'Zweilous',
         species_id: 634,
         height: 14,
         weight: 500,
@@ -6341,7 +6341,7 @@ export const pokemon = [
     },
     {
         id: 635,
-        identifier: 'hydreigon',
+        identifier: 'Hydreigon',
         species_id: 635,
         height: 18,
         weight: 1600,
@@ -6351,7 +6351,7 @@ export const pokemon = [
     },
     {
         id: 636,
-        identifier: 'larvesta',
+        identifier: 'Larvesta',
         species_id: 636,
         height: 11,
         weight: 288,
@@ -6361,7 +6361,7 @@ export const pokemon = [
     },
     {
         id: 637,
-        identifier: 'volcarona',
+        identifier: 'Volcarona',
         species_id: 637,
         height: 16,
         weight: 460,
@@ -6371,7 +6371,7 @@ export const pokemon = [
     },
     {
         id: 638,
-        identifier: 'cobalion',
+        identifier: 'Cobalion',
         species_id: 638,
         height: 21,
         weight: 2500,
@@ -6381,7 +6381,7 @@ export const pokemon = [
     },
     {
         id: 639,
-        identifier: 'terrakion',
+        identifier: 'Terrakion',
         species_id: 639,
         height: 19,
         weight: 2600,
@@ -6391,7 +6391,7 @@ export const pokemon = [
     },
     {
         id: 640,
-        identifier: 'virizion',
+        identifier: 'Virizion',
         species_id: 640,
         height: 20,
         weight: 2000,
@@ -6401,7 +6401,7 @@ export const pokemon = [
     },
     {
         id: 641,
-        identifier: 'tornadus-incarnate',
+        identifier: 'Tornadus-incarnate',
         species_id: 641,
         height: 15,
         weight: 630,
@@ -6411,7 +6411,7 @@ export const pokemon = [
     },
     {
         id: 642,
-        identifier: 'thundurus-incarnate',
+        identifier: 'Thundurus-incarnate',
         species_id: 642,
         height: 15,
         weight: 610,
@@ -6421,7 +6421,7 @@ export const pokemon = [
     },
     {
         id: 643,
-        identifier: 'reshiram',
+        identifier: 'Reshiram',
         species_id: 643,
         height: 32,
         weight: 3300,
@@ -6431,7 +6431,7 @@ export const pokemon = [
     },
     {
         id: 644,
-        identifier: 'zekrom',
+        identifier: 'Zekrom',
         species_id: 644,
         height: 29,
         weight: 3450,
@@ -6441,7 +6441,7 @@ export const pokemon = [
     },
     {
         id: 645,
-        identifier: 'landorus-incarnate',
+        identifier: 'Landorus-incarnate',
         species_id: 645,
         height: 15,
         weight: 680,
@@ -6451,7 +6451,7 @@ export const pokemon = [
     },
     {
         id: 646,
-        identifier: 'kyurem',
+        identifier: 'Kyurem',
         species_id: 646,
         height: 30,
         weight: 3250,
@@ -6461,7 +6461,7 @@ export const pokemon = [
     },
     {
         id: 647,
-        identifier: 'keldeo-ordinary',
+        identifier: 'Keldeo-ordinary',
         species_id: 647,
         height: 14,
         weight: 485,
@@ -6471,7 +6471,7 @@ export const pokemon = [
     },
     {
         id: 648,
-        identifier: 'meloetta-aria',
+        identifier: 'Meloetta-aria',
         species_id: 648,
         height: 6,
         weight: 65,
@@ -6481,7 +6481,7 @@ export const pokemon = [
     },
     {
         id: 649,
-        identifier: 'genesect',
+        identifier: 'Genesect',
         species_id: 649,
         height: 15,
         weight: 825,
@@ -6491,7 +6491,7 @@ export const pokemon = [
     },
     {
         id: 650,
-        identifier: 'chespin',
+        identifier: 'Chespin',
         species_id: 650,
         height: 4,
         weight: 90,
@@ -6501,7 +6501,7 @@ export const pokemon = [
     },
     {
         id: 651,
-        identifier: 'quilladin',
+        identifier: 'Quilladin',
         species_id: 651,
         height: 7,
         weight: 290,
@@ -6511,7 +6511,7 @@ export const pokemon = [
     },
     {
         id: 652,
-        identifier: 'chesnaught',
+        identifier: 'Chesnaught',
         species_id: 652,
         height: 16,
         weight: 900,
@@ -6521,7 +6521,7 @@ export const pokemon = [
     },
     {
         id: 653,
-        identifier: 'fennekin',
+        identifier: 'Fennekin',
         species_id: 653,
         height: 4,
         weight: 94,
@@ -6531,7 +6531,7 @@ export const pokemon = [
     },
     {
         id: 654,
-        identifier: 'braixen',
+        identifier: 'Braixen',
         species_id: 654,
         height: 10,
         weight: 145,
@@ -6541,7 +6541,7 @@ export const pokemon = [
     },
     {
         id: 655,
-        identifier: 'delphox',
+        identifier: 'Delphox',
         species_id: 655,
         height: 15,
         weight: 390,
@@ -6551,7 +6551,7 @@ export const pokemon = [
     },
     {
         id: 656,
-        identifier: 'froakie',
+        identifier: 'Froakie',
         species_id: 656,
         height: 3,
         weight: 70,
@@ -6561,7 +6561,7 @@ export const pokemon = [
     },
     {
         id: 657,
-        identifier: 'frogadier',
+        identifier: 'Frogadier',
         species_id: 657,
         height: 6,
         weight: 109,
@@ -6571,7 +6571,7 @@ export const pokemon = [
     },
     {
         id: 658,
-        identifier: 'greninja',
+        identifier: 'Greninja',
         species_id: 658,
         height: 15,
         weight: 400,
@@ -6581,7 +6581,7 @@ export const pokemon = [
     },
     {
         id: 659,
-        identifier: 'bunnelby',
+        identifier: 'Bunnelby',
         species_id: 659,
         height: 4,
         weight: 50,
@@ -6591,7 +6591,7 @@ export const pokemon = [
     },
     {
         id: 660,
-        identifier: 'diggersby',
+        identifier: 'Diggersby',
         species_id: 660,
         height: 10,
         weight: 424,
@@ -6601,7 +6601,7 @@ export const pokemon = [
     },
     {
         id: 661,
-        identifier: 'fletchling',
+        identifier: 'Fletchling',
         species_id: 661,
         height: 3,
         weight: 17,
@@ -6611,7 +6611,7 @@ export const pokemon = [
     },
     {
         id: 662,
-        identifier: 'fletchinder',
+        identifier: 'Fletchinder',
         species_id: 662,
         height: 7,
         weight: 160,
@@ -6621,7 +6621,7 @@ export const pokemon = [
     },
     {
         id: 663,
-        identifier: 'talonflame',
+        identifier: 'Talonflame',
         species_id: 663,
         height: 12,
         weight: 245,
@@ -6631,7 +6631,7 @@ export const pokemon = [
     },
     {
         id: 664,
-        identifier: 'scatterbug',
+        identifier: 'Scatterbug',
         species_id: 664,
         height: 3,
         weight: 25,
@@ -6641,7 +6641,7 @@ export const pokemon = [
     },
     {
         id: 665,
-        identifier: 'spewpa',
+        identifier: 'Spewpa',
         species_id: 665,
         height: 3,
         weight: 84,
@@ -6651,7 +6651,7 @@ export const pokemon = [
     },
     {
         id: 666,
-        identifier: 'vivillon',
+        identifier: 'Vivillon',
         species_id: 666,
         height: 12,
         weight: 170,
@@ -6661,7 +6661,7 @@ export const pokemon = [
     },
     {
         id: 667,
-        identifier: 'litleo',
+        identifier: 'Litleo',
         species_id: 667,
         height: 6,
         weight: 135,
@@ -6671,7 +6671,7 @@ export const pokemon = [
     },
     {
         id: 668,
-        identifier: 'pyroar',
+        identifier: 'Pyroar',
         species_id: 668,
         height: 15,
         weight: 815,
@@ -6681,7 +6681,7 @@ export const pokemon = [
     },
     {
         id: 669,
-        identifier: 'flabebe',
+        identifier: 'Flabebe',
         species_id: 669,
         height: 1,
         weight: 1,
@@ -6691,7 +6691,7 @@ export const pokemon = [
     },
     {
         id: 670,
-        identifier: 'floette',
+        identifier: 'Floette',
         species_id: 670,
         height: 2,
         weight: 9,
@@ -6701,7 +6701,7 @@ export const pokemon = [
     },
     {
         id: 671,
-        identifier: 'florges',
+        identifier: 'Florges',
         species_id: 671,
         height: 11,
         weight: 100,
@@ -6711,7 +6711,7 @@ export const pokemon = [
     },
     {
         id: 672,
-        identifier: 'skiddo',
+        identifier: 'Skiddo',
         species_id: 672,
         height: 9,
         weight: 310,
@@ -6721,7 +6721,7 @@ export const pokemon = [
     },
     {
         id: 673,
-        identifier: 'gogoat',
+        identifier: 'Gogoat',
         species_id: 673,
         height: 17,
         weight: 910,
@@ -6731,7 +6731,7 @@ export const pokemon = [
     },
     {
         id: 674,
-        identifier: 'pancham',
+        identifier: 'Pancham',
         species_id: 674,
         height: 6,
         weight: 80,
@@ -6741,7 +6741,7 @@ export const pokemon = [
     },
     {
         id: 675,
-        identifier: 'pangoro',
+        identifier: 'Pangoro',
         species_id: 675,
         height: 21,
         weight: 1360,
@@ -6751,7 +6751,7 @@ export const pokemon = [
     },
     {
         id: 676,
-        identifier: 'furfrou',
+        identifier: 'Furfrou',
         species_id: 676,
         height: 12,
         weight: 280,
@@ -6761,7 +6761,7 @@ export const pokemon = [
     },
     {
         id: 677,
-        identifier: 'espurr',
+        identifier: 'Espurr',
         species_id: 677,
         height: 3,
         weight: 35,
@@ -6771,7 +6771,7 @@ export const pokemon = [
     },
     {
         id: 678,
-        identifier: 'meowstic-male',
+        identifier: 'Meowstic-male',
         species_id: 678,
         height: 6,
         weight: 85,
@@ -6781,7 +6781,7 @@ export const pokemon = [
     },
     {
         id: 679,
-        identifier: 'honedge',
+        identifier: 'Honedge',
         species_id: 679,
         height: 8,
         weight: 20,
@@ -6791,7 +6791,7 @@ export const pokemon = [
     },
     {
         id: 680,
-        identifier: 'doublade',
+        identifier: 'Doublade',
         species_id: 680,
         height: 8,
         weight: 45,
@@ -6801,7 +6801,7 @@ export const pokemon = [
     },
     {
         id: 681,
-        identifier: 'aegislash-shield',
+        identifier: 'Aegislash-shield',
         species_id: 681,
         height: 17,
         weight: 530,
@@ -6811,7 +6811,7 @@ export const pokemon = [
     },
     {
         id: 682,
-        identifier: 'spritzee',
+        identifier: 'Spritzee',
         species_id: 682,
         height: 2,
         weight: 5,
@@ -6821,7 +6821,7 @@ export const pokemon = [
     },
     {
         id: 683,
-        identifier: 'aromatisse',
+        identifier: 'Aromatisse',
         species_id: 683,
         height: 8,
         weight: 155,
@@ -6831,7 +6831,7 @@ export const pokemon = [
     },
     {
         id: 684,
-        identifier: 'swirlix',
+        identifier: 'Swirlix',
         species_id: 684,
         height: 4,
         weight: 35,
@@ -6841,7 +6841,7 @@ export const pokemon = [
     },
     {
         id: 685,
-        identifier: 'slurpuff',
+        identifier: 'Slurpuff',
         species_id: 685,
         height: 8,
         weight: 50,
@@ -6851,7 +6851,7 @@ export const pokemon = [
     },
     {
         id: 686,
-        identifier: 'inkay',
+        identifier: 'Inkay',
         species_id: 686,
         height: 4,
         weight: 35,
@@ -6861,7 +6861,7 @@ export const pokemon = [
     },
     {
         id: 687,
-        identifier: 'malamar',
+        identifier: 'Malamar',
         species_id: 687,
         height: 15,
         weight: 470,
@@ -6871,7 +6871,7 @@ export const pokemon = [
     },
     {
         id: 688,
-        identifier: 'binacle',
+        identifier: 'Binacle',
         species_id: 688,
         height: 5,
         weight: 310,
@@ -6881,7 +6881,7 @@ export const pokemon = [
     },
     {
         id: 689,
-        identifier: 'barbaracle',
+        identifier: 'Barbaracle',
         species_id: 689,
         height: 13,
         weight: 960,
@@ -6891,7 +6891,7 @@ export const pokemon = [
     },
     {
         id: 690,
-        identifier: 'skrelp',
+        identifier: 'Skrelp',
         species_id: 690,
         height: 5,
         weight: 73,
@@ -6901,7 +6901,7 @@ export const pokemon = [
     },
     {
         id: 691,
-        identifier: 'dragalge',
+        identifier: 'Dragalge',
         species_id: 691,
         height: 18,
         weight: 815,
@@ -6911,7 +6911,7 @@ export const pokemon = [
     },
     {
         id: 692,
-        identifier: 'clauncher',
+        identifier: 'Clauncher',
         species_id: 692,
         height: 5,
         weight: 83,
@@ -6921,7 +6921,7 @@ export const pokemon = [
     },
     {
         id: 693,
-        identifier: 'clawitzer',
+        identifier: 'Clawitzer',
         species_id: 693,
         height: 13,
         weight: 353,
@@ -6931,7 +6931,7 @@ export const pokemon = [
     },
     {
         id: 694,
-        identifier: 'helioptile',
+        identifier: 'Helioptile',
         species_id: 694,
         height: 5,
         weight: 60,
@@ -6941,7 +6941,7 @@ export const pokemon = [
     },
     {
         id: 695,
-        identifier: 'heliolisk',
+        identifier: 'Heliolisk',
         species_id: 695,
         height: 10,
         weight: 210,
@@ -6951,7 +6951,7 @@ export const pokemon = [
     },
     {
         id: 696,
-        identifier: 'tyrunt',
+        identifier: 'Tyrunt',
         species_id: 696,
         height: 8,
         weight: 260,
@@ -6961,7 +6961,7 @@ export const pokemon = [
     },
     {
         id: 697,
-        identifier: 'tyrantrum',
+        identifier: 'Tyrantrum',
         species_id: 697,
         height: 25,
         weight: 2700,
@@ -6971,7 +6971,7 @@ export const pokemon = [
     },
     {
         id: 698,
-        identifier: 'amaura',
+        identifier: 'Amaura',
         species_id: 698,
         height: 13,
         weight: 252,
@@ -6981,7 +6981,7 @@ export const pokemon = [
     },
     {
         id: 699,
-        identifier: 'aurorus',
+        identifier: 'Aurorus',
         species_id: 699,
         height: 27,
         weight: 2250,
@@ -6991,7 +6991,7 @@ export const pokemon = [
     },
     {
         id: 700,
-        identifier: 'sylveon',
+        identifier: 'Sylveon',
         species_id: 700,
         height: 10,
         weight: 235,
@@ -7001,7 +7001,7 @@ export const pokemon = [
     },
     {
         id: 701,
-        identifier: 'hawlucha',
+        identifier: 'Hawlucha',
         species_id: 701,
         height: 8,
         weight: 215,
@@ -7011,7 +7011,7 @@ export const pokemon = [
     },
     {
         id: 702,
-        identifier: 'dedenne',
+        identifier: 'Dedenne',
         species_id: 702,
         height: 2,
         weight: 22,
@@ -7021,7 +7021,7 @@ export const pokemon = [
     },
     {
         id: 703,
-        identifier: 'carbink',
+        identifier: 'Carbink',
         species_id: 703,
         height: 3,
         weight: 57,
@@ -7031,7 +7031,7 @@ export const pokemon = [
     },
     {
         id: 704,
-        identifier: 'goomy',
+        identifier: 'Goomy',
         species_id: 704,
         height: 3,
         weight: 28,
@@ -7041,7 +7041,7 @@ export const pokemon = [
     },
     {
         id: 705,
-        identifier: 'sliggoo',
+        identifier: 'Sliggoo',
         species_id: 705,
         height: 8,
         weight: 175,
@@ -7051,7 +7051,7 @@ export const pokemon = [
     },
     {
         id: 706,
-        identifier: 'goodra',
+        identifier: 'Goodra',
         species_id: 706,
         height: 20,
         weight: 1505,
@@ -7061,7 +7061,7 @@ export const pokemon = [
     },
     {
         id: 707,
-        identifier: 'klefki',
+        identifier: 'Klefki',
         species_id: 707,
         height: 2,
         weight: 30,
@@ -7071,7 +7071,7 @@ export const pokemon = [
     },
     {
         id: 708,
-        identifier: 'phantump',
+        identifier: 'Phantump',
         species_id: 708,
         height: 4,
         weight: 70,
@@ -7081,7 +7081,7 @@ export const pokemon = [
     },
     {
         id: 709,
-        identifier: 'trevenant',
+        identifier: 'Trevenant',
         species_id: 709,
         height: 15,
         weight: 710,
@@ -7091,7 +7091,7 @@ export const pokemon = [
     },
     {
         id: 710,
-        identifier: 'pumpkaboo-average',
+        identifier: 'Pumpkaboo-average',
         species_id: 710,
         height: 4,
         weight: 50,
@@ -7101,7 +7101,7 @@ export const pokemon = [
     },
     {
         id: 711,
-        identifier: 'gourgeist-average',
+        identifier: 'Gourgeist-average',
         species_id: 711,
         height: 9,
         weight: 125,
@@ -7111,7 +7111,7 @@ export const pokemon = [
     },
     {
         id: 712,
-        identifier: 'bergmite',
+        identifier: 'Bergmite',
         species_id: 712,
         height: 10,
         weight: 995,
@@ -7121,7 +7121,7 @@ export const pokemon = [
     },
     {
         id: 713,
-        identifier: 'avalugg',
+        identifier: 'Avalugg',
         species_id: 713,
         height: 20,
         weight: 5050,
@@ -7131,7 +7131,7 @@ export const pokemon = [
     },
     {
         id: 714,
-        identifier: 'noibat',
+        identifier: 'Noibat',
         species_id: 714,
         height: 5,
         weight: 80,
@@ -7141,7 +7141,7 @@ export const pokemon = [
     },
     {
         id: 715,
-        identifier: 'noivern',
+        identifier: 'Noivern',
         species_id: 715,
         height: 15,
         weight: 850,
@@ -7151,7 +7151,7 @@ export const pokemon = [
     },
     {
         id: 716,
-        identifier: 'xerneas',
+        identifier: 'Xerneas',
         species_id: 716,
         height: 30,
         weight: 2150,
@@ -7161,7 +7161,7 @@ export const pokemon = [
     },
     {
         id: 717,
-        identifier: 'yveltal',
+        identifier: 'Yveltal',
         species_id: 717,
         height: 58,
         weight: 2030,
@@ -7171,7 +7171,7 @@ export const pokemon = [
     },
     {
         id: 718,
-        identifier: 'zygarde',
+        identifier: 'Zygarde',
         species_id: 718,
         height: 50,
         weight: 3050,
@@ -7181,7 +7181,7 @@ export const pokemon = [
     },
     {
         id: 719,
-        identifier: 'diancie',
+        identifier: 'Diancie',
         species_id: 719,
         height: 7,
         weight: 88,
@@ -7191,7 +7191,7 @@ export const pokemon = [
     },
     {
         id: 720,
-        identifier: 'hoopa',
+        identifier: 'Hoopa',
         species_id: 720,
         height: 5,
         weight: 90,
@@ -7201,7 +7201,7 @@ export const pokemon = [
     },
     {
         id: 721,
-        identifier: 'volcanion',
+        identifier: 'Volcanion',
         species_id: 721,
         height: 17,
         weight: 1950,
@@ -7211,7 +7211,7 @@ export const pokemon = [
     },
     {
         id: 722,
-        identifier: 'rowlet',
+        identifier: 'Rowlet',
         species_id: 722,
         height: 3,
         weight: 15,
@@ -7221,7 +7221,7 @@ export const pokemon = [
     },
     {
         id: 723,
-        identifier: 'dartrix',
+        identifier: 'Dartrix',
         species_id: 723,
         height: 7,
         weight: 160,
@@ -7231,7 +7231,7 @@ export const pokemon = [
     },
     {
         id: 724,
-        identifier: 'decidueye',
+        identifier: 'Decidueye',
         species_id: 724,
         height: 16,
         weight: 366,
@@ -7241,7 +7241,7 @@ export const pokemon = [
     },
     {
         id: 725,
-        identifier: 'litten',
+        identifier: 'Litten',
         species_id: 725,
         height: 4,
         weight: 43,
@@ -7251,7 +7251,7 @@ export const pokemon = [
     },
     {
         id: 726,
-        identifier: 'torracat',
+        identifier: 'Torracat',
         species_id: 726,
         height: 7,
         weight: 250,
@@ -7261,7 +7261,7 @@ export const pokemon = [
     },
     {
         id: 727,
-        identifier: 'incineroar',
+        identifier: 'Incineroar',
         species_id: 727,
         height: 18,
         weight: 830,
@@ -7271,7 +7271,7 @@ export const pokemon = [
     },
     {
         id: 728,
-        identifier: 'popplio',
+        identifier: 'Popplio',
         species_id: 728,
         height: 4,
         weight: 75,
@@ -7281,7 +7281,7 @@ export const pokemon = [
     },
     {
         id: 729,
-        identifier: 'brionne',
+        identifier: 'Brionne',
         species_id: 729,
         height: 6,
         weight: 175,
@@ -7291,7 +7291,7 @@ export const pokemon = [
     },
     {
         id: 730,
-        identifier: 'primarina',
+        identifier: 'Primarina',
         species_id: 730,
         height: 18,
         weight: 440,
@@ -7301,7 +7301,7 @@ export const pokemon = [
     },
     {
         id: 731,
-        identifier: 'pikipek',
+        identifier: 'Pikipek',
         species_id: 731,
         height: 3,
         weight: 12,
@@ -7311,7 +7311,7 @@ export const pokemon = [
     },
     {
         id: 732,
-        identifier: 'trumbeak',
+        identifier: 'Trumbeak',
         species_id: 732,
         height: 6,
         weight: 148,
@@ -7321,7 +7321,7 @@ export const pokemon = [
     },
     {
         id: 733,
-        identifier: 'toucannon',
+        identifier: 'Toucannon',
         species_id: 733,
         height: 11,
         weight: 260,
@@ -7331,7 +7331,7 @@ export const pokemon = [
     },
     {
         id: 734,
-        identifier: 'yungoos',
+        identifier: 'Yungoos',
         species_id: 734,
         height: 4,
         weight: 60,
@@ -7341,7 +7341,7 @@ export const pokemon = [
     },
     {
         id: 735,
-        identifier: 'gumshoos',
+        identifier: 'Gumshoos',
         species_id: 735,
         height: 7,
         weight: 142,
@@ -7351,7 +7351,7 @@ export const pokemon = [
     },
     {
         id: 736,
-        identifier: 'grubbin',
+        identifier: 'Grubbin',
         species_id: 736,
         height: 4,
         weight: 44,
@@ -7361,7 +7361,7 @@ export const pokemon = [
     },
     {
         id: 737,
-        identifier: 'charjabug',
+        identifier: 'Charjabug',
         species_id: 737,
         height: 5,
         weight: 105,
@@ -7371,7 +7371,7 @@ export const pokemon = [
     },
     {
         id: 738,
-        identifier: 'vikavolt',
+        identifier: 'Vikavolt',
         species_id: 738,
         height: 15,
         weight: 450,
@@ -7381,7 +7381,7 @@ export const pokemon = [
     },
     {
         id: 739,
-        identifier: 'crabrawler',
+        identifier: 'Crabrawler',
         species_id: 739,
         height: 6,
         weight: 70,
@@ -7391,7 +7391,7 @@ export const pokemon = [
     },
     {
         id: 740,
-        identifier: 'crabominable',
+        identifier: 'Crabominable',
         species_id: 740,
         height: 17,
         weight: 1800,
@@ -7401,7 +7401,7 @@ export const pokemon = [
     },
     {
         id: 741,
-        identifier: 'oricorio-baile',
+        identifier: 'Oricorio-baile',
         species_id: 741,
         height: 6,
         weight: 34,
@@ -7411,7 +7411,7 @@ export const pokemon = [
     },
     {
         id: 742,
-        identifier: 'cutiefly',
+        identifier: 'Cutiefly',
         species_id: 742,
         height: 1,
         weight: 2,
@@ -7421,7 +7421,7 @@ export const pokemon = [
     },
     {
         id: 743,
-        identifier: 'ribombee',
+        identifier: 'Ribombee',
         species_id: 743,
         height: 2,
         weight: 5,
@@ -7431,7 +7431,7 @@ export const pokemon = [
     },
     {
         id: 744,
-        identifier: 'rockruff',
+        identifier: 'Rockruff',
         species_id: 744,
         height: 5,
         weight: 92,
@@ -7441,7 +7441,7 @@ export const pokemon = [
     },
     {
         id: 745,
-        identifier: 'lycanroc-midday',
+        identifier: 'Lycanroc-midday',
         species_id: 745,
         height: 8,
         weight: 250,
@@ -7451,7 +7451,7 @@ export const pokemon = [
     },
     {
         id: 746,
-        identifier: 'wishiwashi-solo',
+        identifier: 'Wishiwashi-solo',
         species_id: 746,
         height: 2,
         weight: 3,
@@ -7461,7 +7461,7 @@ export const pokemon = [
     },
     {
         id: 747,
-        identifier: 'mareanie',
+        identifier: 'Mareanie',
         species_id: 747,
         height: 4,
         weight: 80,
@@ -7471,7 +7471,7 @@ export const pokemon = [
     },
     {
         id: 748,
-        identifier: 'toxapex',
+        identifier: 'Toxapex',
         species_id: 748,
         height: 7,
         weight: 145,
@@ -7481,7 +7481,7 @@ export const pokemon = [
     },
     {
         id: 749,
-        identifier: 'mudbray',
+        identifier: 'Mudbray',
         species_id: 749,
         height: 10,
         weight: 1100,
@@ -7491,7 +7491,7 @@ export const pokemon = [
     },
     {
         id: 750,
-        identifier: 'mudsdale',
+        identifier: 'Mudsdale',
         species_id: 750,
         height: 25,
         weight: 9200,
@@ -7501,7 +7501,7 @@ export const pokemon = [
     },
     {
         id: 751,
-        identifier: 'dewpider',
+        identifier: 'Dewpider',
         species_id: 751,
         height: 3,
         weight: 40,
@@ -7511,7 +7511,7 @@ export const pokemon = [
     },
     {
         id: 752,
-        identifier: 'araquanid',
+        identifier: 'Araquanid',
         species_id: 752,
         height: 18,
         weight: 820,
@@ -7521,7 +7521,7 @@ export const pokemon = [
     },
     {
         id: 753,
-        identifier: 'fomantis',
+        identifier: 'Fomantis',
         species_id: 753,
         height: 3,
         weight: 15,
@@ -7531,7 +7531,7 @@ export const pokemon = [
     },
     {
         id: 754,
-        identifier: 'lurantis',
+        identifier: 'Lurantis',
         species_id: 754,
         height: 9,
         weight: 185,
@@ -7541,7 +7541,7 @@ export const pokemon = [
     },
     {
         id: 755,
-        identifier: 'morelull',
+        identifier: 'Morelull',
         species_id: 755,
         height: 2,
         weight: 15,
@@ -7551,7 +7551,7 @@ export const pokemon = [
     },
     {
         id: 756,
-        identifier: 'shiinotic',
+        identifier: 'Shiinotic',
         species_id: 756,
         height: 10,
         weight: 115,
@@ -7561,7 +7561,7 @@ export const pokemon = [
     },
     {
         id: 757,
-        identifier: 'salandit',
+        identifier: 'Salandit',
         species_id: 757,
         height: 6,
         weight: 48,
@@ -7571,7 +7571,7 @@ export const pokemon = [
     },
     {
         id: 758,
-        identifier: 'salazzle',
+        identifier: 'Salazzle',
         species_id: 758,
         height: 12,
         weight: 222,
@@ -7581,7 +7581,7 @@ export const pokemon = [
     },
     {
         id: 759,
-        identifier: 'stufful',
+        identifier: 'Stufful',
         species_id: 759,
         height: 5,
         weight: 68,
@@ -7591,7 +7591,7 @@ export const pokemon = [
     },
     {
         id: 760,
-        identifier: 'bewear',
+        identifier: 'Bewear',
         species_id: 760,
         height: 21,
         weight: 1350,
@@ -7601,7 +7601,7 @@ export const pokemon = [
     },
     {
         id: 761,
-        identifier: 'bounsweet',
+        identifier: 'Bounsweet',
         species_id: 761,
         height: 3,
         weight: 32,
@@ -7611,7 +7611,7 @@ export const pokemon = [
     },
     {
         id: 762,
-        identifier: 'steenee',
+        identifier: 'Steenee',
         species_id: 762,
         height: 7,
         weight: 82,
@@ -7621,7 +7621,7 @@ export const pokemon = [
     },
     {
         id: 763,
-        identifier: 'tsareena',
+        identifier: 'Tsareena',
         species_id: 763,
         height: 12,
         weight: 214,
@@ -7631,7 +7631,7 @@ export const pokemon = [
     },
     {
         id: 764,
-        identifier: 'comfey',
+        identifier: 'Comfey',
         species_id: 764,
         height: 1,
         weight: 3,
@@ -7641,7 +7641,7 @@ export const pokemon = [
     },
     {
         id: 765,
-        identifier: 'oranguru',
+        identifier: 'Oranguru',
         species_id: 765,
         height: 15,
         weight: 760,
@@ -7651,7 +7651,7 @@ export const pokemon = [
     },
     {
         id: 766,
-        identifier: 'passimian',
+        identifier: 'Passimian',
         species_id: 766,
         height: 20,
         weight: 828,
@@ -7661,7 +7661,7 @@ export const pokemon = [
     },
     {
         id: 767,
-        identifier: 'wimpod',
+        identifier: 'Wimpod',
         species_id: 767,
         height: 5,
         weight: 120,
@@ -7671,7 +7671,7 @@ export const pokemon = [
     },
     {
         id: 768,
-        identifier: 'golisopod',
+        identifier: 'Golisopod',
         species_id: 768,
         height: 20,
         weight: 1080,
@@ -7681,7 +7681,7 @@ export const pokemon = [
     },
     {
         id: 769,
-        identifier: 'sandygast',
+        identifier: 'Sandygast',
         species_id: 769,
         height: 5,
         weight: 700,
@@ -7691,7 +7691,7 @@ export const pokemon = [
     },
     {
         id: 770,
-        identifier: 'palossand',
+        identifier: 'Palossand',
         species_id: 770,
         height: 13,
         weight: 2500,
@@ -7701,7 +7701,7 @@ export const pokemon = [
     },
     {
         id: 771,
-        identifier: 'pyukumuku',
+        identifier: 'Pyukumuku',
         species_id: 771,
         height: 3,
         weight: 12,
@@ -7711,7 +7711,7 @@ export const pokemon = [
     },
     {
         id: 772,
-        identifier: 'type-null',
+        identifier: 'Type-null',
         species_id: 772,
         height: 19,
         weight: 1205,
@@ -7721,7 +7721,7 @@ export const pokemon = [
     },
     {
         id: 773,
-        identifier: 'silvally',
+        identifier: 'Silvally',
         species_id: 773,
         height: 23,
         weight: 1005,
@@ -7731,7 +7731,7 @@ export const pokemon = [
     },
     {
         id: 774,
-        identifier: 'minior-red-meteor',
+        identifier: 'Minior-red-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -7741,7 +7741,7 @@ export const pokemon = [
     },
     {
         id: 775,
-        identifier: 'komala',
+        identifier: 'Komala',
         species_id: 775,
         height: 4,
         weight: 199,
@@ -7751,7 +7751,7 @@ export const pokemon = [
     },
     {
         id: 776,
-        identifier: 'turtonator',
+        identifier: 'Turtonator',
         species_id: 776,
         height: 20,
         weight: 2120,
@@ -7761,7 +7761,7 @@ export const pokemon = [
     },
     {
         id: 777,
-        identifier: 'togedemaru',
+        identifier: 'Togedemaru',
         species_id: 777,
         height: 3,
         weight: 33,
@@ -7771,7 +7771,7 @@ export const pokemon = [
     },
     {
         id: 778,
-        identifier: 'mimikyu-disguised',
+        identifier: 'Mimikyu-disguised',
         species_id: 778,
         height: 2,
         weight: 7,
@@ -7781,7 +7781,7 @@ export const pokemon = [
     },
     {
         id: 779,
-        identifier: 'bruxish',
+        identifier: 'Bruxish',
         species_id: 779,
         height: 9,
         weight: 190,
@@ -7791,7 +7791,7 @@ export const pokemon = [
     },
     {
         id: 780,
-        identifier: 'drampa',
+        identifier: 'Drampa',
         species_id: 780,
         height: 30,
         weight: 1850,
@@ -7801,7 +7801,7 @@ export const pokemon = [
     },
     {
         id: 781,
-        identifier: 'dhelmise',
+        identifier: 'Dhelmise',
         species_id: 781,
         height: 39,
         weight: 2100,
@@ -7811,7 +7811,7 @@ export const pokemon = [
     },
     {
         id: 782,
-        identifier: 'jangmo-o',
+        identifier: 'Jangmo-o',
         species_id: 782,
         height: 6,
         weight: 297,
@@ -7821,7 +7821,7 @@ export const pokemon = [
     },
     {
         id: 783,
-        identifier: 'hakamo-o',
+        identifier: 'Hakamo-o',
         species_id: 783,
         height: 12,
         weight: 470,
@@ -7831,7 +7831,7 @@ export const pokemon = [
     },
     {
         id: 784,
-        identifier: 'kommo-o',
+        identifier: 'Kommo-o',
         species_id: 784,
         height: 16,
         weight: 782,
@@ -7841,7 +7841,7 @@ export const pokemon = [
     },
     {
         id: 785,
-        identifier: 'tapu-koko',
+        identifier: 'Tapu-koko',
         species_id: 785,
         height: 18,
         weight: 205,
@@ -7851,7 +7851,7 @@ export const pokemon = [
     },
     {
         id: 786,
-        identifier: 'tapu-lele',
+        identifier: 'Tapu-lele',
         species_id: 786,
         height: 12,
         weight: 186,
@@ -7861,7 +7861,7 @@ export const pokemon = [
     },
     {
         id: 787,
-        identifier: 'tapu-bulu',
+        identifier: 'Tapu-bulu',
         species_id: 787,
         height: 19,
         weight: 455,
@@ -7871,7 +7871,7 @@ export const pokemon = [
     },
     {
         id: 788,
-        identifier: 'tapu-fini',
+        identifier: 'Tapu-fini',
         species_id: 788,
         height: 13,
         weight: 212,
@@ -7881,7 +7881,7 @@ export const pokemon = [
     },
     {
         id: 789,
-        identifier: 'cosmog',
+        identifier: 'Cosmog',
         species_id: 789,
         height: 2,
         weight: 1,
@@ -7891,7 +7891,7 @@ export const pokemon = [
     },
     {
         id: 790,
-        identifier: 'cosmoem',
+        identifier: 'Cosmoem',
         species_id: 790,
         height: 1,
         weight: 9999,
@@ -7901,7 +7901,7 @@ export const pokemon = [
     },
     {
         id: 791,
-        identifier: 'solgaleo',
+        identifier: 'Solgaleo',
         species_id: 791,
         height: 34,
         weight: 2300,
@@ -7911,7 +7911,7 @@ export const pokemon = [
     },
     {
         id: 792,
-        identifier: 'lunala',
+        identifier: 'Lunala',
         species_id: 792,
         height: 40,
         weight: 1200,
@@ -7921,7 +7921,7 @@ export const pokemon = [
     },
     {
         id: 793,
-        identifier: 'nihilego',
+        identifier: 'Nihilego',
         species_id: 793,
         height: 12,
         weight: 555,
@@ -7931,7 +7931,7 @@ export const pokemon = [
     },
     {
         id: 794,
-        identifier: 'buzzwole',
+        identifier: 'Buzzwole',
         species_id: 794,
         height: 24,
         weight: 3336,
@@ -7941,7 +7941,7 @@ export const pokemon = [
     },
     {
         id: 795,
-        identifier: 'pheromosa',
+        identifier: 'Pheromosa',
         species_id: 795,
         height: 18,
         weight: 250,
@@ -7951,7 +7951,7 @@ export const pokemon = [
     },
     {
         id: 796,
-        identifier: 'xurkitree',
+        identifier: 'Xurkitree',
         species_id: 796,
         height: 38,
         weight: 1000,
@@ -7961,7 +7961,7 @@ export const pokemon = [
     },
     {
         id: 797,
-        identifier: 'celesteela',
+        identifier: 'Celesteela',
         species_id: 797,
         height: 92,
         weight: 9999,
@@ -7971,7 +7971,7 @@ export const pokemon = [
     },
     {
         id: 798,
-        identifier: 'kartana',
+        identifier: 'Kartana',
         species_id: 798,
         height: 3,
         weight: 1,
@@ -7981,7 +7981,7 @@ export const pokemon = [
     },
     {
         id: 799,
-        identifier: 'guzzlord',
+        identifier: 'Guzzlord',
         species_id: 799,
         height: 55,
         weight: 8880,
@@ -7991,7 +7991,7 @@ export const pokemon = [
     },
     {
         id: 800,
-        identifier: 'necrozma',
+        identifier: 'Necrozma',
         species_id: 800,
         height: 24,
         weight: 2300,
@@ -8001,7 +8001,7 @@ export const pokemon = [
     },
     {
         id: 801,
-        identifier: 'magearna',
+        identifier: 'Magearna',
         species_id: 801,
         height: 10,
         weight: 805,
@@ -8011,7 +8011,7 @@ export const pokemon = [
     },
     {
         id: 802,
-        identifier: 'marshadow',
+        identifier: 'Marshadow',
         species_id: 802,
         height: 7,
         weight: 222,
@@ -8021,7 +8021,7 @@ export const pokemon = [
     },
     {
         id: 803,
-        identifier: 'poipole',
+        identifier: 'Poipole',
         species_id: 803,
         height: 6,
         weight: 18,
@@ -8031,7 +8031,7 @@ export const pokemon = [
     },
     {
         id: 804,
-        identifier: 'naganadel',
+        identifier: 'Naganadel',
         species_id: 804,
         height: 36,
         weight: 1500,
@@ -8041,7 +8041,7 @@ export const pokemon = [
     },
     {
         id: 805,
-        identifier: 'stakataka',
+        identifier: 'Stakataka',
         species_id: 805,
         height: 55,
         weight: 8200,
@@ -8051,7 +8051,7 @@ export const pokemon = [
     },
     {
         id: 806,
-        identifier: 'blacephalon',
+        identifier: 'Blacephalon',
         species_id: 806,
         height: 18,
         weight: 130,
@@ -8061,7 +8061,7 @@ export const pokemon = [
     },
     {
         id: 807,
-        identifier: 'zeraora',
+        identifier: 'Zeraora',
         species_id: 807,
         height: 15,
         weight: 445,
@@ -8071,7 +8071,7 @@ export const pokemon = [
     },
     {
         id: 10001,
-        identifier: 'deoxys-attack',
+        identifier: 'Deoxys-attack',
         species_id: 386,
         height: 17,
         weight: 608,
@@ -8081,7 +8081,7 @@ export const pokemon = [
     },
     {
         id: 10002,
-        identifier: 'deoxys-defense',
+        identifier: 'Deoxys-defense',
         species_id: 386,
         height: 17,
         weight: 608,
@@ -8091,7 +8091,7 @@ export const pokemon = [
     },
     {
         id: 10003,
-        identifier: 'deoxys-speed',
+        identifier: 'Deoxys-speed',
         species_id: 386,
         height: 17,
         weight: 608,
@@ -8101,7 +8101,7 @@ export const pokemon = [
     },
     {
         id: 10004,
-        identifier: 'wormadam-sandy',
+        identifier: 'Wormadam-sandy',
         species_id: 413,
         height: 5,
         weight: 65,
@@ -8111,7 +8111,7 @@ export const pokemon = [
     },
     {
         id: 10005,
-        identifier: 'wormadam-trash',
+        identifier: 'Wormadam-trash',
         species_id: 413,
         height: 5,
         weight: 65,
@@ -8121,7 +8121,7 @@ export const pokemon = [
     },
     {
         id: 10006,
-        identifier: 'shaymin-sky',
+        identifier: 'Shaymin-sky',
         species_id: 492,
         height: 4,
         weight: 52,
@@ -8131,7 +8131,7 @@ export const pokemon = [
     },
     {
         id: 10007,
-        identifier: 'giratina-origin',
+        identifier: 'Giratina-origin',
         species_id: 487,
         height: 69,
         weight: 6500,
@@ -8141,7 +8141,7 @@ export const pokemon = [
     },
     {
         id: 10008,
-        identifier: 'rotom-heat',
+        identifier: 'Rotom-heat',
         species_id: 479,
         height: 3,
         weight: 3,
@@ -8151,7 +8151,7 @@ export const pokemon = [
     },
     {
         id: 10009,
-        identifier: 'rotom-wash',
+        identifier: 'Rotom-wash',
         species_id: 479,
         height: 3,
         weight: 3,
@@ -8161,7 +8161,7 @@ export const pokemon = [
     },
     {
         id: 10010,
-        identifier: 'rotom-frost',
+        identifier: 'Rotom-frost',
         species_id: 479,
         height: 3,
         weight: 3,
@@ -8171,7 +8171,7 @@ export const pokemon = [
     },
     {
         id: 10011,
-        identifier: 'rotom-fan',
+        identifier: 'Rotom-fan',
         species_id: 479,
         height: 3,
         weight: 3,
@@ -8181,7 +8181,7 @@ export const pokemon = [
     },
     {
         id: 10012,
-        identifier: 'rotom-mow',
+        identifier: 'Rotom-mow',
         species_id: 479,
         height: 3,
         weight: 3,
@@ -8191,7 +8191,7 @@ export const pokemon = [
     },
     {
         id: 10013,
-        identifier: 'castform-sunny',
+        identifier: 'Castform-sunny',
         species_id: 351,
         height: 3,
         weight: 8,
@@ -8201,7 +8201,7 @@ export const pokemon = [
     },
     {
         id: 10014,
-        identifier: 'castform-rainy',
+        identifier: 'Castform-rainy',
         species_id: 351,
         height: 3,
         weight: 8,
@@ -8211,7 +8211,7 @@ export const pokemon = [
     },
     {
         id: 10015,
-        identifier: 'castform-snowy',
+        identifier: 'Castform-snowy',
         species_id: 351,
         height: 3,
         weight: 8,
@@ -8221,7 +8221,7 @@ export const pokemon = [
     },
     {
         id: 10016,
-        identifier: 'basculin-blue-striped',
+        identifier: 'Basculin-blue-striped',
         species_id: 550,
         height: 10,
         weight: 180,
@@ -8231,7 +8231,7 @@ export const pokemon = [
     },
     {
         id: 10017,
-        identifier: 'darmanitan-zen',
+        identifier: 'Darmanitan-zen',
         species_id: 555,
         height: 13,
         weight: 929,
@@ -8241,7 +8241,7 @@ export const pokemon = [
     },
     {
         id: 10018,
-        identifier: 'meloetta-pirouette',
+        identifier: 'Meloetta-pirouette',
         species_id: 648,
         height: 6,
         weight: 65,
@@ -8251,7 +8251,7 @@ export const pokemon = [
     },
     {
         id: 10019,
-        identifier: 'tornadus-therian',
+        identifier: 'Tornadus-therian',
         species_id: 641,
         height: 14,
         weight: 630,
@@ -8261,7 +8261,7 @@ export const pokemon = [
     },
     {
         id: 10020,
-        identifier: 'thundurus-therian',
+        identifier: 'Thundurus-therian',
         species_id: 642,
         height: 30,
         weight: 610,
@@ -8271,7 +8271,7 @@ export const pokemon = [
     },
     {
         id: 10021,
-        identifier: 'landorus-therian',
+        identifier: 'Landorus-therian',
         species_id: 645,
         height: 13,
         weight: 680,
@@ -8281,7 +8281,7 @@ export const pokemon = [
     },
     {
         id: 10022,
-        identifier: 'kyurem-black',
+        identifier: 'Kyurem-black',
         species_id: 646,
         height: 33,
         weight: 3250,
@@ -8291,7 +8291,7 @@ export const pokemon = [
     },
     {
         id: 10023,
-        identifier: 'kyurem-white',
+        identifier: 'Kyurem-white',
         species_id: 646,
         height: 36,
         weight: 3250,
@@ -8301,7 +8301,7 @@ export const pokemon = [
     },
     {
         id: 10024,
-        identifier: 'keldeo-resolute',
+        identifier: 'Keldeo-resolute',
         species_id: 647,
         height: 14,
         weight: 485,
@@ -8311,7 +8311,7 @@ export const pokemon = [
     },
     {
         id: 10025,
-        identifier: 'meowstic-female',
+        identifier: 'Meowstic-female',
         species_id: 678,
         height: 6,
         weight: 85,
@@ -8321,7 +8321,7 @@ export const pokemon = [
     },
     {
         id: 10026,
-        identifier: 'aegislash-blade',
+        identifier: 'Aegislash-blade',
         species_id: 681,
         height: 17,
         weight: 530,
@@ -8331,7 +8331,7 @@ export const pokemon = [
     },
     {
         id: 10027,
-        identifier: 'pumpkaboo-small',
+        identifier: 'Pumpkaboo-small',
         species_id: 710,
         height: 3,
         weight: 35,
@@ -8341,7 +8341,7 @@ export const pokemon = [
     },
     {
         id: 10028,
-        identifier: 'pumpkaboo-large',
+        identifier: 'Pumpkaboo-large',
         species_id: 710,
         height: 5,
         weight: 75,
@@ -8351,7 +8351,7 @@ export const pokemon = [
     },
     {
         id: 10029,
-        identifier: 'pumpkaboo-super',
+        identifier: 'Pumpkaboo-super',
         species_id: 710,
         height: 8,
         weight: 150,
@@ -8361,7 +8361,7 @@ export const pokemon = [
     },
     {
         id: 10030,
-        identifier: 'gourgeist-small',
+        identifier: 'Gourgeist-small',
         species_id: 711,
         height: 7,
         weight: 95,
@@ -8371,7 +8371,7 @@ export const pokemon = [
     },
     {
         id: 10031,
-        identifier: 'gourgeist-large',
+        identifier: 'Gourgeist-large',
         species_id: 711,
         height: 11,
         weight: 140,
@@ -8381,7 +8381,7 @@ export const pokemon = [
     },
     {
         id: 10032,
-        identifier: 'gourgeist-super',
+        identifier: 'Gourgeist-super',
         species_id: 711,
         height: 17,
         weight: 390,
@@ -8391,7 +8391,7 @@ export const pokemon = [
     },
     {
         id: 10033,
-        identifier: 'venusaur-mega',
+        identifier: 'Venusaur-mega',
         species_id: 3,
         height: 24,
         weight: 1555,
@@ -8401,7 +8401,7 @@ export const pokemon = [
     },
     {
         id: 10034,
-        identifier: 'charizard-mega-x',
+        identifier: 'Charizard-mega-x',
         species_id: 6,
         height: 17,
         weight: 1105,
@@ -8411,7 +8411,7 @@ export const pokemon = [
     },
     {
         id: 10035,
-        identifier: 'charizard-mega-y',
+        identifier: 'Charizard-mega-y',
         species_id: 6,
         height: 17,
         weight: 1005,
@@ -8421,7 +8421,7 @@ export const pokemon = [
     },
     {
         id: 10036,
-        identifier: 'blastoise-mega',
+        identifier: 'Blastoise-mega',
         species_id: 9,
         height: 16,
         weight: 1011,
@@ -8431,7 +8431,7 @@ export const pokemon = [
     },
     {
         id: 10037,
-        identifier: 'alakazam-mega',
+        identifier: 'Alakazam-mega',
         species_id: 65,
         height: 12,
         weight: 480,
@@ -8441,7 +8441,7 @@ export const pokemon = [
     },
     {
         id: 10038,
-        identifier: 'gengar-mega',
+        identifier: 'Gengar-mega',
         species_id: 94,
         height: 14,
         weight: 405,
@@ -8451,7 +8451,7 @@ export const pokemon = [
     },
     {
         id: 10039,
-        identifier: 'kangaskhan-mega',
+        identifier: 'Kangaskhan-mega',
         species_id: 115,
         height: 22,
         weight: 1000,
@@ -8461,7 +8461,7 @@ export const pokemon = [
     },
     {
         id: 10040,
-        identifier: 'pinsir-mega',
+        identifier: 'Pinsir-mega',
         species_id: 127,
         height: 17,
         weight: 590,
@@ -8471,7 +8471,7 @@ export const pokemon = [
     },
     {
         id: 10041,
-        identifier: 'gyarados-mega',
+        identifier: 'Gyarados-mega',
         species_id: 130,
         height: 65,
         weight: 3050,
@@ -8481,7 +8481,7 @@ export const pokemon = [
     },
     {
         id: 10042,
-        identifier: 'aerodactyl-mega',
+        identifier: 'Aerodactyl-mega',
         species_id: 142,
         height: 21,
         weight: 790,
@@ -8491,7 +8491,7 @@ export const pokemon = [
     },
     {
         id: 10043,
-        identifier: 'mewtwo-mega-x',
+        identifier: 'Mewtwo-mega-x',
         species_id: 150,
         height: 23,
         weight: 1270,
@@ -8501,7 +8501,7 @@ export const pokemon = [
     },
     {
         id: 10044,
-        identifier: 'mewtwo-mega-y',
+        identifier: 'Mewtwo-mega-y',
         species_id: 150,
         height: 15,
         weight: 330,
@@ -8511,7 +8511,7 @@ export const pokemon = [
     },
     {
         id: 10045,
-        identifier: 'ampharos-mega',
+        identifier: 'Ampharos-mega',
         species_id: 181,
         height: 14,
         weight: 615,
@@ -8521,7 +8521,7 @@ export const pokemon = [
     },
     {
         id: 10046,
-        identifier: 'scizor-mega',
+        identifier: 'Scizor-mega',
         species_id: 212,
         height: 20,
         weight: 1250,
@@ -8531,7 +8531,7 @@ export const pokemon = [
     },
     {
         id: 10047,
-        identifier: 'heracross-mega',
+        identifier: 'Heracross-mega',
         species_id: 214,
         height: 17,
         weight: 625,
@@ -8541,7 +8541,7 @@ export const pokemon = [
     },
     {
         id: 10048,
-        identifier: 'houndoom-mega',
+        identifier: 'Houndoom-mega',
         species_id: 229,
         height: 19,
         weight: 495,
@@ -8551,7 +8551,7 @@ export const pokemon = [
     },
     {
         id: 10049,
-        identifier: 'tyranitar-mega',
+        identifier: 'Tyranitar-mega',
         species_id: 248,
         height: 25,
         weight: 2550,
@@ -8561,7 +8561,7 @@ export const pokemon = [
     },
     {
         id: 10050,
-        identifier: 'blaziken-mega',
+        identifier: 'Blaziken-mega',
         species_id: 257,
         height: 19,
         weight: 520,
@@ -8571,7 +8571,7 @@ export const pokemon = [
     },
     {
         id: 10051,
-        identifier: 'gardevoir-mega',
+        identifier: 'Gardevoir-mega',
         species_id: 282,
         height: 16,
         weight: 484,
@@ -8581,7 +8581,7 @@ export const pokemon = [
     },
     {
         id: 10052,
-        identifier: 'mawile-mega',
+        identifier: 'Mawile-mega',
         species_id: 303,
         height: 10,
         weight: 235,
@@ -8591,7 +8591,7 @@ export const pokemon = [
     },
     {
         id: 10053,
-        identifier: 'aggron-mega',
+        identifier: 'Aggron-mega',
         species_id: 306,
         height: 22,
         weight: 3950,
@@ -8601,7 +8601,7 @@ export const pokemon = [
     },
     {
         id: 10054,
-        identifier: 'medicham-mega',
+        identifier: 'Medicham-mega',
         species_id: 308,
         height: 13,
         weight: 315,
@@ -8611,7 +8611,7 @@ export const pokemon = [
     },
     {
         id: 10055,
-        identifier: 'manectric-mega',
+        identifier: 'Manectric-mega',
         species_id: 310,
         height: 18,
         weight: 440,
@@ -8621,7 +8621,7 @@ export const pokemon = [
     },
     {
         id: 10056,
-        identifier: 'banette-mega',
+        identifier: 'Banette-mega',
         species_id: 354,
         height: 12,
         weight: 130,
@@ -8631,7 +8631,7 @@ export const pokemon = [
     },
     {
         id: 10057,
-        identifier: 'absol-mega',
+        identifier: 'Absol-mega',
         species_id: 359,
         height: 12,
         weight: 490,
@@ -8641,7 +8641,7 @@ export const pokemon = [
     },
     {
         id: 10058,
-        identifier: 'garchomp-mega',
+        identifier: 'Garchomp-mega',
         species_id: 445,
         height: 19,
         weight: 950,
@@ -8651,7 +8651,7 @@ export const pokemon = [
     },
     {
         id: 10059,
-        identifier: 'lucario-mega',
+        identifier: 'Lucario-mega',
         species_id: 448,
         height: 13,
         weight: 575,
@@ -8661,7 +8661,7 @@ export const pokemon = [
     },
     {
         id: 10060,
-        identifier: 'abomasnow-mega',
+        identifier: 'Abomasnow-mega',
         species_id: 460,
         height: 27,
         weight: 1850,
@@ -8671,7 +8671,7 @@ export const pokemon = [
     },
     {
         id: 10061,
-        identifier: 'floette-eternal',
+        identifier: 'Floette-eternal',
         species_id: 670,
         height: 2,
         weight: 9,
@@ -8681,7 +8681,7 @@ export const pokemon = [
     },
     {
         id: 10062,
-        identifier: 'latias-mega',
+        identifier: 'Latias-mega',
         species_id: 380,
         height: 18,
         weight: 520,
@@ -8691,7 +8691,7 @@ export const pokemon = [
     },
     {
         id: 10063,
-        identifier: 'latios-mega',
+        identifier: 'Latios-mega',
         species_id: 381,
         height: 23,
         weight: 700,
@@ -8701,7 +8701,7 @@ export const pokemon = [
     },
     {
         id: 10064,
-        identifier: 'swampert-mega',
+        identifier: 'Swampert-mega',
         species_id: 260,
         height: 19,
         weight: 1020,
@@ -8711,7 +8711,7 @@ export const pokemon = [
     },
     {
         id: 10065,
-        identifier: 'sceptile-mega',
+        identifier: 'Sceptile-mega',
         species_id: 254,
         height: 19,
         weight: 552,
@@ -8721,7 +8721,7 @@ export const pokemon = [
     },
     {
         id: 10066,
-        identifier: 'sableye-mega',
+        identifier: 'Sableye-mega',
         species_id: 302,
         height: 5,
         weight: 1610,
@@ -8731,7 +8731,7 @@ export const pokemon = [
     },
     {
         id: 10067,
-        identifier: 'altaria-mega',
+        identifier: 'Altaria-mega',
         species_id: 334,
         height: 15,
         weight: 206,
@@ -8741,7 +8741,7 @@ export const pokemon = [
     },
     {
         id: 10068,
-        identifier: 'gallade-mega',
+        identifier: 'Gallade-mega',
         species_id: 475,
         height: 16,
         weight: 564,
@@ -8751,7 +8751,7 @@ export const pokemon = [
     },
     {
         id: 10069,
-        identifier: 'audino-mega',
+        identifier: 'Audino-mega',
         species_id: 531,
         height: 15,
         weight: 320,
@@ -8761,7 +8761,7 @@ export const pokemon = [
     },
     {
         id: 10070,
-        identifier: 'sharpedo-mega',
+        identifier: 'Sharpedo-mega',
         species_id: 319,
         height: 25,
         weight: 1303,
@@ -8771,7 +8771,7 @@ export const pokemon = [
     },
     {
         id: 10071,
-        identifier: 'slowbro-mega',
+        identifier: 'Slowbro-mega',
         species_id: 80,
         height: 20,
         weight: 1200,
@@ -8781,7 +8781,7 @@ export const pokemon = [
     },
     {
         id: 10072,
-        identifier: 'steelix-mega',
+        identifier: 'Steelix-mega',
         species_id: 208,
         height: 105,
         weight: 7400,
@@ -8791,7 +8791,7 @@ export const pokemon = [
     },
     {
         id: 10073,
-        identifier: 'pidgeot-mega',
+        identifier: 'Pidgeot-mega',
         species_id: 18,
         height: 22,
         weight: 505,
@@ -8801,7 +8801,7 @@ export const pokemon = [
     },
     {
         id: 10074,
-        identifier: 'glalie-mega',
+        identifier: 'Glalie-mega',
         species_id: 362,
         height: 21,
         weight: 3502,
@@ -8811,7 +8811,7 @@ export const pokemon = [
     },
     {
         id: 10075,
-        identifier: 'diancie-mega',
+        identifier: 'Diancie-mega',
         species_id: 719,
         height: 11,
         weight: 278,
@@ -8821,7 +8821,7 @@ export const pokemon = [
     },
     {
         id: 10076,
-        identifier: 'metagross-mega',
+        identifier: 'Metagross-mega',
         species_id: 376,
         height: 25,
         weight: 9429,
@@ -8831,7 +8831,7 @@ export const pokemon = [
     },
     {
         id: 10077,
-        identifier: 'kyogre-primal',
+        identifier: 'Kyogre-primal',
         species_id: 382,
         height: 98,
         weight: 4300,
@@ -8841,7 +8841,7 @@ export const pokemon = [
     },
     {
         id: 10078,
-        identifier: 'groudon-primal',
+        identifier: 'Groudon-primal',
         species_id: 383,
         height: 50,
         weight: 9997,
@@ -8851,7 +8851,7 @@ export const pokemon = [
     },
     {
         id: 10079,
-        identifier: 'rayquaza-mega',
+        identifier: 'Rayquaza-mega',
         species_id: 384,
         height: 108,
         weight: 3920,
@@ -8861,7 +8861,7 @@ export const pokemon = [
     },
     {
         id: 10080,
-        identifier: 'pikachu-rock-star',
+        identifier: 'Pikachu-rock-star',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -8871,7 +8871,7 @@ export const pokemon = [
     },
     {
         id: 10081,
-        identifier: 'pikachu-belle',
+        identifier: 'Pikachu-belle',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -8881,7 +8881,7 @@ export const pokemon = [
     },
     {
         id: 10082,
-        identifier: 'pikachu-pop-star',
+        identifier: 'Pikachu-pop-star',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -8891,7 +8891,7 @@ export const pokemon = [
     },
     {
         id: 10083,
-        identifier: 'pikachu-phd',
+        identifier: 'Pikachu-phd',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -8901,7 +8901,7 @@ export const pokemon = [
     },
     {
         id: 10084,
-        identifier: 'pikachu-libre',
+        identifier: 'Pikachu-libre',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -8911,7 +8911,7 @@ export const pokemon = [
     },
     {
         id: 10085,
-        identifier: 'pikachu-cosplay',
+        identifier: 'Pikachu-cosplay',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -8921,7 +8921,7 @@ export const pokemon = [
     },
     {
         id: 10086,
-        identifier: 'hoopa-unbound',
+        identifier: 'Hoopa-unbound',
         species_id: 720,
         height: 65,
         weight: 4900,
@@ -8931,7 +8931,7 @@ export const pokemon = [
     },
     {
         id: 10087,
-        identifier: 'camerupt-mega',
+        identifier: 'Camerupt-mega',
         species_id: 323,
         height: 25,
         weight: 3205,
@@ -8941,7 +8941,7 @@ export const pokemon = [
     },
     {
         id: 10088,
-        identifier: 'lopunny-mega',
+        identifier: 'Lopunny-mega',
         species_id: 428,
         height: 13,
         weight: 283,
@@ -8951,7 +8951,7 @@ export const pokemon = [
     },
     {
         id: 10089,
-        identifier: 'salamence-mega',
+        identifier: 'Salamence-mega',
         species_id: 373,
         height: 18,
         weight: 1126,
@@ -8961,7 +8961,7 @@ export const pokemon = [
     },
     {
         id: 10090,
-        identifier: 'beedrill-mega',
+        identifier: 'Beedrill-mega',
         species_id: 15,
         height: 14,
         weight: 405,
@@ -8971,7 +8971,7 @@ export const pokemon = [
     },
     {
         id: 10091,
-        identifier: 'rattata-alola',
+        identifier: 'Rattata-alola',
         species_id: 19,
         height: 3,
         weight: 38,
@@ -8981,7 +8981,7 @@ export const pokemon = [
     },
     {
         id: 10092,
-        identifier: 'raticate-alola',
+        identifier: 'Raticate-alola',
         species_id: 20,
         height: 7,
         weight: 255,
@@ -8991,7 +8991,7 @@ export const pokemon = [
     },
     {
         id: 10093,
-        identifier: 'raticate-totem-alola',
+        identifier: 'Raticate-totem-alola',
         species_id: 20,
         height: 14,
         weight: 1050,
@@ -9001,7 +9001,7 @@ export const pokemon = [
     },
     {
         id: 10094,
-        identifier: 'pikachu-original-cap',
+        identifier: 'Pikachu-original-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9011,7 +9011,7 @@ export const pokemon = [
     },
     {
         id: 10095,
-        identifier: 'pikachu-hoenn-cap',
+        identifier: 'Pikachu-hoenn-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9021,7 +9021,7 @@ export const pokemon = [
     },
     {
         id: 10096,
-        identifier: 'pikachu-sinnoh-cap',
+        identifier: 'Pikachu-sinnoh-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9031,7 +9031,7 @@ export const pokemon = [
     },
     {
         id: 10097,
-        identifier: 'pikachu-unova-cap',
+        identifier: 'Pikachu-unova-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9041,7 +9041,7 @@ export const pokemon = [
     },
     {
         id: 10098,
-        identifier: 'pikachu-kalos-cap',
+        identifier: 'Pikachu-kalos-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9051,7 +9051,7 @@ export const pokemon = [
     },
     {
         id: 10099,
-        identifier: 'pikachu-alola-cap',
+        identifier: 'Pikachu-alola-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9061,7 +9061,7 @@ export const pokemon = [
     },
     {
         id: 10100,
-        identifier: 'raichu-alola',
+        identifier: 'Raichu-alola',
         species_id: 26,
         height: 7,
         weight: 210,
@@ -9071,7 +9071,7 @@ export const pokemon = [
     },
     {
         id: 10101,
-        identifier: 'sandshrew-alola',
+        identifier: 'Sandshrew-alola',
         species_id: 27,
         height: 7,
         weight: 400,
@@ -9081,7 +9081,7 @@ export const pokemon = [
     },
     {
         id: 10102,
-        identifier: 'sandslash-alola',
+        identifier: 'Sandslash-alola',
         species_id: 28,
         height: 12,
         weight: 550,
@@ -9091,7 +9091,7 @@ export const pokemon = [
     },
     {
         id: 10103,
-        identifier: 'vulpix-alola',
+        identifier: 'Vulpix-alola',
         species_id: 37,
         height: 6,
         weight: 99,
@@ -9101,7 +9101,7 @@ export const pokemon = [
     },
     {
         id: 10104,
-        identifier: 'ninetales-alola',
+        identifier: 'Ninetales-alola',
         species_id: 38,
         height: 11,
         weight: 199,
@@ -9111,7 +9111,7 @@ export const pokemon = [
     },
     {
         id: 10105,
-        identifier: 'diglett-alola',
+        identifier: 'Diglett-alola',
         species_id: 50,
         height: 2,
         weight: 10,
@@ -9121,7 +9121,7 @@ export const pokemon = [
     },
     {
         id: 10106,
-        identifier: 'dugtrio-alola',
+        identifier: 'Dugtrio-alola',
         species_id: 51,
         height: 7,
         weight: 666,
@@ -9131,7 +9131,7 @@ export const pokemon = [
     },
     {
         id: 10107,
-        identifier: 'meowth-alola',
+        identifier: 'Meowth-alola',
         species_id: 52,
         height: 4,
         weight: 42,
@@ -9141,7 +9141,7 @@ export const pokemon = [
     },
     {
         id: 10108,
-        identifier: 'persian-alola',
+        identifier: 'Persian-alola',
         species_id: 53,
         height: 11,
         weight: 330,
@@ -9151,7 +9151,7 @@ export const pokemon = [
     },
     {
         id: 10109,
-        identifier: 'geodude-alola',
+        identifier: 'Geodude-alola',
         species_id: 74,
         height: 4,
         weight: 203,
@@ -9161,7 +9161,7 @@ export const pokemon = [
     },
     {
         id: 10110,
-        identifier: 'graveler-alola',
+        identifier: 'Graveler-alola',
         species_id: 75,
         height: 10,
         weight: 1100,
@@ -9171,7 +9171,7 @@ export const pokemon = [
     },
     {
         id: 10111,
-        identifier: 'golem-alola',
+        identifier: 'Golem-alola',
         species_id: 76,
         height: 17,
         weight: 3160,
@@ -9181,7 +9181,7 @@ export const pokemon = [
     },
     {
         id: 10112,
-        identifier: 'grimer-alola',
+        identifier: 'Grimer-alola',
         species_id: 88,
         height: 7,
         weight: 420,
@@ -9191,7 +9191,7 @@ export const pokemon = [
     },
     {
         id: 10113,
-        identifier: 'muk-alola',
+        identifier: 'Muk-alola',
         species_id: 89,
         height: 10,
         weight: 520,
@@ -9201,7 +9201,7 @@ export const pokemon = [
     },
     {
         id: 10114,
-        identifier: 'exeggutor-alola',
+        identifier: 'Exeggutor-alola',
         species_id: 103,
         height: 109,
         weight: 4156,
@@ -9211,7 +9211,7 @@ export const pokemon = [
     },
     {
         id: 10115,
-        identifier: 'marowak-alola',
+        identifier: 'Marowak-alola',
         species_id: 105,
         height: 10,
         weight: 340,
@@ -9221,7 +9221,7 @@ export const pokemon = [
     },
     {
         id: 10116,
-        identifier: 'greninja-battle-bond',
+        identifier: 'Greninja-battle-bond',
         species_id: 658,
         height: 15,
         weight: 400,
@@ -9231,7 +9231,7 @@ export const pokemon = [
     },
     {
         id: 10117,
-        identifier: 'greninja-ash',
+        identifier: 'Greninja-ash',
         species_id: 658,
         height: 15,
         weight: 400,
@@ -9241,7 +9241,7 @@ export const pokemon = [
     },
     {
         id: 10118,
-        identifier: 'zygarde-10',
+        identifier: 'Zygarde-10',
         species_id: 718,
         height: 12,
         weight: 335,
@@ -9251,7 +9251,7 @@ export const pokemon = [
     },
     {
         id: 10119,
-        identifier: 'zygarde-50',
+        identifier: 'Zygarde-50',
         species_id: 718,
         height: 50,
         weight: 3050,
@@ -9261,7 +9261,7 @@ export const pokemon = [
     },
     {
         id: 10120,
-        identifier: 'zygarde-complete',
+        identifier: 'Zygarde-complete',
         species_id: 718,
         height: 45,
         weight: 6100,
@@ -9271,7 +9271,7 @@ export const pokemon = [
     },
     {
         id: 10121,
-        identifier: 'gumshoos-totem',
+        identifier: 'Gumshoos-totem',
         species_id: 735,
         height: 14,
         weight: 600,
@@ -9281,7 +9281,7 @@ export const pokemon = [
     },
     {
         id: 10122,
-        identifier: 'vikavolt-totem',
+        identifier: 'Vikavolt-totem',
         species_id: 738,
         height: 26,
         weight: 1475,
@@ -9291,7 +9291,7 @@ export const pokemon = [
     },
     {
         id: 10123,
-        identifier: 'oricorio-pom-pom',
+        identifier: 'Oricorio-pom-pom',
         species_id: 741,
         height: 6,
         weight: 34,
@@ -9301,7 +9301,7 @@ export const pokemon = [
     },
     {
         id: 10124,
-        identifier: 'oricorio-pau',
+        identifier: 'Oricorio-pau',
         species_id: 741,
         height: 6,
         weight: 34,
@@ -9311,7 +9311,7 @@ export const pokemon = [
     },
     {
         id: 10125,
-        identifier: 'oricorio-sensu',
+        identifier: 'Oricorio-sensu',
         species_id: 741,
         height: 6,
         weight: 34,
@@ -9321,7 +9321,7 @@ export const pokemon = [
     },
     {
         id: 10126,
-        identifier: 'lycanroc-midnight',
+        identifier: 'Lycanroc-midnight',
         species_id: 745,
         height: 11,
         weight: 250,
@@ -9331,7 +9331,7 @@ export const pokemon = [
     },
     {
         id: 10127,
-        identifier: 'wishiwashi-school',
+        identifier: 'Wishiwashi-school',
         species_id: 746,
         height: 82,
         weight: 786,
@@ -9341,7 +9341,7 @@ export const pokemon = [
     },
     {
         id: 10128,
-        identifier: 'lurantis-totem',
+        identifier: 'Lurantis-totem',
         species_id: 754,
         height: 15,
         weight: 580,
@@ -9351,7 +9351,7 @@ export const pokemon = [
     },
     {
         id: 10129,
-        identifier: 'salazzle-totem',
+        identifier: 'Salazzle-totem',
         species_id: 758,
         height: 21,
         weight: 810,
@@ -9361,7 +9361,7 @@ export const pokemon = [
     },
     {
         id: 10130,
-        identifier: 'minior-orange-meteor',
+        identifier: 'Minior-orange-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -9371,7 +9371,7 @@ export const pokemon = [
     },
     {
         id: 10131,
-        identifier: 'minior-yellow-meteor',
+        identifier: 'Minior-yellow-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -9381,7 +9381,7 @@ export const pokemon = [
     },
     {
         id: 10132,
-        identifier: 'minior-green-meteor',
+        identifier: 'Minior-green-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -9391,7 +9391,7 @@ export const pokemon = [
     },
     {
         id: 10133,
-        identifier: 'minior-blue-meteor',
+        identifier: 'Minior-blue-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -9401,7 +9401,7 @@ export const pokemon = [
     },
     {
         id: 10134,
-        identifier: 'minior-indigo-meteor',
+        identifier: 'Minior-indigo-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -9411,7 +9411,7 @@ export const pokemon = [
     },
     {
         id: 10135,
-        identifier: 'minior-violet-meteor',
+        identifier: 'Minior-violet-meteor',
         species_id: 774,
         height: 3,
         weight: 400,
@@ -9421,7 +9421,7 @@ export const pokemon = [
     },
     {
         id: 10136,
-        identifier: 'minior-red',
+        identifier: 'Minior-red',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9431,7 +9431,7 @@ export const pokemon = [
     },
     {
         id: 10137,
-        identifier: 'minior-orange',
+        identifier: 'Minior-orange',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9441,7 +9441,7 @@ export const pokemon = [
     },
     {
         id: 10138,
-        identifier: 'minior-yellow',
+        identifier: 'Minior-yellow',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9451,7 +9451,7 @@ export const pokemon = [
     },
     {
         id: 10139,
-        identifier: 'minior-green',
+        identifier: 'Minior-green',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9461,7 +9461,7 @@ export const pokemon = [
     },
     {
         id: 10140,
-        identifier: 'minior-blue',
+        identifier: 'Minior-blue',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9471,7 +9471,7 @@ export const pokemon = [
     },
     {
         id: 10141,
-        identifier: 'minior-indigo',
+        identifier: 'Minior-indigo',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9481,7 +9481,7 @@ export const pokemon = [
     },
     {
         id: 10142,
-        identifier: 'minior-violet',
+        identifier: 'Minior-violet',
         species_id: 774,
         height: 3,
         weight: 3,
@@ -9491,7 +9491,7 @@ export const pokemon = [
     },
     {
         id: 10143,
-        identifier: 'mimikyu-busted',
+        identifier: 'Mimikyu-busted',
         species_id: 778,
         height: 2,
         weight: 7,
@@ -9501,7 +9501,7 @@ export const pokemon = [
     },
     {
         id: 10144,
-        identifier: 'mimikyu-totem-disguised',
+        identifier: 'Mimikyu-totem-disguised',
         species_id: 778,
         height: 4,
         weight: 28,
@@ -9511,7 +9511,7 @@ export const pokemon = [
     },
     {
         id: 10145,
-        identifier: 'mimikyu-totem-busted',
+        identifier: 'Mimikyu-totem-busted',
         species_id: 778,
         height: 4,
         weight: 28,
@@ -9521,7 +9521,7 @@ export const pokemon = [
     },
     {
         id: 10146,
-        identifier: 'kommo-o-totem',
+        identifier: 'Kommo-o-totem',
         species_id: 784,
         height: 24,
         weight: 2075,
@@ -9531,7 +9531,7 @@ export const pokemon = [
     },
     {
         id: 10147,
-        identifier: 'magearna-original',
+        identifier: 'Magearna-original',
         species_id: 801,
         height: 10,
         weight: 805,
@@ -9541,7 +9541,7 @@ export const pokemon = [
     },
     {
         id: 10148,
-        identifier: 'pikachu-partner-cap',
+        identifier: 'Pikachu-partner-cap',
         species_id: 25,
         height: 4,
         weight: 60,
@@ -9551,7 +9551,7 @@ export const pokemon = [
     },
     {
         id: 10149,
-        identifier: 'marowak-totem',
+        identifier: 'Marowak-totem',
         species_id: 105,
         height: 17,
         weight: 980,
@@ -9561,7 +9561,7 @@ export const pokemon = [
     },
     {
         id: 10150,
-        identifier: 'ribombee-totem',
+        identifier: 'Ribombee-totem',
         species_id: 743,
         height: 4,
         weight: 20,
@@ -9571,7 +9571,7 @@ export const pokemon = [
     },
     {
         id: 10151,
-        identifier: 'rockruff-own-tempo',
+        identifier: 'Rockruff-own-tempo',
         species_id: 744,
         height: 5,
         weight: 92,
@@ -9581,7 +9581,7 @@ export const pokemon = [
     },
     {
         id: 10152,
-        identifier: 'lycanroc-dusk',
+        identifier: 'Lycanroc-dusk',
         species_id: 745,
         height: 8,
         weight: 250,
@@ -9591,7 +9591,7 @@ export const pokemon = [
     },
     {
         id: 10153,
-        identifier: 'araquanid-totem',
+        identifier: 'Araquanid-totem',
         species_id: 752,
         height: 31,
         weight: 2175,
@@ -9601,7 +9601,7 @@ export const pokemon = [
     },
     {
         id: 10154,
-        identifier: 'togedemaru-totem',
+        identifier: 'Togedemaru-totem',
         species_id: 777,
         height: 6,
         weight: 130,
@@ -9611,7 +9611,7 @@ export const pokemon = [
     },
     {
         id: 10155,
-        identifier: 'necrozma-dusk',
+        identifier: 'Necrozma-dusk',
         species_id: 800,
         height: 38,
         weight: 4600,
@@ -9621,7 +9621,7 @@ export const pokemon = [
     },
     {
         id: 10156,
-        identifier: 'necrozma-dawn',
+        identifier: 'Necrozma-dawn',
         species_id: 800,
         height: 42,
         weight: 3500,
@@ -9631,7 +9631,7 @@ export const pokemon = [
     },
     {
         id: 10157,
-        identifier: 'necrozma-ultra',
+        identifier: 'Necrozma-ultra',
         species_id: 800,
         height: 75,
         weight: 2300,
