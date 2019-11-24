@@ -16,8 +16,8 @@
       "inlineSourceMap": true,
       "inlineSources": true,
       "noImplicitReturns": true,
-      "noUnusedParameters": true,
-      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "noUnusedLocals": false,
       "skipLibCheck": true,
       "experimentalDecorators": true
     },

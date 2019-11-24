@@ -1,0 +1,25 @@
+/* The container in the static markup */
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Entry react element */
+
+.pkb-root {
+}
+
+.pkb-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.pkb-search-container {
+    margin: 10px;
+}

@@ -34,9 +34,10 @@ endef
 
 .PHONY: build default start bundle clean node_modules format format-write lint lint-fix start stop test
 
-default: build
+default: all
 
-all: build bundle format test
+# all: build bundle format test
+all: format bundle test
 
 build: $(typescript.build.files)
 
@@ -66,8 +67,6 @@ node_modules: $(workspace.node_modules)
 start:
 	@$(call i, Starting TypeScript and React Native bundler in watch mode)
 	mkdir -p $(dev.server-dir)
-	# Start the servers and save their pids so we can kill them later
-	npx tsc -w & echo $$! > $(dev.tsc-server-file) 
 	npx webpack-dev-server & echo $$! > $(dev.webpack-dev-server-file) 
 	sleep 3; which xdg-open && xdg-open $(dev.url) || open $(dev.url)
 	cat $(dev.webpack-dev-server-file) | xargs -I _ tail --pid=_ -f /dev/null
@@ -90,7 +89,7 @@ $(typescript.build.files): $(workspace.node_modules)
 	@$(call i, Compiling TypeScript files into JavaScript)
 	npx tsc
 
-$(build.bundle): $(typescript.build.files)
+$(build.bundle): 
 	@$(call i, Generating the webpack bundle)
 	npx webpack
 

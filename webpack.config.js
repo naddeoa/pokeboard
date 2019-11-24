@@ -1,18 +1,29 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
-  entry: './artifacts/index.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
-  },
+    entry: './src/index.ts',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+    },
 
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js'],
+    },
 
-  devServer: {
-    contentBase: path.join(__dirname, 'static'),
-    compress: true,
-    port: 8081
-  }
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            { test: /\.tsx?$/, loader: 'ts-loader' },
+        ],
+    },
 
-
-};
+    devServer: {
+        contentBase: path.join(__dirname, 'static'),
+        compress: true,
+        port: 8081,
+    },
+}
