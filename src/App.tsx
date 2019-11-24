@@ -245,12 +245,12 @@ export function App() {
             return [
                 renderTypeEfficacyCard({
                     title: `${contentData.typeName} attack modifiers`,
-                    desc: 'bonus damage attacking these',
+                    desc: 'modifications attacking these',
                     efficacy: offense,
                 }),
                 renderTypeEfficacyCard({
                     title: `${contentData.typeName} defense modifiers`,
-                    desc: 'less damage attacking these',
+                    desc: 'modifications getting attacked by these',
                     efficacy: defense,
                 }),
             ]
