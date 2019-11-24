@@ -176,7 +176,7 @@ interface RenderTypeEfficacyProps {
 function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
     return (
         <Card>
-            <h2>{props.title}</h2>
+            <span className="pkb-section-title">{props.title}</span>
             <ul>
                 {props.efficacy.map(it => (
                     <TypeEfficacy key={it.type_id} efficacy={it} />
@@ -267,6 +267,7 @@ export function App() {
                 {/* <span>Search: </span>
                 <input autoFocus={true} value={searchValue} onChange={val => setValue(val.target.value.toLowerCase())} /> */}
                 <Typeahead
+                    id="typeahead"
                     clearButton={true}
                     renderMenuItemChildren={renderMenuItemChildren}
                     onChange={it => {
@@ -274,7 +275,6 @@ export function App() {
                     }}
                     defaultInputValue={searchValue}
                     maxResults={5}
-                    autoFocus={true}
                     placeholder="Search for types or pokemon"
                     options={allPokemonAndTypeNames}
                     labelKey="name"

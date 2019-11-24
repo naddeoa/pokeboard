@@ -7,11 +7,6 @@
     bottom: 0;
 }
 
-/* Entry react element */
-
-.pkb-root {
-}
-
 .pkb-results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -22,4 +17,38 @@
 
 .pkb-search-container {
     margin: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #776767;
+}
+
+@media only screen and (max-width: 599px) {
+
+    .pkb-section-title {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .pkb-section-title {
+        font-size: 2em;
+        font-weight: bold;
+    }
 }
