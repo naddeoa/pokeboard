@@ -52,7 +52,7 @@ function emptyEfficacy(): Efficacy {
     return fromPairs(allTypeNames.map(typeName => [typeName, 1]))
 }
 
-export function combineEfficacies(e1: Efficacy, e2: Efficacy): Efficacy {
+export function combineDefenseEfficacies(e1: Efficacy, e2: Efficacy): Efficacy {
     return fromPairs(
         toPairs(e1).map(([typeName, factor]) => {
             return [typeName, factor * e2[typeName]]
@@ -60,11 +60,12 @@ export function combineEfficacies(e1: Efficacy, e2: Efficacy): Efficacy {
     )
 }
 
-export function combineOffenseDefense(o1: OffenseDefense, o2: OffenseDefense): OffenseDefense {
-    return {
-        offense: combineEfficacies(o1.offense, o2.offense),
-        defense: combineEfficacies(o1.defense, o2.defense),
-    }
+export function combineOffenseEfficacies(e1: Efficacy, e2: Efficacy): Efficacy {
+    return fromPairs(
+        toPairs(e1).map(([typeName, factor]) => {
+            return [typeName, Math.max(factor, e2[typeName])]
+        })
+    )
 }
 
 export const offenseDefenseEfficacies = typeEfficacy.reduce(

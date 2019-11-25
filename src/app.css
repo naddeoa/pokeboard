@@ -7,6 +7,14 @@
     bottom: 0;
 }
 
+.pkb-source-link {
+    display: flex;
+}
+
+.pkb-source-link h2 {
+    flex-grow: 1;
+}
+
 .pkb-results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -133,7 +141,6 @@ ul.pkb-eff-listing li {
     background-color: #78c850;
 }
 
-
 @media only screen and (max-width: 599px) {
     .pkb-section-title {
         font-size: 1.4em;
@@ -142,7 +149,7 @@ ul.pkb-eff-listing li {
     }
 
     .pkb-section-subtitle {
-        font-size: .8em;
+        font-size: 0.8em;
         line-height: 1.2em;
     }
 }
@@ -155,7 +162,7 @@ ul.pkb-eff-listing li {
     }
 
     .pkb-section-subtitle {
-        font-size: .8em;
+        font-size: 0.8em;
         line-height: 1.2em;
     }
 }

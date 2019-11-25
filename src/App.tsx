@@ -1,16 +1,15 @@
 import flatten from 'ramda/es/flatten'
 import groupBy from 'ramda/es/groupBy'
 import toPairs from 'ramda/es/toPairs'
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Highlighter, Typeahead, TypeaheadMenuProps, TypeaheadResult } from 'react-bootstrap-typeahead'
 import './app.css'
 import { Card } from './card/Card'
 import {
     allPokemonAndTypeNames,
     AllTypesAndPokemon,
-    combineOffenseDefense,
+    combineDefenseEfficacies,
     Efficacy,
-    OffenseDefense,
     offenseDefenseEfficacies,
     pokemonIdsToTypes,
     pokemonNamesToIds,
@@ -174,25 +173,41 @@ function renderAllTypes(props: RenderAllTypesProps) {
 
 interface ContentData {
     readonly typeName: string
-    readonly offDeff: OffenseDefense[]
+    readonly mode: 'offense' | 'defense'
+    readonly efficacy: Efficacy
 }
 
-function getContentData(typeName: TypeResolution): ContentData {
+function getContentData(typeName: TypeResolution): ContentData[] {
     switch (typeName.matchedAs) {
         case 'unknown':
-            return { typeName: 'unknown', offDeff: [] }
+            return []
 
         case 'type name':
-            return { typeName: typeName.typeName, offDeff: [offenseDefenseEfficacies[typeName.typeName]] }
+            return [
+                { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].offense, mode: 'offense' },
+                { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].defense, mode: 'defense' },
+            ]
 
         case 'pokemon name':
             if (typeName.secondaryTypeName) {
-                return {
-                    typeName: `${typeName.typeName}+${typeName.secondaryTypeName}`,
-                    offDeff: [combineOffenseDefense(offenseDefenseEfficacies[typeName.typeName], offenseDefenseEfficacies[typeName.secondaryTypeName])],
-                }
+                return [
+                    { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].offense, mode: 'offense' },
+                    { typeName: typeName.secondaryTypeName, efficacy: offenseDefenseEfficacies[typeName.secondaryTypeName].offense, mode: 'offense' },
+                    {
+                        // Combined efficacy for targeting pokemon with multiple types
+                        typeName: `${typeName.typeName}/${typeName.secondaryTypeName}`,
+                        mode: 'defense',
+                        efficacy: combineDefenseEfficacies(
+                            offenseDefenseEfficacies[typeName.typeName].defense,
+                            offenseDefenseEfficacies[typeName.secondaryTypeName].defense
+                        ),
+                    },
+                ]
             } else {
-                return { typeName: typeName.typeName, offDeff: [offenseDefenseEfficacies[typeName.typeName]] }
+                return [
+                    { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].offense, mode: 'offense' },
+                    { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].defense, mode: 'defense' },
+                ]
             }
     }
 }
@@ -251,6 +266,27 @@ function setLastSuccessSearch(typeName: TypeResolution) {
     }
 }
 
+function renderContentData(contentData: ContentData[]) {
+    return flatten(
+        contentData.map(({ typeName, efficacy, mode }) => {
+            switch (mode) {
+                case 'offense':
+                    return renderTypeEfficacyCard({
+                        title: `${typeName} attack modifiers`,
+                        desc: 'modifications attacking these',
+                        efficacy,
+                    })
+                case 'defense':
+                    return renderTypeEfficacyCard({
+                        title: `${typeName} defense modifiers`,
+                        desc: 'modifications getting attacked by these',
+                        efficacy,
+                    })
+            }
+        })
+    )
+}
+
 export function App() {
     const [searchValue, setValue] = useState(getLastSuccessSearch())
     const input = useRef<Typeahead<AllTypesAndPokemon>>(null)
@@ -267,22 +303,6 @@ export function App() {
     })
 
     const contentData = getContentData(typeNameResult)
-    const content = flatten(
-        contentData.offDeff.map(({ offense, defense }) => {
-            return [
-                renderTypeEfficacyCard({
-                    title: `${contentData.typeName} attack modifiers`,
-                    desc: 'modifications attacking these',
-                    efficacy: offense,
-                }),
-                renderTypeEfficacyCard({
-                    title: `${contentData.typeName} defense modifiers`,
-                    desc: 'modifications getting attacked by these',
-                    efficacy: defense,
-                }),
-            ]
-        })
-    )
 
     function onTypeNameClick(name: string) {
         setValue(name)
@@ -301,6 +321,12 @@ export function App() {
 
     return (
         <div className="pkb-root">
+            <div className="pkb-source-link">
+                <h2>Calculate Pokemon Type Damage</h2>
+                <a target="_blank" href="https://github.com/naddeoa/pokeboard">
+                    Source on Github
+                </a>
+            </div>
             <div>{renderAllTypes({ onClick: onTypeNameClick })}</div>
             <div className="pkb-search-container">
                 <Typeahead
@@ -317,7 +343,7 @@ export function App() {
                 />
             </div>
 
-            <div className="pkb-results">{content}</div>
+            <div className="pkb-results">{renderContentData(contentData)}</div>
         </div>
     )
 }
