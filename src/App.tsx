@@ -274,13 +274,13 @@ function getContentData(typeName: TypeResolution): ContentData[] {
 const appStorageKey = 'pkb-app-store2'
 function getLastSuccessSearch(defaultValue: AppState): AppState {
     const storedSearchString = localStorage.getItem(appStorageKey)
-    const lastAppState = storedSearchString ? JSON.parse(storedSearchString) : null
+    const lastAppState: AppState | null = storedSearchString ? JSON.parse(storedSearchString) : null
     const urlParams = getUrlParams()
 
     if (urlParams.type === 'TypeFilterUrlParams') {
         return {
             searchMode: 'TypeFilterSearch',
-            lastPokemonSearch: lastAppState.lastPokemonSearch,
+            lastPokemonSearch: lastAppState === null ? defaultValue.lastPokemonSearch : lastAppState.lastPokemonSearch,
             lastTypeFilterSearch: {
                 type: 'TypeFilterSearch',
                 typeName1: urlParams.primary,
@@ -290,7 +290,7 @@ function getLastSuccessSearch(defaultValue: AppState): AppState {
     } else if (urlParams.type === 'TypeSearchUrlParams') {
         return {
             searchMode: 'TypeSearch',
-            lastTypeFilterSearch: lastAppState.lastTypeFilterSearch,
+            lastTypeFilterSearch: lastAppState === null ? defaultValue.lastTypeFilterSearch : lastAppState.lastTypeFilterSearch,
             lastPokemonSearch: {
                 type: 'TypeSearch',
                 value: urlParams.pokemonName,
