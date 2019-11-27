@@ -1,5 +1,5 @@
 // Taken from https://gist.github.com/NoelDavies/a7e8e3d959a0619362b291bb10a8fd8d
-export const swordShieldPokemonTypes = [
+export const _swordShieldPokemonTypes = [
     { pokemon_id: 1, type_id: 12, slot: 1 },
     { pokemon_id: 1, type_id: 4, slot: 2 },
     { pokemon_id: 2, type_id: 12, slot: 1 },
@@ -788,3 +788,7 @@ export const swordShieldPokemonTypes = [
     { pokemon_id: 117, type_id: 4, slot: 1 },
     { pokemon_id: 117, type_id: 16, slot: 2 },
 ]
+
+// Only take the pokemon from gen 8 on this list. There is some sketchy things in here
+// that can't be reconciled with the other pokemon data in pokemon-types.ts
+export const swordShieldPokemonTypes = _swordShieldPokemonTypes.filter(pkm => pkm.pokemon_id > 810)

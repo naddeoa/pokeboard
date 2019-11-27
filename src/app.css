@@ -86,6 +86,18 @@ ul.pkb-eff-listing li {
     border-radius: 2px;
 }
 
+.pkb-toggle-container{
+    display: flex;
+    justify-content: center;
+}
+
+.pkb-type-selected {
+    border-color: red;
+    border-width: 4px;
+    border-radius: 3px;
+    margin: 15px;
+}
+
 .pkb-type-fire {
     background-color: #f08030;
 }

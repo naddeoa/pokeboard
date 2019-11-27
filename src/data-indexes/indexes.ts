@@ -86,6 +86,7 @@ export const offenseDefenseEfficacies = typeEfficacy.reduce(
 
 const mergedPokemonDataSets = unionWith((a, b) => a.id === b.id, pokemon, swordShieldPokemon)
 export const pokemonNamesToIds = fromPairs(mergedPokemonDataSets.map(it => [it.identifier, it.id] as [string, number]))
+export const pokemonIdsToNames = fromPairs(mergedPokemonDataSets.map(it => [it.id, it.identifier] as [number, string]))
 
 export interface PokemonType {
     readonly type_id: number
@@ -115,7 +116,12 @@ export interface AllTypesAndPokemon {
     readonly type: 'pokemon' | 'type'
     readonly name: string
 }
-export const allPokemonAndTypeNames: AllTypesAndPokemon[] = [
-    ...allPokemonNames.map(it => ({ type: 'pokemon', name: it } as const)),
-    ...allTypeNames.map(it => ({ type: 'type', name: it } as const)),
-]
+
+export const typeIdsToPokemon = mergedPokemonTypeData.reduce(
+    (acc, curr) => {
+        const pokemonForType = acc[curr.type_id] || (acc[curr.type_id] = [] as number[])
+        pokemonForType.push(curr.pokemon_id)
+        return acc
+    },
+    {} as Record<number, number[]>
+)

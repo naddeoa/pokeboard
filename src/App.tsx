@@ -1,23 +1,34 @@
+import ToggleButton from '@material-ui/lab/ToggleButton'
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup'
+import equals from 'ramda/es/equals'
 import flatten from 'ramda/es/flatten'
 import groupBy from 'ramda/es/groupBy'
+import intersection from 'ramda/es/intersection'
 import toPairs from 'ramda/es/toPairs'
 import React, { useEffect, useRef, useState } from 'react'
-import { Highlighter, Typeahead, TypeaheadMenuProps, TypeaheadResult } from 'react-bootstrap-typeahead'
+import { Typeahead, TypeaheadResult, TypeaheadMenuProps, Highlighter } from 'react-bootstrap-typeahead'
 import './app.css'
 import { Card } from './card/Card'
 import {
-    allPokemonAndTypeNames,
-    AllTypesAndPokemon,
+    allPokemonNames,
     combineDefenseEfficacies,
     Efficacy,
     offenseDefenseEfficacies,
+    pokemonIdsToNames,
     pokemonIdsToTypes,
     pokemonNamesToIds,
     typeIdsToNames,
+    typeIdsToPokemon,
     typeNamesToId,
 } from './data-indexes/indexes'
 
-type TypeResolution = PokemonMatch | TypeMatch | UnknownMatch
+type TypeResolution = PokemonMatch | TypeMatch | UnknownMatch | MultiTypeMatch
+
+interface MultiTypeMatch {
+    readonly matchedAs: 'primary/secondary type'
+    readonly typeName?: string
+    readonly secondaryTypeName?: string
+}
 
 interface PokemonMatch {
     readonly matchedAs: 'pokemon name'
@@ -35,27 +46,39 @@ interface UnknownMatch {
     readonly matchedAs: 'unknown'
 }
 
-function getTypeName(searchTerm: string): TypeResolution {
-    // Is it a pokemon name?
-    const pokemonType = getTypeForPokemon(searchTerm)
-    if (typeof pokemonType === 'string') {
-        return { typeName: pokemonType, matchedAs: 'pokemon name', pokemonName: searchTerm }
-    } else if (Array.isArray(pokemonType)) {
-        return {
-            typeName: pokemonType[0],
-            matchedAs: 'pokemon name',
-            pokemonName: searchTerm,
-            secondaryTypeName: pokemonType[1],
-        }
-    }
+function getTypeName(searchTerm: SearchValue): TypeResolution {
+    switch (searchTerm.type) {
+        case 'TypeSearch':
+            // Is it a pokemon name?
+            const searchString = searchTerm.value
+            const pokemonType = getTypeForPokemon(searchString)
+            if (typeof pokemonType === 'string') {
+                return { typeName: pokemonType, matchedAs: 'pokemon name', pokemonName: searchString }
+            } else if (Array.isArray(pokemonType)) {
+                return {
+                    typeName: pokemonType[0],
+                    matchedAs: 'pokemon name',
+                    pokemonName: searchString,
+                    secondaryTypeName: pokemonType[1],
+                }
+            }
 
-    // Is it a type name?
-    const typeName = typeNamesToId[searchTerm]
-    if (typeName) {
-        return { typeName: searchTerm, matchedAs: 'type name' }
-    }
+            // Is it a type name?
+            const typeName = typeNamesToId[searchString]
+            if (typeName) {
+                return { typeName: searchString, matchedAs: 'type name' }
+            }
 
-    return { matchedAs: 'unknown' }
+            return { matchedAs: 'unknown' }
+
+        case 'TypeFilterSearch':
+            return {
+                matchedAs: 'primary/secondary type',
+                typeName: searchTerm.typeName1 || undefined,
+                secondaryTypeName: searchTerm.typeName2 || undefined,
+            }
+            break
+    }
 }
 
 type PokemonTypeResult = string | [string, string] | undefined
@@ -133,7 +156,6 @@ function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
 
         return (
             <div className="pkb-eff-container" key={title}>
-                {/* <span>{title}</span> */}
                 {jsx}
             </div>
         )
@@ -154,7 +176,9 @@ function renderTypeEfficacyCard(props: RenderTypeEfficacyProps) {
 }
 
 interface RenderAllTypesProps {
-    onClick(name: string): void
+    onClick(name: string | null): void
+    readonly selection?: string
+    readonly disabledItem?: string
 }
 
 function renderAllTypes(props: RenderAllTypesProps) {
@@ -162,11 +186,23 @@ function renderAllTypes(props: RenderAllTypesProps) {
 
     return (
         <span>
-            {allNames.map(name => (
-                <button className={`pkb-type-${name}`} key={name} onClick={() => props.onClick(name)}>
-                    {name}
-                </button>
-            ))}
+            {allNames.map(name => {
+                const disabled = name === props.disabledItem
+                const selected = name === props.selection && !disabled
+
+                function onClick() {
+                    if (selected) {
+                        props.onClick(null)
+                    } else {
+                        !disabled && props.onClick(name)
+                    }
+                }
+                return (
+                    <button className={`${selected ? 'pkb-type-selected' : ''} pkb-type-${name}`} key={name} onClick={onClick}>
+                        {name}
+                    </button>
+                )
+            })}
         </span>
     )
 }
@@ -209,61 +245,161 @@ function getContentData(typeName: TypeResolution): ContentData[] {
                     { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].defense, mode: 'defense' },
                 ]
             }
-    }
-}
-
-function renderMenuItemChildren(option: TypeaheadResult<AllTypesAndPokemon>, props: TypeaheadMenuProps<AllTypesAndPokemon>, index: number) {
-    return [
-        <Highlighter key="name" search={props.text}>
-            {option.name}
-        </Highlighter>,
-        <div key="type">
-            <small>{option.type}</small>
-        </div>,
-    ]
-}
-
-function generateTypeaheadSelection(typeName: TypeResolution): AllTypesAndPokemon[] {
-    switch (typeName.matchedAs) {
-        case 'unknown':
-            return []
-        case 'pokemon name':
-            return [{ name: typeName.pokemonName, type: 'pokemon' }]
-        case 'type name':
-            return [{ name: typeName.typeName, type: 'pokemon' }]
-    }
-}
-
-const searchStorageKey = 'pkb_search'
-function getLastSuccessSearch(): string {
-    const urlParams = new URLSearchParams(window.location.search)
-    const searchParam = urlParams.get('search')
-    return searchParam || localStorage.getItem(searchStorageKey) || 'normal'
-}
-
-function setLastSuccessSearch(typeName: TypeResolution) {
-    const urlParams = new URLSearchParams(window.location.search)
-    const currentParam = urlParams.get('search')
-    switch (typeName.matchedAs) {
-        case 'unknown':
-            return
-        case 'pokemon name':
-            const name = typeName.pokemonName
-            document.title = `Pokeboard: ${name}`
-            localStorage.setItem(searchStorageKey, typeName.pokemonName)
-            if (currentParam !== name) {
-                history.pushState({ search: name }, document.title, `?search=${name}`)
+        case 'primary/secondary type':
+            if (typeName.typeName && typeName.secondaryTypeName) {
+                return [
+                    { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].offense, mode: 'offense' },
+                    { typeName: typeName.secondaryTypeName, efficacy: offenseDefenseEfficacies[typeName.secondaryTypeName].offense, mode: 'offense' },
+                    {
+                        // Combined efficacy for targeting pokemon with multiple types
+                        typeName: `${typeName.typeName}/${typeName.secondaryTypeName}`,
+                        mode: 'defense',
+                        efficacy: combineDefenseEfficacies(
+                            offenseDefenseEfficacies[typeName.typeName].defense,
+                            offenseDefenseEfficacies[typeName.secondaryTypeName].defense
+                        ),
+                    },
+                ]
+            } else if (typeName.typeName) {
+                return [
+                    { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].offense, mode: 'offense' },
+                    { typeName: typeName.typeName, efficacy: offenseDefenseEfficacies[typeName.typeName].defense, mode: 'defense' },
+                ]
+            } else {
+                return []
             }
-            return
-        case 'type name':
-            const name2 = typeName.typeName
-            document.title = `Pokeboard: ${name2}`
-            localStorage.setItem(searchStorageKey, name2)
-            if (currentParam !== name2) {
-                history.pushState({ search: name2 }, document.title, `?search=${name2}`)
-            }
-            return
     }
+}
+
+const appStorageKey = 'pkb-app-store2'
+function getLastSuccessSearch(defaultValue: AppState): AppState {
+    const storedSearchString = localStorage.getItem(appStorageKey)
+    const lastAppState = storedSearchString ? JSON.parse(storedSearchString) : null
+    const urlParams = getUrlParams()
+
+    if (urlParams.type === 'TypeFilterUrlParams') {
+        return {
+            searchMode: 'TypeFilterSearch',
+            lastPokemonSearch: lastAppState.lastPokemonSearch,
+            lastTypeFilterSearch: {
+                type: 'TypeFilterSearch',
+                typeName1: urlParams.primary,
+                typeName2: urlParams.secondary,
+            },
+        }
+    } else if (urlParams.type === 'TypeSearchUrlParams') {
+        return {
+            searchMode: 'TypeSearch',
+            lastTypeFilterSearch: lastAppState.lastTypeFilterSearch,
+            lastPokemonSearch: {
+                type: 'TypeSearch',
+                value: urlParams.pokemonName,
+            },
+        }
+    }
+
+    return lastAppState || defaultValue
+}
+
+type UrlParams = TypeFilterUrlParams | TypeSearchUrlParams | UnknownUrlParams
+
+interface TypeFilterUrlParams {
+    readonly type: 'TypeFilterUrlParams'
+    readonly mode: string
+    readonly primary?: string
+    readonly secondary?: string
+}
+
+interface TypeSearchUrlParams {
+    readonly type: 'TypeSearchUrlParams'
+    readonly mode: string
+    readonly pokemonName: string
+}
+
+interface UnknownUrlParams {
+    readonly type: 'UnknownUrlParams'
+}
+
+function getUrlParams(): UrlParams {
+    const urlParams = new URLSearchParams(window.location.search)
+    const mode = urlParams.get('mode')
+    const primary = urlParams.get('primary')
+    const secondary = urlParams.get('secondary')
+    const pokemonName = urlParams.get('pokemonName')
+
+    if (mode === 'TypeFilterSearch' && primary !== null) {
+        return {
+            type: 'TypeFilterUrlParams',
+            mode: mode,
+            primary,
+            secondary: secondary || undefined,
+        }
+    } else if (mode === 'TypeSearch' && pokemonName !== null) {
+        return {
+            type: 'TypeSearchUrlParams',
+            mode: mode,
+            pokemonName,
+        }
+    } else {
+        return { type: 'UnknownUrlParams' }
+    }
+}
+
+function generateQueryString(urlParams: UrlParams): string {
+    switch (urlParams.type) {
+        case 'TypeSearchUrlParams':
+            return `?mode=${urlParams.mode}&pokemonName=${urlParams.pokemonName}`
+        case 'TypeFilterUrlParams':
+            return `?mode=${urlParams.mode}&primary=${urlParams.primary || ''}&secondary=${urlParams.secondary || ''}`
+        case 'UnknownUrlParams':
+            return ''
+    }
+}
+
+function urlParamsForState(appState: AppState): UrlParams {
+    const mode = appState.searchMode
+    switch (appState.searchMode) {
+        case 'TypeFilterSearch':
+            const { lastTypeFilterSearch } = appState
+            return {
+                type: 'TypeFilterUrlParams',
+                mode,
+                primary: lastTypeFilterSearch.typeName1,
+                secondary: lastTypeFilterSearch.typeName2,
+            }
+        case 'TypeSearch':
+            const { lastPokemonSearch } = appState
+            return { type: 'TypeSearchUrlParams', mode, pokemonName: lastPokemonSearch.value }
+    }
+}
+
+function setLastSuccessSearch(typeName: TypeResolution, appState: AppState) {
+    localStorage.setItem(appStorageKey, JSON.stringify(appState))
+
+    if (typeName.matchedAs === 'unknown') {
+        return
+    }
+
+    const urlParams = urlParamsForState(appState)
+    const currentUrlParams = getUrlParams()
+
+    if (equals(urlParams, currentUrlParams)) {
+        // Don't persist the same state if nothing changed
+        return
+    }
+
+    switch (appState.searchMode) {
+        case 'TypeFilterSearch':
+            const { lastTypeFilterSearch } = appState
+            document.title = `Pokeboard: ${lastTypeFilterSearch.typeName1} ${lastTypeFilterSearch.typeName2}`
+            break
+        case 'TypeSearch':
+            const { lastPokemonSearch } = appState
+            document.title = `Pokeboard: ${lastPokemonSearch.value}`
+            break
+    }
+
+    history.pushState(urlParams, document.title, generateQueryString(urlParams))
 }
 
 function renderContentData(contentData: ContentData[]) {
@@ -287,37 +423,221 @@ function renderContentData(contentData: ContentData[]) {
     )
 }
 
+function findMatchingPokemon(type1?: string, type2?: string): string[] {
+    if (type1 && type2) {
+        const t1 = typeIdsToPokemon[typeNamesToId[type1]] || []
+        const t2 = typeIdsToPokemon[typeNamesToId[type2]] || []
+        if (t2.length === 0) {
+            return t1.map(pokemonId => pokemonIdsToNames[pokemonId])
+        } else {
+            return intersection(t1, t2).map(pokemonId => {
+                console.warn(pokemonId)
+                return pokemonIdsToNames[pokemonId]
+            })
+        }
+    } else if (type1) {
+        const t1 = typeIdsToPokemon[typeNamesToId[type1]] || []
+        return t1.map(pokemonId => pokemonIdsToNames[pokemonId])
+    } else {
+        return []
+    }
+}
+
+type SearchValue = PokemonTypeSearch | TypeFilterSearch
+
+interface PokemonTypeSearch {
+    readonly type: 'TypeSearch'
+    readonly value: string
+}
+
+interface TypeFilterSearch {
+    readonly type: 'TypeFilterSearch'
+    readonly typeName1?: string
+    readonly typeName2?: string
+}
+
+interface SearchAreaProps {
+    onSearchChange(value: SearchValue): void
+    onModeChange(mode: SearchValue['type']): void
+    readonly search: SearchValue
+}
+
+function SearchArea(props: SearchAreaProps) {
+    const input = useRef<Typeahead<string>>(null)
+
+    function onToggleChange(_event: unknown, val: SearchValue['type']) {
+        props.onModeChange(val)
+    }
+
+    const toggle = (
+        <div className="pkb-toggle-container">
+            <ToggleButtonGroup value={props.search.type} exclusive={true} onChange={onToggleChange} aria-label="text alignment">
+                <ToggleButton value="TypeFilterSearch" aria-label="centered">
+                    Search by Types
+                </ToggleButton>
+                <ToggleButton value="TypeSearch" aria-label="centered">
+                    Search by Pokemon
+                </ToggleButton>
+            </ToggleButtonGroup>
+        </div>
+    )
+
+    if (props.search.type === 'TypeSearch') {
+        function onInputChange(val: string[]) {
+            val[0] &&
+                props.onSearchChange({
+                    type: 'TypeSearch',
+                    value: val[0],
+                })
+
+            const ref = input.current
+            if (ref && val.length > 0) {
+                // tslint:disable-next-line:no-any
+                ;(ref as any).blur()
+            }
+        }
+
+        console.warn(props.search.value)
+        return (
+            <div className="pkb-search-container">
+                {toggle}
+                <Typeahead
+                    ref={input}
+                    id="type-ahead"
+                    clearButton={true}
+                    onChange={onInputChange}
+                    selected={[props.search.value]}
+                    maxResults={10}
+                    placeholder="Search for types or pokemon"
+                    options={allPokemonNames}
+                />
+            </div>
+        )
+    } else {
+        const filterSearch = props.search
+        function onType1Change(typeName: string) {
+            props.onSearchChange({
+                ...filterSearch,
+                typeName1: typeName,
+            })
+        }
+
+        function onType2Change(typeName: string) {
+            props.onSearchChange({
+                ...filterSearch,
+                typeName2: typeName,
+            })
+        }
+
+        const matchingPokemon = findMatchingPokemon(filterSearch.typeName1, filterSearch.typeName2)
+
+        function onInputChange(val: string[]) {
+            const pokemonName = val[0]
+            if (pokemonName) {
+                const pokemonId = pokemonNamesToIds[pokemonName]
+                window.open(`https://pokemondb.net/pokedex/${pokemonId}`, '_blank')
+            }
+        }
+
+        return (
+            <div className="pkb-search-container">
+                {toggle}
+                <h3>Primary type</h3>
+                <div>{renderAllTypes({ onClick: onType1Change, selection: filterSearch.typeName1, disabledItem: filterSearch.typeName2 })}</div>
+                <h3>Secondary type</h3>
+                <div>{renderAllTypes({ onClick: onType2Change, selection: filterSearch.typeName2, disabledItem: filterSearch.typeName1 })}</div>
+                <h3>Pokemon with selected types</h3>
+                <Typeahead
+                    id="filter-type-ahead"
+                    clearButton={true}
+                    onChange={onInputChange}
+                    selected={[]}
+                    maxResults={10}
+                    placeholder="Open Pokemon in PokemonDb.net"
+                    options={matchingPokemon}
+                />
+            </div>
+        )
+    }
+}
+
+interface AppState {
+    readonly searchMode: SearchValue['type']
+    readonly lastPokemonSearch: PokemonTypeSearch
+    readonly lastTypeFilterSearch: TypeFilterSearch
+}
+
+const initialAppState: AppState = {
+    searchMode: 'TypeFilterSearch',
+    lastTypeFilterSearch: {
+        type: 'TypeFilterSearch',
+    },
+    lastPokemonSearch: {
+        type: 'TypeSearch',
+        value: 'Charizard',
+    },
+}
+
+function updateAppStateOnBack(event: PopStateEvent, appState: AppState): AppState | null {
+    const urlParams: UrlParams = event.state
+
+    if (urlParams.type === 'TypeFilterUrlParams') {
+        return {
+            ...appState,
+            lastTypeFilterSearch: {
+                type: 'TypeFilterSearch',
+                typeName1: urlParams.primary,
+                typeName2: urlParams.secondary,
+            },
+        }
+    } else if (urlParams.type === 'TypeSearchUrlParams') {
+        return {
+            ...appState,
+            lastPokemonSearch: {
+                type: 'TypeSearch',
+                value: urlParams.pokemonName,
+            },
+        }
+    } else {
+        return null
+    }
+}
+
 export function App() {
-    const [searchValue, setValue] = useState(getLastSuccessSearch())
-    const input = useRef<Typeahead<AllTypesAndPokemon>>(null)
+    const [appState, setValue] = useState<AppState>(() => getLastSuccessSearch(initialAppState))
+
+    let searchValue
+    if (appState.searchMode === 'TypeFilterSearch') {
+        searchValue = appState.lastTypeFilterSearch
+    } else {
+        searchValue = appState.lastPokemonSearch
+    }
 
     const typeNameResult = getTypeName(searchValue)
-    setLastSuccessSearch(typeNameResult) // side effect
+    setLastSuccessSearch(typeNameResult, appState) // side effect
 
     useEffect(() => {
         window.onpopstate = (event: PopStateEvent) => {
-            if (event.state.search) {
-                setValue(event.state.search)
+            const updated = updateAppStateOnBack(event, appState)
+            if (updated !== null) {
+                setValue(updated)
             }
         }
     })
 
     const contentData = getContentData(typeNameResult)
 
-    function onTypeNameClick(name: string) {
-        setValue(name)
-    }
-
-    function onInputChange(val: AllTypesAndPokemon[]) {
-        val[0] && setValue(val[0].name)
-        const ref = input.current
-        if (ref && val.length > 0) {
-            // tslint:disable-next-line:no-any
-            ;(ref as any).blur()
+    function onInputChange(value: SearchValue) {
+        if (value.type === 'TypeFilterSearch') {
+            setValue({ ...appState, lastTypeFilterSearch: value })
+        } else {
+            setValue({ ...appState, lastPokemonSearch: value })
         }
     }
 
-    const selected = generateTypeaheadSelection(typeNameResult)
+    function onModeChange(mode: SearchValue['type']) {
+        setValue({ ...appState, searchMode: mode })
+    }
 
     return (
         <div className="pkb-root">
@@ -327,21 +647,7 @@ export function App() {
                     Source on Github
                 </a>
             </div>
-            <div>{renderAllTypes({ onClick: onTypeNameClick })}</div>
-            <div className="pkb-search-container">
-                <Typeahead
-                    ref={input}
-                    id="typeahead"
-                    clearButton={true}
-                    renderMenuItemChildren={renderMenuItemChildren}
-                    onChange={onInputChange}
-                    selected={selected}
-                    maxResults={5}
-                    placeholder="Search for types or pokemon"
-                    options={allPokemonAndTypeNames}
-                    labelKey="name"
-                />
-            </div>
+            <SearchArea onModeChange={onModeChange} onSearchChange={onInputChange} search={searchValue} />
 
             <div className="pkb-results">{renderContentData(contentData)}</div>
         </div>

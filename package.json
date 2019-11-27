@@ -28,6 +28,8 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/lab": "^4.0.0-alpha.33",
     "ramda": "^0.26.1",
     "react": "^16.8.3",
     "react-bootstrap-typeahead": "^3.4.7",
