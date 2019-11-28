@@ -439,7 +439,7 @@ function findMatchingPokemon(type1?: string, type2?: string): string[] {
         const t1 = typeIdsToPokemon[typeNamesToId[type1]] || []
         return t1.map(pokemonId => pokemonIdsToNames[pokemonId])
     } else {
-        return []
+        return allPokemonNames
     }
 }
 
