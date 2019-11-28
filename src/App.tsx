@@ -391,7 +391,8 @@ function setLastSuccessSearch(typeName: TypeResolution, appState: AppState) {
     switch (appState.searchMode) {
         case 'TypeFilterSearch':
             const { lastTypeFilterSearch } = appState
-            document.title = `Pokeboard: ${lastTypeFilterSearch.typeName1} ${lastTypeFilterSearch.typeName2}`
+            const types = [lastTypeFilterSearch.typeName1, lastTypeFilterSearch.typeName2].filter(it => !!it).join(', ')
+            document.title = `Pokeboard: ${types}`
             break
         case 'TypeSearch':
             const { lastPokemonSearch } = appState
