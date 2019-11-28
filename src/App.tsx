@@ -467,7 +467,10 @@ function SearchArea(props: SearchAreaProps) {
     const input = useRef<Typeahead<string>>(null)
 
     function onToggleChange(_event: unknown, val: SearchValue['type']) {
-        props.onModeChange(val)
+        // apparently it sends null when the selected option is picked again
+        if (val !== null) {
+            props.onModeChange(val)
+        }
     }
 
     const toggle = (
