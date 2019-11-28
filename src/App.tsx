@@ -432,7 +432,6 @@ function findMatchingPokemon(type1?: string, type2?: string): string[] {
             return t1.map(pokemonId => pokemonIdsToNames[pokemonId])
         } else {
             return intersection(t1, t2).map(pokemonId => {
-                console.warn(pokemonId)
                 return pokemonIdsToNames[pokemonId]
             })
         }
@@ -501,7 +500,6 @@ function SearchArea(props: SearchAreaProps) {
             }
         }
 
-        console.warn(props.search.value)
         return (
             <div className="pkb-search-container">
                 {toggle}
