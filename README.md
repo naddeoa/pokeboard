@@ -1,8 +1,10 @@
-### Pokeboard
+### Pokeboard: Calculate Pokemon Type Weaknesses and Strengths
 
-This is a little utility to get readouts of pokemon strengths/weaknesses at a glance. It's hosted at
+This is a little utility to get readouts of pokemon strengths/weaknesses at a glance. You can search by type or by pokemon and get a list of the type modifiers that type will have when attacking and defending.
 
-https://naddeo.org/pokeboard/
+![Pokeboard Example Screenshot](https://naddeo.org/img/pokeboard-pokemon-type-weaknesses.jpg)
+
+It's hosted at https://naddeo.org/pokeboard/
 
 Some examples searches:
 - [normal type weaknesses](https://naddeo.org/pokeboard/?mode=TypeFilterSearch&primary=normal)
