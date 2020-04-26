@@ -1,21 +1,14 @@
 /* The container in the static markup */
-#root {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
 
-.pkb-source-link {
+#root .pkb-source-link {
     display: flex;
 }
 
-.pkb-source-link h2 {
+#root .pkb-source-link h1 {
     flex-grow: 1;
 }
 
-.pkb-results {
+#root .pkb-results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-column-gap: 10px;
@@ -23,11 +16,11 @@
     grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));
 }
 
-.pkb-search-container {
+#root .pkb-search-container {
     margin: 10px;
 }
 
-button {
+#root button {
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #ffffff;
@@ -41,7 +34,7 @@ button {
     transition: all 0.2s;
 }
 
-.pkb-eff-container {
+#root .pkb-eff-container {
     padding-left: 10px;
 }
 
@@ -65,7 +58,7 @@ i.down.pkb-eff-indicator {
     border-color: red;
 }
 
-button:hover {
+#root button:hover {
     color: #000000;
     background-color: #776767;
 }
@@ -80,76 +73,76 @@ ul.pkb-eff-listing li {
     margin-top: 1em;
 }
 
-.pkb-type-label {
+#root .pkb-type-label {
     padding: 5px;
     margin-right: 3px;
     border-radius: 2px;
 }
 
-.pkb-toggle-container{
+#root .pkb-toggle-container{
     display: flex;
     justify-content: center;
 }
 
-.pkb-type-selected {
+#root .pkb-type-selected {
     border-color: red;
     border-width: 4px;
     border-radius: 3px;
     margin: 15px;
 }
 
-.pkb-type-fire {
+#root .pkb-type-fire {
     background-color: #f08030;
 }
-.pkb-type-flying {
+#root .pkb-type-flying {
     background-color: #a890f0;
 }
-.pkb-type-rock {
+#root .pkb-type-rock {
     background-color: #b8a038;
 }
-.pkb-type-normal {
+#root .pkb-type-normal {
     background-color: #a8a878;
 }
-.pkb-type-poison {
+#root .pkb-type-poison {
     background-color: #a040a0;
 }
-.pkb-type-bug {
+#root .pkb-type-bug {
     background-color: #a8b820;
 }
-.pkb-type-ghost {
+#root .pkb-type-ghost {
     background-color: #705898;
 }
-.pkb-type-steel {
+#root .pkb-type-steel {
     background-color: #b8b8d0;
 }
-.pkb-type-water {
+#root .pkb-type-water {
     background-color: #6890f0;
 }
-.pkb-type-electric {
+#root .pkb-type-electric {
     background-color: #f8d030;
 }
-.pkb-type-psychic {
+#root .pkb-type-psychic {
     background-color: #f85888;
 }
-.pkb-type-ice {
+#root .pkb-type-ice {
     background-color: #98d8d8;
 }
-.pkb-type-dragon {
+#root .pkb-type-dragon {
     background-color: #7038f8;
 }
-.pkb-type-dark {
+#root .pkb-type-dark {
     background-color: #705848;
 }
-.pkb-type-fairy {
+#root .pkb-type-fairy {
     background-color: #ee99ac;
 }
-.pkb-type-fighting {
+#root .pkb-type-fighting {
     background-color: #c03028;
 }
-.pkb-type-ground {
+#root .pkb-type-ground {
     background-color: #e0c068;
 }
-.pkb-type-grass {
+#root .pkb-type-grass {
     background-color: #78c850;
 }
 

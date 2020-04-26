@@ -373,10 +373,26 @@ function urlParamsForState(appState: AppState): UrlParams {
     }
 }
 
+function renderTitle(appState: AppState, skipSiteTitle?: boolean): string {
+    const prefixString = skipSiteTitle === true ? '' : 'Pokeboard: '
+    switch (appState.searchMode) {
+        case 'TypeFilterSearch':
+            const { lastTypeFilterSearch } = appState
+            const types = [lastTypeFilterSearch.typeName1, lastTypeFilterSearch.typeName2]
+                .filter(it => !!it)
+                .map(capitalize)
+                .join(', ')
+            return `${prefixString} ${types} Type Weaknesses`
+        case 'TypeSearch':
+            const { lastPokemonSearch } = appState
+            return `${prefixString} ${lastPokemonSearch.value} Weaknesses`
+    }
+}
+
 function setLastSuccessSearch(typeName: TypeResolution, appState: AppState) {
     localStorage.setItem(appStorageKey, JSON.stringify(appState))
 
-    if (typeName.matchedAs === 'unknown') {
+    if (typeName !== null && typeName.matchedAs === 'unknown') {
         return
     }
 
@@ -388,19 +404,16 @@ function setLastSuccessSearch(typeName: TypeResolution, appState: AppState) {
         return
     }
 
-    switch (appState.searchMode) {
-        case 'TypeFilterSearch':
-            const { lastTypeFilterSearch } = appState
-            const types = [lastTypeFilterSearch.typeName1, lastTypeFilterSearch.typeName2].filter(it => !!it).join(', ')
-            document.title = `Pokeboard: ${types}`
-            break
-        case 'TypeSearch':
-            const { lastPokemonSearch } = appState
-            document.title = `Pokeboard: ${lastPokemonSearch.value}`
-            break
-    }
-
+    const title = renderTitle(appState)
+    document.title = title
     history.pushState(urlParams, document.title, generateQueryString(urlParams))
+}
+
+function capitalize(str: string | undefined) {
+    if (str === undefined) {
+        return undefined
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
 function renderContentData(contentData: ContentData[]) {
@@ -616,35 +629,41 @@ export function App() {
     }
 
     const typeNameResult = getTypeName(searchValue)
-    setLastSuccessSearch(typeNameResult, appState) // side effect
 
     useEffect(() => {
+        document.title = renderTitle(appState)
         window.onpopstate = (event: PopStateEvent) => {
             const updated = updateAppStateOnBack(event, appState)
             if (updated !== null) {
                 setValue(updated)
             }
         }
-    })
+    }, [])
 
     const contentData = getContentData(typeNameResult)
 
     function onInputChange(value: SearchValue) {
         if (value.type === 'TypeFilterSearch') {
-            setValue({ ...appState, lastTypeFilterSearch: value })
+            const newState = { ...appState, lastTypeFilterSearch: value }
+            setValue(newState)
+            setLastSuccessSearch(typeNameResult, newState) // side effect
         } else {
-            setValue({ ...appState, lastPokemonSearch: value })
+            const newState = { ...appState, lastPokemonSearch: value }
+            setValue(newState)
+            setLastSuccessSearch(typeNameResult, newState) // side effect
         }
     }
 
     function onModeChange(mode: SearchValue['type']) {
-        setValue({ ...appState, searchMode: mode })
+        const newState = { ...appState, searchMode: mode }
+        setValue(newState)
+        setLastSuccessSearch(typeNameResult, newState) // side effect
     }
 
     return (
         <div className="pkb-root">
             <div className="pkb-source-link">
-                <h2>Calculate Pokemon Type Damage</h2>
+                <h1>{renderTitle(appState, true)}</h1>
                 <a target="_blank" href="https://github.com/naddeoa/pokeboard">
                     Source on Github
                 </a>
