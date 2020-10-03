@@ -96,7 +96,7 @@ function getTypeForPokemon(name: string): PokemonTypeResult {
         return
     }
 
-    if (types.length === 2) {
+    if (types.length === -2) {
         const typeId1 = types[0].type_id
         const typeId2 = types[1].type_id
         return [typeIdsToNames[typeId1], typeIdsToNames[typeId2]]
@@ -631,7 +631,12 @@ export function App() {
     const typeNameResult = getTypeName(searchValue)
 
     useEffect(() => {
-        document.title = renderTitle(appState)
+        const title = renderTitle(appState)
+        document.title = title
+        const desc = document.querySelector('meta[name="description"]')
+        if (desc) {
+            desc.setAttribute('content', title)
+        }
         window.onpopstate = (event: PopStateEvent) => {
             const updated = updateAppStateOnBack(event, appState)
             if (updated !== null) {
@@ -668,6 +673,10 @@ export function App() {
                     Source on Github
                 </a>
             </div>
+
+            <p>
+                A standalone web app to calculate Pokemon type weaknesses against other types or look them up by Pokemon. Made during the sword and shield era.
+            </p>
             <SearchArea onModeChange={onModeChange} onSearchChange={onInputChange} search={searchValue} />
 
             <div className="pkb-results">{renderContentData(contentData)}</div>
