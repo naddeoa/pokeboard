@@ -96,7 +96,7 @@ function getTypeForPokemon(name: string): PokemonTypeResult {
         return
     }
 
-    if (types.length === -2) {
+    if (types.length === 2) {
         const typeId1 = types[0].type_id
         const typeId2 = types[1].type_id
         return [typeIdsToNames[typeId1], typeIdsToNames[typeId2]]
@@ -381,11 +381,33 @@ function renderTitle(appState: AppState, skipSiteTitle?: boolean): string {
             const types = [lastTypeFilterSearch.typeName1, lastTypeFilterSearch.typeName2]
                 .filter(it => !!it)
                 .map(capitalize)
-                .join(', ')
+                .join('/')
             return `${prefixString} ${types} Type Weaknesses`
         case 'TypeSearch':
             const { lastPokemonSearch } = appState
             return `${prefixString} ${lastPokemonSearch.value} Weaknesses`
+    }
+}
+
+function renderDescription(appState: AppState, skipSiteTitle?: boolean): string {
+    switch (appState.searchMode) {
+        case 'TypeFilterSearch':
+            const { lastTypeFilterSearch } = appState
+            const types = [lastTypeFilterSearch.typeName1, lastTypeFilterSearch.typeName2]
+                .filter(it => !!it)
+                .map(capitalize)
+                .join('/')
+            return `View Attack and Defense Modifiers for ${types} types.`
+        case 'TypeSearch':
+            const { lastPokemonSearch } = appState
+            return `View ${lastPokemonSearch.value}'s strengths and weaknesses relative to all types.`
+    }
+}
+
+function updateDescription(appState: AppState, skipSiteTitle?: boolean) {
+    const desc = document.querySelector('meta[name="description"]')
+    if (desc) {
+        desc.setAttribute('content', renderDescription(appState))
     }
 }
 
@@ -406,6 +428,7 @@ function setLastSuccessSearch(typeName: TypeResolution, appState: AppState) {
 
     const title = renderTitle(appState)
     document.title = title
+    updateDescription(appState)
     history.pushState(urlParams, document.title, generateQueryString(urlParams))
 }
 
@@ -633,10 +656,7 @@ export function App() {
     useEffect(() => {
         const title = renderTitle(appState)
         document.title = title
-        const desc = document.querySelector('meta[name="description"]')
-        if (desc) {
-            desc.setAttribute('content', title)
-        }
+        updateDescription(appState)
         window.onpopstate = (event: PopStateEvent) => {
             const updated = updateAppStateOnBack(event, appState)
             if (updated !== null) {

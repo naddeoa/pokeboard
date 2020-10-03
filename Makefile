@@ -64,6 +64,9 @@ test:
 
 node_modules: $(workspace.node_modules)
 
+lame-deploy: clean all
+	cp dist/bundle.js ../personal-site/demo/pokeboard/static/js/pokeboard.js
+
 start:
 	@$(call i, Starting TypeScript and React Native bundler in watch mode)
 	mkdir -p $(dev.server-dir)
